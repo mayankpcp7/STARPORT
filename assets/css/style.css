@@ -147,6 +147,13 @@
 .accordian_item_gap {
   gap: 40px;
 }
+.translate_middle {
+  transform: translate(-50%, -50%);
+}
+.play_icon {
+  cursor: pointer;
+  z-index: 10; /* Ensure it stays above the video */
+}
 @media (max-width: 992px) {
   .accordian_item_gap {
     gap: 20px;
