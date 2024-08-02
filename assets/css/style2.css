@@ -28,7 +28,29 @@
     width: 25px;
     height: 25px;
 }
+/* -------header------- */
+.header_bg{
+  background-image: url('../images/webp/starport-header-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 810px;
+}
 
+.starport_logo{
+  max-width: 430px;
+  height: 65px;
+}
+
+@media (max-width:767.98px) {
+  .starport_logo{
+    max-width: 330px;
+    height: 65px;
+  }
+  .header_bg{
+    min-height: 510px;
+  }
+}
 @media (max-width:991.98px) {
   .button_svg_icon {
     width: 20px;
