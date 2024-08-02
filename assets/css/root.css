@@ -95,3 +95,13 @@
 .leading_152 {
   line-height: 152%;
 }
+/* ===== CUSTOM CONTAINER ===== */
+.custom_container {
+  max-width: 1172px;
+  margin: 0px auto;
+  padding: 0px 16px;
+}
+
+.section_width {
+  max-width: 1290px;
+}
