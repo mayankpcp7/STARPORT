@@ -52,9 +52,6 @@
 .text_skin {
   color: var(--text-skin);
 }
-.text_gray {
-  color: var(--text-gray);
-}
 .text_purple {
   color: var(--text-purple);
 }
@@ -71,7 +68,9 @@
 .bg_purple {
   background-color: var(--text-purple);
 }
-
+.bg_gray {
+  background-color: var(--text-gray);
+}
 /* ====== FONT FAMILY CLASSES =========== */
 .font_glasio {
   font-family: "Gelasio", serif;
@@ -79,4 +78,20 @@
 
 .font_inter {
   font-family: "Inter", sans-serif;
+}
+/* ======== LINE HEIGHTS ============ */
+.leading_120 {
+  line-height: 120%;
+}
+.leading_135 {
+  line-height: 135%;
+}
+.leading_140 {
+  line-height: 140%;
+}
+.leading_150 {
+  line-height: 150%;
+}
+.leading_152 {
+  line-height: 152%;
 }
