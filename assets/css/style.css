@@ -4,16 +4,18 @@
 }
 /* ========================== DUE DILIGENCE ================== */
 .radius_28 {
-  border-radius: 28px;
+    border-radius: 28px;
 }
 
 .diligence_image {
-  max-height: 185px;
-  max-width: 324px;
-
-  border-radius: 8px;
+    max-height: 185px;
+    max-width: 324px;
+    border-radius: 8px;
 }
 
+.diligence_card:hover img {
+  transform: scale(1.05);
+}
 .diligence_card {
   max-width: 364px;
 }
@@ -25,12 +27,12 @@
 
 .diligence_button {
   min-width: 162px;
+  padding: 12px 0;
 }
-.button_svg_icon {
-  width: 25px;
-  height: 25px;
+.button_svg_icon{
+    width: 25px;
+    height: 25px;
 }
-
 /* =========================== MOVING FORWARD ================ */
 .opacity_70 {
   opacity: 70%;
@@ -181,16 +183,17 @@
   .footer_logo {
     max-width: 390px;
   }
-  .button_svg_icon {
+ .button_svg_icon {
     width: 20px;
     height: 20px;
+  }
+  .diligence_button {
+    padding: 9px 0;
+    min-width: 132px;
   }
   .diligence_image {
     border-radius: 16px;
     max-width: 100%;
-  }
-  .diligence_button {
-    min-width: 132px;
   }
 }
 @media (max-width: 767.98px) {
