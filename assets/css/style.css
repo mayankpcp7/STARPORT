@@ -13,6 +13,9 @@
   border-radius: 8px;
 }
 
+.diligence_card:hover img {
+  transform: scale(1.05);
+}
 .diligence_card {
   max-width: 364px;
 }
@@ -24,12 +27,12 @@
 
 .diligence_button {
   min-width: 162px;
+  padding: 12px 0;
 }
 .button_svg_icon {
   width: 25px;
   height: 25px;
 }
-
 /* =========================== MOVING FORWARD ================ */
 .opacity_70 {
   opacity: 70%;
@@ -187,12 +190,13 @@
     width: 20px;
     height: 20px;
   }
+  .diligence_button {
+    padding: 9px 0;
+    min-width: 132px;
+  }
   .diligence_image {
     border-radius: 16px;
     max-width: 100%;
-  }
-  .diligence_button {
-    min-width: 132px;
   }
 }
 @media (max-width: 767.98px) {
@@ -214,5 +218,23 @@
   }
   .accordian_item_gap {
     gap: 12px;
+  }
+
+  .accordion-item:nth-child(3) .accordion-button::after,
+  .accordion-item:nth-child(4) .accordion-button::after,
+  .accordion-item:nth-child(5) .accordion-button::after {
+    width: 28px !important;
+  }
+  .accordion-item {
+    padding: 0 12px !important;
+  }
+  .accordion-item:nth-child(1) .accordion-button::after,
+  .accordion-item:nth-child(2) .accordion-button::after {
+    font-size: 12px !important;
+    width: 100px !important;
+    height: 40px !important;
+  }
+  .accordion-button {
+    padding: 12px 0 !important;
   }
 }

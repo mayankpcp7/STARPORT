@@ -5,10 +5,12 @@
 .diligence_image {
     max-height: 185px;
     max-width: 324px;
-
     border-radius: 8px;
 }
 
+.diligence_card:hover img {
+  transform: scale(1.05);
+}
 .diligence_card {
   max-width: 364px;
 }
@@ -20,9 +22,24 @@
 
 .diligence_button {
   min-width: 162px;
+  padding: 12px 0;
 }
 .button_svg_icon{
     width: 25px;
     height: 25px;
 }
 
+@media (max-width:991.98px) {
+  .button_svg_icon {
+    width: 20px;
+    height: 20px;
+  }
+  .diligence_button {
+    padding: 9px 0;
+    min-width: 132px;
+  }
+  .diligence_image {
+    border-radius: 16px;
+    max-width: 100%;
+  }
+}
