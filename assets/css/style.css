@@ -181,6 +181,11 @@
   .accordion-button:not(.collapsed) {
     padding: 16px !important;
   }
+  .accordion-item:nth-child(3) .accordion-button::after,
+  .accordion-item:nth-child(4) .accordion-button::after,
+  .accordion-item:nth-child(5) .accordion-button::after {
+    margin-top: -8px !important;
+  }
 }
 @media (max-width: 991.98px) {
   .footer_logo {
@@ -224,6 +229,8 @@
   .accordion-item:nth-child(4) .accordion-button::after,
   .accordion-item:nth-child(5) .accordion-button::after {
     width: 28px !important;
+    font-size: 30px !important;
+    margin-top: -8px !important;
   }
   .accordion-item {
     padding: 0 12px !important;
