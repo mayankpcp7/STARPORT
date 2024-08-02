@@ -23,9 +23,6 @@
     0 6px 20px 0 var(--text-navyblue);
 }
 
-.diligence_button {
-  min-width: 162px;
-}
 .button_svg_icon {
   width: 25px;
   height: 25px;
@@ -138,17 +135,4 @@
 
 .gap_40 {
   gap: 40px;
-}
-@media (max-width: 991.98px) {
-  .button_svg_icon {
-    width: 20px;
-    height: 20px;
-  }
-  .diligence_image {
-    border-radius: 16px;
-    max-width: 100%;
-  }
-  .diligence_button {
-    min-width: 132px;
-  }
 }

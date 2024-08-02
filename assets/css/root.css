@@ -109,9 +109,6 @@
 .p_20 {
   padding: 20px;
 }
-.py_12 {
-  padding: 12px 0px;
-}
 .radius_32 {
   border-radius: 32px;
 }
@@ -154,9 +151,6 @@
   }
 }
 @media (max-width: 767.98px) {
-  .py_12 {
-    padding: 9px 0px;
-  }
   .section_spacing {
     margin-top: 60px;
   }
