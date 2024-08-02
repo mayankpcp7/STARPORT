@@ -1,0 +1,21 @@
+.radius_28 {
+  border-radius: 28px;
+}
+
+.diligence_image {
+  max-width: 324px;
+  max-height: 185px;
+}
+
+.diligence_card {
+  max-width: 364px;
+}
+
+.diligence_button:hover {
+  box-shadow: 0 4px 8px 0 var(--text-navyblue),
+    0 6px 20px 0 var(--text-navyblue);
+}
+
+.diligence_button {
+  min-width: 162px;
+}

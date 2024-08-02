@@ -2,17 +2,27 @@
   text-decoration: none !important;
   list-style-type: none !important;
 }
-/* =========================Common Investor Questions========================= */
+
 .opacity_70 {
   opacity: 70%;
+}
+.radius_16 {
+  border-radius: 16px;
+}
+.opacity_70 {
+  opacity: 70%;
+}
+.footer_logo {
+  max-width: 444px;
+}
+.cards_shadow:hover {
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
 }
 .faq {
   padding-top: 60px;
   max-width: 946px;
 }
-.rounded_32 {
-  border-radius: 32px;
-}
+/* =========================Common Investor Questions========================= */
 .py_common_invester {
   padding-top: 101px;
   padding-bottom: 101px;

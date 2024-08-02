@@ -15,6 +15,7 @@
   --text-gray: #cccccc;
   --text-purple: #630df3;
   --text-darkblue: #090e27;
+  --text-offwhite: #fefefe;
 }
 /* ====== FONT SIZE CLASSES =======*/
 .fs_xxl {
@@ -55,6 +56,9 @@
 .text_purple {
   color: var(--text-purple);
 }
+.text_offwhite {
+  color: var(--text-offwhite);
+}
 /* ======== BACKGROUND COLORS CLASSES ====== */
 .bg_red {
   background-color: var(--text-red);
@@ -71,8 +75,11 @@
 .bg_gray {
   background-color: var(--text-gray);
 }
+.bg_offwhite {
+  background-color: var(--text-offwhite);
+}
 /* ====== FONT FAMILY CLASSES =========== */
-.font_glasio {
+.font_gelasio {
   font-family: "Gelasio", serif;
 }
 
@@ -95,13 +102,78 @@
 .leading_152 {
   line-height: 152%;
 }
-/* ===== CUSTOM CONTAINER ===== */
-.custom_container {
-  max-width: 1172px;
-  margin: 0px auto;
-  padding: 0px 16px;
-}
-
+/* ====== COMMON CLASSES ===== */
 .section_width {
   max-width: 1290px;
+}
+.p_20 {
+  padding: 20px;
+}
+.py_12 {
+  padding: 12px 0px;
+}
+.radius_32 {
+  border-radius: 32px;
+}
+.section_spacing {
+  margin-top: 75px;
+}
+.duration_300 {
+  transition: all 300ms linear;
+}
+/* ===== CUSTOM CONTAINER ===== */
+@media (min-width: 1399.98px) {
+  .custom_container {
+    max-width: 1172px !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .section_spacing {
+    margin-top: 70px;
+  }
+  :root {
+    --fs-xxl: 55px;
+    --fs-xl: 38px;
+    --fs-lg: 20px;
+    --fs-md: 19px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section_spacing {
+    margin-top: 65px;
+  }
+  :root {
+    --fs-xxl: 50px;
+    --fs-xl: 35px;
+    --fs-lg: 19px;
+    --fs-md: 17px;
+    --fs-sm: 16px;
+  }
+  .p_20 {
+    padding: 12px;
+  }
+}
+@media (max-width: 767.98px) {
+  .section_spacing {
+    margin-top: 60px;
+  }
+  :root {
+    --fs-xxl: 48px;
+    --fs-xl: 32px;
+    --fs-lg: 17px;
+    --fs-md: 16px;
+    --fs-sm: 15px;
+  }
+}
+@media (max-width: 575.98px) {
+  .section_spacing {
+    margin-top: 48px;
+  }
+  :root {
+    --fs-xxl: 45px;
+    --fs-xl: 30px;
+    --fs-lg: 17px;
+    --fs-md: 16px;
+    --fs-sm: 14px;
+  }
 }
