@@ -118,6 +118,9 @@
 .section_spacing {
   margin-top: 75px;
 }
+.duration_300 {
+  transition: all 300ms linear;
+}
 /* ===== CUSTOM CONTAINER ===== */
 @media (min-width: 1399.98px) {
   .custom_container {
