@@ -18,11 +18,11 @@
 .cards_shadow:hover {
   box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
 }
+/* =========================Common Investor Questions========================= */
 .faq {
   padding-top: 60px;
   max-width: 946px;
 }
-/* =========================Common Investor Questions========================= */
 .py_common_invester {
   padding-top: 101px;
   padding-bottom: 101px;
@@ -33,12 +33,8 @@
 .accordion-button:focus {
   box-shadow: none !important;
 }
-.accordion-item {
-  background-color: #fefefe;
-}
 .accordion-button {
   padding: 20px !important;
-  background-color: #efefef !important;
 }
 
 .accordion-button:not(.collapsed) {
