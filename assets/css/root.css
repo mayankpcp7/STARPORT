@@ -151,6 +151,9 @@
   }
 }
 @media (max-width: 767.98px) {
+  .py_12 {
+    padding: 9px 0px;
+  }
   .section_spacing {
     margin-top: 60px;
   }
