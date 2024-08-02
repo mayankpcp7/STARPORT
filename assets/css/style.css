@@ -242,4 +242,7 @@
   .accordion-button {
     padding: 12px 0 !important;
   }
+  .faq {
+    padding-top: 16px;
+  }
 }
