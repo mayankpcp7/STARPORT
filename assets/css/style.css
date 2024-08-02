@@ -2,6 +2,10 @@
   text-decoration: none !important;
   list-style-type: none !important;
 }
+/* ===========================  */
+.slider_playicon {
+  max-width: 64px;
+}
 /* ========================== DUE DILIGENCE ================== */
 .radius_28 {
   border-radius: 28px;
