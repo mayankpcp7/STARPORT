@@ -4,16 +4,18 @@
 }
 /* ========================== DUE DILIGENCE ================== */
 .radius_28 {
-  border-radius: 28px;
+    border-radius: 28px;
 }
 
 .diligence_image {
-  max-height: 185px;
-  max-width: 324px;
-
-  border-radius: 8px;
+    max-height: 185px;
+    max-width: 324px;
+    border-radius: 8px;
 }
 
+.diligence_card:hover img {
+  transform: scale(1.05);
+}
 .diligence_card {
   max-width: 364px;
 }
@@ -23,11 +25,14 @@
     0 6px 20px 0 var(--text-navyblue);
 }
 
-.button_svg_icon {
-  width: 25px;
-  height: 25px;
+.diligence_button {
+  min-width: 162px;
+  padding: 12px 0;
 }
-
+.button_svg_icon{
+    width: 25px;
+    height: 25px;
+}
 /* =========================== MOVING FORWARD ================ */
 .opacity_70 {
   opacity: 70%;
@@ -44,6 +49,7 @@
 .cards_shadow:hover {
   box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
 }
+/* =========================Common Investor Questions========================= */
 .faq {
   padding-top: 60px;
   max-width: 946px;
@@ -62,14 +68,12 @@
 .accordion-button:focus {
   box-shadow: none !important;
 }
-.accordion-item {
-  background-color: #fefefe;
-}
 .accordion-button {
-  padding: 20px !important;
-  background-color: #efefef !important;
+  padding: 20px 0 !important;
 }
-
+.accordion-item {
+  padding: 0 20px !important;
+}
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
   box-shadow: none !important;
@@ -94,19 +98,26 @@
 .accordion-item:nth-child(2) .accordion-button::after {
   content: "Open Video" !important;
   color: #fff !important;
-  background: #ff0a00 !important;
+  background: #ff0a00;
   border-radius: 12px !important;
   font-family: "Inter", sans-serif !important;
   font-weight: 500 !important;
   font-size: 18px !important;
+  transition: 0.3s linear;
+}
+.accordion-item:nth-child(1) .accordion-button:hover::after,
+.accordion-item:nth-child(2) .accordion-button:hover::after {
+  background: #ff0a00ad !important;
+  color: #fff !important;
 }
 
 .accordion-item:nth-child(3) .accordion-button::after,
 .accordion-item:nth-child(4) .accordion-button::after,
 .accordion-item:nth-child(5) .accordion-button::after {
   content: "+" !important;
-  font-size: 50px;
-  color: #010101;
+  font-size: 50px !important;
+  color: #010101 !important;
+  font-weight: 400 !important;
 }
 .accordion-item:nth-child(1) .accordion-button:not(.collapsed)::after,
 .accordion-item:nth-child(2) .accordion-button:not(.collapsed)::after {
@@ -133,6 +144,65 @@
   max-width: 523px;
 }
 
-.gap_40 {
+.accordian_item_gap {
   gap: 40px;
+}
+@media (max-width: 992px) {
+  .accordian_item_gap {
+    gap: 20px;
+  }
+  .accordion-body {
+    padding: 0px 0px 16px 20px !important;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 24px 40.5px 16px 20px !important;
+  }
+  .accordion-item:nth-child(1) .accordion-button::after,
+  .accordion-item:nth-child(2) .accordion-button::after {
+    font-size: 14px !important;
+    width: 120px !important;
+  }
+  .py_common_invester {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .py_common_invester {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .accordion-button:not(.collapsed) {
+    padding: 16px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .footer_logo {
+    max-width: 390px;
+  }
+ .button_svg_icon {
+    width: 20px;
+    height: 20px;
+  }
+  .diligence_button {
+    padding: 9px 0;
+    min-width: 132px;
+  }
+  .diligence_image {
+    border-radius: 16px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer_logo {
+    max-width: 360px;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer_logo {
+    max-width: 300px;
+  }
 }

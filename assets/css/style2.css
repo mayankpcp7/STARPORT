@@ -1,16 +1,17 @@
 .radius_28 {
-    border-radius: 28px;
+  border-radius: 28px;
 }
 
 .diligence_image {
-    max-height: 185px;
-    max-width: 324px;
-    border-radius: 8px;
+  max-height: 185px;
+  max-width: 324px;
+  border-radius: 8px;
 }
 
 .diligence_card:hover img {
   transform: scale(1.05);
 }
+
 .diligence_card {
   max-width: 364px;
 }
@@ -24,12 +25,14 @@
   min-width: 162px;
   padding: 12px 0;
 }
-.button_svg_icon{
-    width: 25px;
-    height: 25px;
+
+.button_svg_icon {
+  width: 25px;
+  height: 25px;
 }
+
 /* -------header------- */
-.header_bg{
+.header_bg {
   background-image: url('../images/webp/starport-header-bg.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -37,31 +40,86 @@
   min-height: 810px;
 }
 
-.starport_logo{
+.starport_logo {
   max-width: 430px;
   height: 65px;
 }
 
-@media (max-width:767.98px) {
-  .starport_logo{
-    max-width: 330px;
-    height: 65px;
-  }
-  .header_bg{
-    min-height: 510px;
+/* video section */
+.video_sec_spacing {
+  padding: 140px 0;
+  transform: translateY(-32%);
+  margin-bottom: -250px;
+}
+
+.diligence_video_img {
+  max-width: 945px;
+  max-height: 537px;
+  border-radius: 24px;
+}
+
+.video_play_icon {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  top: 45%;
+  left: 45%;
+}
+
+@media (max-width:1024px) {
+  .video_sec_spacing {
+    transform: translateY(-27%);
   }
 }
 @media (max-width:991.98px) {
+  .video_sec_spacing {
+    padding: 80px 0;
+    transform: translateY(-32%);
+  }
+
   .button_svg_icon {
     width: 20px;
     height: 20px;
   }
+
   .diligence_button {
     padding: 9px 0;
     min-width: 132px;
   }
+
   .diligence_image {
     border-radius: 16px;
     max-width: 100%;
+  }
+}
+@media (max-width:767.98px) {
+  .video_sec_spacing {
+    transform: translateY(-23%);
+    margin-bottom: -180px;
+  }
+  
+  .video_sec_spacing {
+    padding: 60px 0;
+  }
+
+  .video_play_icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .starport_logo {
+    max-width: 330px;
+    height: 65px;
+  }
+
+  .header_bg {
+    min-height: 510px;
+  }
+}
+@media (max-width:575.98px) {
+  .video_sec_spacing {
+    padding: 50px 0;
+    transform: translateY(-31%);
+
   }
 }

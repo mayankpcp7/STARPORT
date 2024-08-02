@@ -73,7 +73,7 @@
   background-color: var(--text-purple);
 }
 .bg_gray {
-  background-color: var(--text-gray);
+  background-color: rgba(0, 0, 0, 0.2);;
 }
 .bg_offwhite {
   background-color: var(--text-offwhite);
