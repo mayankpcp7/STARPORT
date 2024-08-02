@@ -146,6 +146,9 @@
     --fs-md: 17px;
     --fs-sm: 16px;
   }
+  .p_20 {
+    padding: 12px;
+  }
 }
 @media (max-width: 767.98px) {
   .section_spacing {
@@ -154,8 +157,8 @@
   :root {
     --fs-xxl: 48px;
     --fs-xl: 32px;
-    --fs-lg: 18px;
-    --fs-md: 17px;
+    --fs-lg: 17px;
+    --fs-md: 16px;
     --fs-sm: 15px;
   }
 }
@@ -163,7 +166,7 @@
   .section_spacing {
     margin-top: 48px;
   }
-   :root {
+  :root {
     --fs-xxl: 45px;
     --fs-xl: 30px;
     --fs-lg: 17px;
