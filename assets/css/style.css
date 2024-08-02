@@ -10,7 +10,6 @@
 .diligence_image {
   max-height: 185px;
   max-width: 324px;
-
   border-radius: 8px;
 }
 
@@ -47,12 +46,12 @@
 .cards_shadow:hover {
   box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
 }
-/* =========================Common Investor Questions========================= */
+
+/* ========================= COMMON INVESTOR QUESTIONS ========================= */
 .faq {
   padding-top: 60px;
   max-width: 946px;
 }
-/* ========================= COMMON INVESTOR QUESTIONS ========================= */
 .radius_32 {
   border-radius: 32px;
 }
@@ -166,6 +165,9 @@
     padding-top: 70px;
     padding-bottom: 70px;
   }
+  .faq {
+    padding-top: 36px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -201,5 +203,16 @@
 @media (max-width: 575.98px) {
   .footer_logo {
     max-width: 300px;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 24px 0px 16px 0px !important;
+  }
+  .accordion-body {
+    padding: 0px 0px 16px 0 !important;
+  }
+  .accordian_item_gap {
+    gap: 12px;
   }
 }
