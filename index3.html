@@ -68,13 +68,11 @@
                                     to understand that market
                                     fluctuations can impact returns.
                                 </div>
-                                <!-- <img src="./assets/images/png/faq-video.png" alt="faq-video"
-                                    class="w-100 max_w_866 mx-auto d-flex mb-md-4 mb-3 radius_32"> -->
                                 <div class="position-relative">
                                     <img src="./assets/images/svg/play-icon.svg" alt="play-icon" id="playButton"
                                         class="position-absolute top-50 start-50 translate_middle play_icon">
                                     <video id="videoPlayer" controls playsinline muted loop
-                                        class="w-100 max_w_866 mx-auto d-flex mb-md-4 mb-3 radius_32">
+                                        class="w-100 max_w_866 mx-auto d-flex mb-md-4 mb-3 video_radius">
                                         <source type="video/mp4" src="./assets/videos/demo video.mp4">
                                     </video>
                                 </div>
@@ -100,8 +98,9 @@
                                     to understand that market
                                     fluctuations can impact returns.
 
-                                </div><img src="./assets/images/png/faq-video.png" alt="faq-video" class="w-100 max_w_866 mx-auto d-flex mb-md-4 mb-3 radius_32 
-">
+                                </div>
+                                <img src="./assets/images/png/faq-video.png" alt="faq-video"
+                                    class="w-100 max_w_866 mx-auto d-flex mb-md-4 mb-3 radius_32">
                             </div>
                         </div>
                         <div class="accordion-item rounded-4 border-0 bg_offwhite">
@@ -185,32 +184,32 @@
         document.addEventListener('DOMContentLoaded', function () {
             var video = document.getElementById('videoPlayer');
             var playButton = document.getElementById('playButton');
-
             // When play button is clicked
-            playButton.addEventListener('click', function () {
+            videoPlayer.addEventListener('click', function () {
                 if (video.paused) {
                     video.play();
                     playButton.classList.add('d-none');
+                } else {
+                    video.pause();
+                    playButton.classList.remove('d-none');
                 }
+                updatePlayButtonVisibility();
             });
 
             // When the video itself is clicked
             video.addEventListener('click', function () {
                 if (!video.paused) {
                     video.pause();
-                    playButton.classList.remove('d-none');
+                } else {
+                    video.play();
                 }
+                updatePlayButtonVisibility();
             });
 
-            // When the video starts playing
-            video.addEventListener('play', function () {
-                playButton.classList.add('d-none');
-            });
-
-            // When the video is paused
-            video.addEventListener('pause', function () {
-                playButton.classList.remove('d-none');
-            });
+            // Update play button visibility on video play/pause
+            video.addEventListener('play', updatePlayButtonVisibility);
+            video.addEventListener('pause', updatePlayButtonVisibility);
+            updatePlayButtonVisibility();
         });
     </script>
 
