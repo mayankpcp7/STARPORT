@@ -72,7 +72,7 @@
   background-color: var(--text-gray);
 }
 /* ====== FONT FAMILY CLASSES =========== */
-.font_glasio {
+.font_gelasio {
   font-family: "Gelasio", serif;
 }
 
@@ -103,7 +103,12 @@
 .section_width {
   max-width: 1290px;
 }
-
+.p_20 {
+  padding: 20px;
+}
+.py_12 {
+  padding: 12px 0px;
+}
 .radius_32 {
   border-radius: 32px;
 }
