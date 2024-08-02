@@ -4,13 +4,13 @@
 }
 /* ========================== DUE DILIGENCE ================== */
 .radius_28 {
-    border-radius: 28px;
+  border-radius: 28px;
 }
 
 .diligence_image {
-    max-height: 185px;
-    max-width: 324px;
-    border-radius: 8px;
+  max-height: 185px;
+  max-width: 324px;
+  border-radius: 8px;
 }
 
 .diligence_card:hover img {
@@ -29,9 +29,9 @@
   min-width: 162px;
   padding: 12px 0;
 }
-.button_svg_icon{
-    width: 25px;
-    height: 25px;
+.button_svg_icon {
+  width: 25px;
+  height: 25px;
 }
 /* =========================== MOVING FORWARD ================ */
 .opacity_70 {
@@ -49,12 +49,12 @@
 .cards_shadow:hover {
   box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
 }
-/* =========================Common Investor Questions========================= */
+
+/* ========================= COMMON INVESTOR QUESTIONS ========================= */
 .faq {
   padding-top: 60px;
   max-width: 946px;
 }
-/* ========================= COMMON INVESTOR QUESTIONS ========================= */
 .radius_32 {
   border-radius: 32px;
 }
@@ -168,6 +168,9 @@
     padding-top: 70px;
     padding-bottom: 70px;
   }
+  .faq {
+    padding-top: 36px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -183,7 +186,7 @@
   .footer_logo {
     max-width: 390px;
   }
- .button_svg_icon {
+  .button_svg_icon {
     width: 20px;
     height: 20px;
   }
@@ -204,5 +207,34 @@
 @media (max-width: 575.98px) {
   .footer_logo {
     max-width: 300px;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 24px 0px 16px 0px !important;
+  }
+  .accordion-body {
+    padding: 0px 0px 16px 0 !important;
+  }
+  .accordian_item_gap {
+    gap: 12px;
+  }
+
+  .accordion-item:nth-child(3) .accordion-button::after,
+  .accordion-item:nth-child(4) .accordion-button::after,
+  .accordion-item:nth-child(5) .accordion-button::after {
+    width: 28px !important;
+  }
+  .accordion-item {
+    padding: 0 12px !important;
+  }
+  .accordion-item:nth-child(1) .accordion-button::after,
+  .accordion-item:nth-child(2) .accordion-button::after {
+    font-size: 12px !important;
+    width: 100px !important;
+    height: 40px !important;
+  }
+  .accordion-button {
+    padding: 12px 0 !important;
   }
 }
