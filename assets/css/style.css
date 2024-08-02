@@ -3,3 +3,18 @@
   list-style-type: none !important;
 }
 
+.radius_16 {
+  border-radius: 16px;
+}
+.opacity_70 {
+  opacity: 70%;
+}
+.footer_logo {
+  max-width: 444px;
+}
+.cards_shadow:hover {
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
+}
+.duration_300 {
+  transition: all 300ms linear;
+}
