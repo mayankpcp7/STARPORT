@@ -214,15 +214,13 @@
     max-width: 300px;
   }
   .accordion-button:not(.collapsed) {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    padding: 24px 0px 16px 0px !important;
+    padding: 24px 0px 8px 0px !important;
   }
   .accordion-body {
     padding: 0px 0px 16px 0 !important;
   }
   .accordian_item_gap {
-    gap: 12px;
+    gap: 12px !important;
   }
 
   .accordion-item:nth-child(3) .accordion-button::after,
