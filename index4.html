@@ -393,8 +393,9 @@
                                             </svg>
 
                                         </span>
-                                        <video poster="./assets/images/webp/starport/faq-video-poster.webp" id="videoPlayer"
-                                            playsinline muted loop class="w-100 d-flex mb-md-4 mb-3 video_radius">
+                                        <video poster="./assets/images/webp/starport/faq-video-poster.webp"
+                                            id="videoPlayer" playsinline muted loop
+                                            class="w-100 d-flex mb-md-4 mb-3 video_radius">
                                             <source type="video/mp4" src="./assets/videos/demo video.mp4">
                                         </video>
                                     </div>
@@ -440,8 +441,8 @@
                                             </svg>
 
                                         </span>
-                                        <video poster="./assets/images/webp/starport/faq-video-poster.webp" id="myVideoPlayer"
-                                            controls playsinline muted loop
+                                        <video poster="./assets/images/webp/starport/faq-video-poster.webp"
+                                            id="myVideoPlayer" controls playsinline muted loop
                                             class="w-100 d-flex mb-md-4 mb-3 video_radius">
                                             <source type="video/mp4" src="./assets/videos/demo video.mp4">
                                         </video>
@@ -450,14 +451,16 @@
                             </div>
                             <div class="accordion-item rounded-4 border-0 bg_offwhite">
                                 <h2 class="accordion-header" id="headingThree">
-                                    <button
-                                        class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                         aria-expanded="false" aria-controls="collapseThree">
                                         <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>3. </span> How
                                             often
                                             will I receive updates on my investment ?</p>
-                                    </button>
+                                        <button
+                                            class="bg_darkblue video_btn text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -475,14 +478,16 @@
                             </div>
                             <div class="accordion-item rounded-4 border-0 bg_offwhite">
                                 <h2 class="accordion-header" id="headingFour">
-                                    <button
-                                        class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                         aria-expanded="false" aria-controls="collapseFour">
                                         <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>4. </span> How
                                             do
                                             you ensure the security of my investment ?</p>
-                                    </button>
+                                        <button
+                                            class="bg_darkblue video_btn text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionExample">
@@ -699,7 +704,9 @@
             // Accordion button toggle logic
             var accordionItems = [
                 { button: '.accordion-item:nth-child(1) .accordion-button .video_btn', collapse: '#collapseOne' },
-                { button: '.accordion-item:nth-child(2) .accordion-button .video_btn', collapse: '#collapseTwo' }
+                { button: '.accordion-item:nth-child(2) .accordion-button .video_btn', collapse: '#collapseTwo' },
+                { button: '.accordion-item:nth-child(3) .accordion-button .video_btn', collapse: '#collapseThree' },
+                { button: '.accordion-item:nth-child(4) .accordion-button .video_btn', collapse: '#collapseFour' }
             ];
 
             accordionItems.forEach(function (item, index) {
