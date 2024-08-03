@@ -33,7 +33,7 @@
 
 /* -------header------- */
 .header_bg {
-  background-image: url("../images/webp/starport-header-bg.png");
+  background-image: url('../images/webp/starport-header-bg.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,9 +46,12 @@
 }
 
 /* video section */
+.vider_top_spacing{
+  padding-top: 150px;
+}
 .video_sec_spacing {
   padding: 140px 0;
-  transform: translateY(-32%);
+  transform: translateY(-28%);
   margin-bottom: -250px;
 }
 
@@ -61,13 +64,15 @@
 .video_play_icon {
   width: 100px;
   height: 100px;
-  cursor: pointer;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
 
-@media (max-width: 1024px) {
+@media (max-width:1023.98px) {
+  .vider_top_spacing{
+    padding-top: 100px;
+  }
   .video_sec_spacing {
     transform: translateY(-27%);
   }
@@ -93,7 +98,11 @@
     max-width: 100%;
   }
 }
-@media (max-width: 767.98px) {
+
+@media (max-width:767.98px) {
+  .vider_top_spacing{
+    padding-top: 40px;
+  }
   .video_sec_spacing {
     transform: translateY(-23%);
     margin-bottom: -180px;
