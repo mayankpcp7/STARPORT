@@ -2,6 +2,58 @@
   text-decoration: none !important;
   list-style-type: none !important;
 }
+/* ===========================  */
+.mb_58 {
+  margin-bottom: 58px;
+}
+.slider_playicon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slide_width {
+  max-width: 467px;
+  height: 100% !important;
+}
+.swiper-slide {
+  min-width: 461px;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: -40px !important;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-3d {
+  perspective: 1288px !important;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-skyblue);
+  opacity: 37%;
+  margin: 0 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--text-skyblue);
+  opacity: 100%;
+}
+.startegic_market {
+  max-width: 370px;
+}
+.revetalizing_retail {
+  max-width: 367px !important;
+}
+.driving_innovation {
+  max-width: 275px !important;
+}
+.scaling_new {
+  max-width: 319px;
+}
+
 /* ========================== DUE DILIGENCE ================== */
 .radius_28 {
   border-radius: 28px;
@@ -47,7 +99,7 @@
   max-width: 444px;
 }
 .cards_shadow:hover {
-  box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 8px 8px rgba(239, 19, 19, 0.5);
 }
 
 /* ========================= COMMON INVESTOR QUESTIONS ========================= */
@@ -188,6 +240,9 @@
   }
 }
 @media (max-width: 991.98px) {
+  .swiper-slide {
+    min-height: 376px !important;
+  }
   .footer_logo {
     max-width: 390px;
   }
@@ -205,12 +260,23 @@
   }
 }
 @media (max-width: 767.98px) {
+  .slider_video {
+    max-width: 307px;
+    height: 100% !important;
+  }
+  .swiper-slide {
+    min-width: 347px !important;
+    height: 100% !important;
+  }
   .footer_logo {
     max-width: 360px;
   }
   .play_icon {
     width: 50px;
     height: 49px;
+  }
+  .swiper-slide {
+    min-height: 306px !important;
   }
 }
 @media (max-width: 575.98px) {

@@ -16,6 +16,7 @@
   --text-purple: #630df3;
   --text-darkblue: #090e27;
   --text-offwhite: #fefefe;
+
 }
 /* ====== FONT SIZE CLASSES =======*/
 .fs_xxl {
@@ -72,12 +73,14 @@
 .bg_purple {
   background-color: var(--text-purple);
 }
-.bg_gray {
-  background-color: rgba(0, 0, 0, 0.2);;
+.section_bg_blur {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(100px);
 }
 .bg_offwhite {
   background-color: var(--text-offwhite);
 }
+
 /* ====== FONT FAMILY CLASSES =========== */
 .font_gelasio {
   font-family: "Gelasio", serif;
@@ -117,6 +120,9 @@
 }
 .duration_300 {
   transition: all 300ms linear;
+}
+.cursor_pointer {
+  cursor: pointer;
 }
 /* ===== CUSTOM CONTAINER ===== */
 @media (min-width: 1399.98px) {

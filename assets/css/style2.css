@@ -17,12 +17,11 @@
 }
 
 .diligence_button:hover {
-  box-shadow: 0 4px 8px 0 var(--text-navyblue),
-    0 6px 20px 0 var(--text-navyblue);
+  box-shadow: 0 3px 10px 0 var(--text-skyblue);
 }
 
 .diligence_button {
-  min-width: 162px;
+  max-width: 162px !;
   padding: 12px 0;
 }
 
@@ -32,12 +31,24 @@
 }
 
 /* -------header------- */
-.header_bg {
-  background-image: url('../images/webp/starport-header-bg.webp');
+.video_bg {
+  background-attachment: fixed;
+  min-height: auto;
+}
+
+#headerVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 810px;
 }
 
 .starport_logo {
@@ -46,13 +57,13 @@
 }
 
 /* video section */
-.vider_top_spacing{
+.vider_top_spacing {
   padding-top: 150px;
 }
+
 .video_sec_spacing {
   padding: 140px 0;
-  transform: translateY(-28%);
-  margin-bottom: -250px;
+  margin-top: 0% ;
 }
 
 .diligence_video_img {
@@ -65,23 +76,39 @@
   width: 100px;
   height: 100px;
   cursor: pointer;
-  top: 45%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+.mb_desktop{
+  margin-bottom: 80px;
+}
+@media (max-width:1500.98px) {
+  .video_bg {
+    min-height: 100vh !important;
+  }
+  .mb_desktop{
+    margin-bottom: 0;
+  }
+  
+.video_sec_spacing {
+  padding: 140px 0;
+  margin-top: -40% ;
 }
 
-@media (max-width:1024px) {
-  .vider_top_spacing{
+}
+@media (max-width:1023.98px) {
+  .vider_top_spacing {
     padding-top: 100px;
   }
-  .video_sec_spacing {
-    transform: translateY(-27%);
-  }
+
 }
-@media (max-width:991.98px) {
- 
+
+@media (max-width: 991.98px) {
   .video_sec_spacing {
     padding: 80px 0;
-    transform: translateY(-32%);
+    margin-top: -58% ;
+
   }
 
   .button_svg_icon {
@@ -99,19 +126,17 @@
     max-width: 100%;
   }
 }
+
 @media (max-width:767.98px) {
-  .vider_top_spacing{
+  .vider_top_spacing {
     padding-top: 40px;
   }
-  .video_sec_spacing {
-    transform: translateY(-23%);
-    margin-bottom: -180px;
-  }
-  
-  .video_sec_spacing {
-    padding: 60px 0;
-  }
 
+  .video_sec_spacing {
+    margin-top: -80% ;
+    padding: 60px 0;
+
+  }
   .video_play_icon {
     width: 50px;
     height: 50px;
@@ -126,10 +151,15 @@
     min-height: 510px;
   }
 }
-@media (max-width:575.98px) {
+
+@media (max-width: 575.98px) {
   .video_sec_spacing {
     padding: 50px 0;
-    transform: translateY(-31%);
-
+    margin-top: -100% ;
+  }
+}
+@media (max-width: 405.98px) {
+  .video_sec_spacing {
+    margin-top: -130% ;
   }
 }
