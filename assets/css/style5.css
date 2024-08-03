@@ -1,0 +1,37 @@
+.video_bg::after {
+    position: fixed;
+    background: var(--text-darkblue) !important;
+    opacity: 74%;
+    bottom: 0;
+    content: "";
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    mix-blend-mode: color;
+}
+
+.onboarding_logo {
+    height: 65px;
+    width: 195px;
+}
+
+.video_bg::after {
+    background: var(--text-darkpurple);
+    background-blend-mode: color;
+    mix-blend-mode: color;
+}
+
+.video_btn:hover {
+    background-color: var(--text-darkpurple) !important;
+}
+
+.video_btn.closebtn {
+    background-color: transparent;
+    border: 1px solid var(--text-darkpurple) !important;
+    color: var(--text-darkpurple) !important;
+}
+
+.closebtn:hover {
+    background-color: transparent !important;
+}
