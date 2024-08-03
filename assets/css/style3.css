@@ -1,29 +1,22 @@
-:root {
-  --gradient-purple: linear-gradient(
-    180deg,
-    #630df3 0%,
-    #7527ec 40.51%,
-    #ffefb7 100%
-  );
-  --off-yellow: #ffefb7;
-  --dark-purple: #6a16f1;
-}
+
 .text_gradient_purple {
   background: var(--gradient-purple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .swiper-pagination .swiper-pagination-bullet {
-  background-color: var(--off-yellow);
+  background-color: var(--text-yellow);
 }
+
 .video_bg::after {
-  background: var(--dark-purple);
+  background: var(--text-darkpurple);
   background-blend-mode: color;
   mix-blend-mode: color;
 }
+
 .video_btn.closebtn {
   background-color: transparent;
   border: 1px solid var(--text-purple) !important;
   color: var(--text-purple) !important;
 }
-

@@ -1,6 +1,6 @@
 .video_bg::after {
     position: fixed;
-    background: linear-gradient(179.27deg, #090E27 0.63%, #000000 175.69%);
+    background: linear-gradient(179.27deg, #090E27 0.63%, #000000 175.69%) !important;
     opacity: 74%;
     bottom: 0;
     content: "";
@@ -10,8 +10,24 @@
     right: 0;
     mix-blend-mode: color;
   }
-  
-
+  /* FAQ */
+  .swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--text-darkblue);
+  }
+  .video_btn:hover {
+    background-color: var(--text-darkblue) !important;
+  }
+  .video_btn.closebtn {
+    background-color: transparent;
+    border: 1px solid var(--text-darkblue) !important;
+    color: white !important;
+  }
+  .video_bg::after {
+    background: transparent;
+    background-blend-mode: color;
+    mix-blend-mode: color;
+  }
+  /* swiper  */
   .swiper-pagination .swiper-pagination-bullet {
     background-color: white;
   }
