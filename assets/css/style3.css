@@ -17,9 +17,17 @@
 .swiper-pagination .swiper-pagination-bullet {
   background-color: var(--off-yellow);
 }
+
 .video_bg::after {
-  background: var(--dark-purple);
-  background-blend-mode: color;
+  position: fixed;
+  background-color: var(--dark-purple) !important;
+  opacity: 74%;
+  bottom: 0;
+  content: "";
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
   mix-blend-mode: color;
 }
 .video_btn.closebtn {
