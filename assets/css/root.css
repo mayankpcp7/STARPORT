@@ -60,6 +60,9 @@
 .text_offwhite {
   color: var(--text-offwhite);
 }
+.text_purpleGradient {
+  background: linear-gradient(180deg, #630DF3 0%, #7527EC 40.51%, #FFEFB7 100%);
+}
 /* ======== BACKGROUND COLORS CLASSES ====== */
 .bg_red {
   background-color: var(--text-red);
