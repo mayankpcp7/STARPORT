@@ -72,12 +72,14 @@
 .bg_purple {
   background-color: var(--text-purple);
 }
-.bg_gray {
+.section_bg_blur {
   background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(100px);
 }
 .bg_offwhite {
   background-color: var(--text-offwhite);
 }
+
 /* ====== FONT FAMILY CLASSES =========== */
 .font_gelasio {
   font-family: "Gelasio", serif;

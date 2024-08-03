@@ -32,25 +32,31 @@
     <!-- ==================  BOOTSTRAP CDNS ======================= -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
 </head>
 
-<body>
+<body class=" px-xxl-0">
     <!-- =------------header----------- -->
-    <header class="header_bg pt-5">
-        <div class="pt-4">
-            <img class="mx-auto starport_logo d-flex justify-content-center mb-3"
-                src="./assets/images/svg/starport-header-logo.svg" alt="starport logo">
-            <h1 class="text-white font_gelasio fw-bold text-center mt-1 fs_xxl mx-auto">Investor Due <br /> Diligence
-                Guide</h1>
+    <header class="video-bg position-relative w-100 -mx-3 overflow-hidden pt-5">
+        <video autoplay muted loop id="headerVideo">
+            <source src="./assets/videos/header_bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="pt-4 z-2 position-relative container custom_container z-1">
+            <a href="#" aria-label="Header Logo">
+                <img class="mx-auto starport_logo d-flex justify-content-center mb-3"
+                    src="./assets/images/svg/starport-header-logo.svg" alt="starport logo">
+            </a>
+            <h1 class="text-white font_gelasio fw-bold text-center mt-1 fs_xxl mx-auto">Investor Due <br />
+                Diligence Guide</h1>
         </div>
     </header>
+
     <!-- video section -->
-    <section class="section_width px-3 video_sec_spacing section_spacing radius_32 bg_gray mx-auto">
+    <section class="section_width px-3 video_sec_spacing section_spacing radius_32 section_bg_blur mx-auto">
         <p class="text_red font_gelasio fw-medium leading_135 fs_xl text-center fst-italic mb-2">Step 1:</p>
         <p class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center pb-1 mb-md-4">
-            Watch The Video Below </p>
+            Watch The Video Below
+        </p>
         <div class="d-flex justify-content-center position-relative">
             <video id="diligenceVideo" class="diligence_video_img w-100" src="./assets/videos/buildings.mp4" controls
                 poster="./assets/images/webp/buildings.webp"></video>
@@ -66,12 +72,11 @@
         <p class="text_red font_gelasio fw-medium leading_135 fs_xl text-center fst-italic vider_top_spacing">Step 2:
         </p>
         <p class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center pb-1 mb-md-4">Our Unique Value
-            Proposition
-        </p>
+            Proposition</p>
         <div class="d-flex justify-content-center position-relative">
             <video id="diligenceVideo2" class="diligence_video_img w-100" src="./assets/videos/bussiness-person.mp4"
                 controls poster="./assets/images/webp/bussiness-men.webp"></video>
-            <span id="playIcon2" class="video_play_icon cursor_pointer position-absolute">
+            <span id="playIcon2" class="video_play_icon position-absolute">
                 <svg viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="50" cy="50.2197" r="50" fill="white" fill-opacity="0.53" />
                     <path
@@ -82,14 +87,14 @@
         </div>
     </section>
     <!-- ==================  DUE DILIGENCE ======================= -->
-    <section class="section_width section_spacing radius_32 bg_gray mx-auto">
+    <section class="section_width section_spacing radius_32 section_bg_blur mx-auto">
         <div class="custom_container px-3 mx-auto py-5 ">
             <p class="text_red font_gelasio fw-medium leading_135 fs_xl text-center fst-italic pt-md-4 mt-sm-3 mb-2">
                 Step 4:</p>
-            <p class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center mb-4 mb-md-5">Further Due
+            <p class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center pb-2 mb-4 mb-md-5">Further Due
                 Diligence
             </p>
-            <div class="row m-0 pb-md-4 mb-sm-3">
+            <div class="row m-0 pb-md-4 mb-sm-3 pt-1">
                 <div class="col-12 col-sm-6 col-md-4">
                     <article class="bg-white diligence_card duration_300 mx-auto duration_300 radius_28 p_20">
                         <div class="overflow-hidden"> <img src="./assets/images/webp/teaser-document.webp"
@@ -227,21 +232,35 @@
             </div>
         </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script>
-        document.getElementById('playIcon').addEventListener('click', function () {
-            var video = document.getElementById('diligenceVideo');
-            video.play();
-            this.style.display = 'none';
-        });
+        function setupVideoControls(videoId, playIconId) {
+            var video = document.getElementById(videoId);
+            var playIcon = document.getElementById(playIconId);
 
-        document.getElementById('playIcon2').addEventListener('click', function () {
-            var video = document.getElementById('diligenceVideo2');
-            video.play();
-            this.style.display = 'none';
-        });
+            playIcon.addEventListener('click', function () {
+                video.play();
+                this.style.display = 'none';
+            });
+
+            video.addEventListener('play', function () {
+                this.controls = true;
+            });
+
+            video.addEventListener('pause', function () {
+                playIcon.style.display = 'block';
+            });
+
+            video.addEventListener('ended', function () {
+                playIcon.style.display = 'block';
+            });
+        }
+
+        setupVideoControls('diligenceVideo', 'playIcon');
+        setupVideoControls('diligenceVideo2', 'playIcon2');
     </script>
 </body>
 
