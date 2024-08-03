@@ -2,6 +2,24 @@
   text-decoration: none !important;
   list-style-type: none !important;
 }
+/* ===========================  */
+.slider_playicon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slide_width {
+  max-width: 467px;
+}
+.revetalizing_retail {
+  max-width: 367px !important;
+}
+.driving_innovation {
+  max-width: 275px !important;
+}
+.scaling_new{
+  max-width: 319px;
+}
 /* ========================== DUE DILIGENCE ================== */
 .radius_28 {
   border-radius: 28px;
