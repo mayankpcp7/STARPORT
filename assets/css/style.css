@@ -130,7 +130,7 @@
 }
 
 .diligence_button {
-  max-width: 162px !;
+  min-width: 162px;
   padding: 12px 0;
 }
 
