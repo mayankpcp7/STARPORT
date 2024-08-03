@@ -11,13 +11,17 @@
 .slide_width {
   max-width: 467px;
 }
+.swiper-slide {
+  min-width: 461px;
+}
+
 .revetalizing_retail {
   max-width: 367px !important;
 }
 .driving_innovation {
   max-width: 275px !important;
 }
-.scaling_new{
+.scaling_new {
   max-width: 319px;
 }
 /* ========================== DUE DILIGENCE ================== */
