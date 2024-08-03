@@ -389,13 +389,15 @@
                             id="accordionExample">
                             <div class="accordion-item rounded-4 border-0 bg_offwhite">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button
-                                        class="accordion-button bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                    <div class="accordion-button bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne">
                                         <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>1. </span> What
                                             are the risks associated with this investment ?</p>
-                                    </button>
+                                        <button
+                                            class="bg_red video_btn text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show "
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -410,10 +412,20 @@
                                         fluctuations can impact returns.
                                     </div>
                                     <div class="position-relative">
-                                        <img src="./assets/images/svg/play-icon.svg" alt="play-icon" id="playButton"
-                                            class="position-absolute top-50 start-50 translate_middle play_icon">
-                                        <video id="videoPlayer" controls playsinline muted loop
-                                            class="w-100 d-flex mb-md-4 mb-3 video_radius">
+                                        <span>
+                                            <svg id="playButton"
+                                                class="position-absolute top-50 start-50 translate_middle play_icon"
+                                                width="70" height="69" viewBox="0 0 70 69" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="35" cy="34.5" r="34.5" fill="#F4F4F4" fill-opacity="0.75" />
+                                                <path
+                                                    d="M45.3541 35.1999C45.3549 35.5446 45.2744 35.8837 45.1203 36.1842C44.9663 36.4847 44.7441 36.7363 44.4752 36.9145L27.8126 48.1009C27.5316 48.2897 27.2099 48.3928 26.8805 48.3995C26.5512 48.4062 26.2262 48.3162 25.9391 48.139C25.6547 47.9645 25.4178 47.7101 25.2528 47.4018C25.0877 47.0935 25.0005 46.7426 25 46.385V24.0148C25.0005 23.6573 25.0877 23.3063 25.2528 22.998C25.4178 22.6898 25.6547 22.4353 25.9391 22.2608C26.2262 22.0836 26.5512 21.9937 26.8805 22.0003C27.2099 22.007 27.5316 22.1101 27.8126 22.2989L44.4752 33.4853C44.7441 33.6636 44.9663 33.9152 45.1203 34.2156C45.2744 34.5161 45.3549 34.8552 45.3541 35.1999Z"
+                                                    fill="#FF0A00" />
+                                            </svg>
+
+                                        </span>
+                                        <video poster="./assets/images/webp/faq-video-poster.webp" id="videoPlayer"
+                                            playsinline muted loop class="w-100 d-flex mb-md-4 mb-3 video_radius">
                                             <source type="video/mp4" src="./assets/videos/demo video.mp4">
                                         </video>
                                     </div>
@@ -421,15 +433,17 @@
                             </div>
                             <div class="accordion-item rounded-4 border-0 bg_offwhite">
                                 <h2 class="accordion-header" id="headingTwo">
-                                    <button
-                                        class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                         aria-expanded="false" aria-controls="collapseTwo">
                                         <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>2. </span> How
                                             can
                                             I
                                             track the performance of my investment ?</p>
-                                    </button>
+                                        <button
+                                            class="bg_red video_btn text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
@@ -445,9 +459,20 @@
 
                                     </div>
                                     <div class="position-relative">
-                                        <img src="./assets/images/svg/play-icon.svg" alt="play-icon" id="myPlayButton"
-                                            class="position-absolute top-50 start-50 translate_middle play_icon">
-                                        <video id="myVideoPlayer" controls playsinline muted loop
+                                        <span>
+                                            <svg id="myPlayButton"
+                                                class="position-absolute top-50 start-50 translate_middle play_icon"
+                                                width="70" height="69" viewBox="0 0 70 69" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="35" cy="34.5" r="34.5" fill="#F4F4F4" fill-opacity="0.75" />
+                                                <path
+                                                    d="M45.3541 35.1999C45.3549 35.5446 45.2744 35.8837 45.1203 36.1842C44.9663 36.4847 44.7441 36.7363 44.4752 36.9145L27.8126 48.1009C27.5316 48.2897 27.2099 48.3928 26.8805 48.3995C26.5512 48.4062 26.2262 48.3162 25.9391 48.139C25.6547 47.9645 25.4178 47.7101 25.2528 47.4018C25.0877 47.0935 25.0005 46.7426 25 46.385V24.0148C25.0005 23.6573 25.0877 23.3063 25.2528 22.998C25.4178 22.6898 25.6547 22.4353 25.9391 22.2608C26.2262 22.0836 26.5512 21.9937 26.8805 22.0003C27.2099 22.007 27.5316 22.1101 27.8126 22.2989L44.4752 33.4853C44.7441 33.6636 44.9663 33.9152 45.1203 34.2156C45.2744 34.5161 45.3549 34.8552 45.3541 35.1999Z"
+                                                    fill="#FF0A00" />
+                                            </svg>
+
+                                        </span>
+                                        <video poster="./assets/images/webp/faq-video-poster.webp" id="myVideoPlayer"
+                                            controls playsinline muted loop
                                             class="w-100 d-flex mb-md-4 mb-3 video_radius">
                                             <source type="video/mp4" src="./assets/videos/demo video.mp4">
                                         </video>
@@ -649,7 +674,7 @@
                     spaceBetween: 20,
                 },
                 640: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 20,
                 },
                 768: {
@@ -688,67 +713,60 @@
     <!-- ========== COMMON INVEST QUESTION =========== -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var video = document.getElementById('videoPlayer');
-            var playButton = document.getElementById('playButton');
-            // When video is clicked
-            videoPlayer.addEventListener('click', function () {
-                if (video.paused) {
+            function handleVideoClick(videoId, playButtonId) {
+                var video = document.getElementById(videoId);
+                var playButton = document.getElementById(playButtonId);
+
+                video.addEventListener('click', function () {
+                    if (video.paused) {
+                        video.play();
+                        playButton.classList.add('d-none');
+                        video.controls = true; // Enable controls when video plays
+                    } else {
+                        video.pause();
+                        playButton.classList.remove('d-none');
+                        video.controls = false; // Disable controls when video is paused
+                    }
+                });
+
+                playButton.addEventListener('click', function () {
                     video.play();
                     playButton.classList.add('d-none');
-                } else {
-                    video.pause();
-                    playButton.classList.remove('d-none');
-                }
-                updatePlayButtonVisibility();
-            });
+                    video.controls = true; // Enable controls when video plays
+                });
+            }
 
-            // When the video itself is clicked
-            video.addEventListener('click', function () {
-                if (!video.paused) {
-                    video.pause();
-                } else {
-                    video.play();
-                }
-                updatePlayButtonVisibility();
-            });
+            handleVideoClick('videoPlayer', 'playButton');
+            handleVideoClick('myVideoPlayer', 'myPlayButton');
 
-            // Update play button visibility on video play/pause
-            video.addEventListener('play', updatePlayButtonVisibility);
-            video.addEventListener('pause', updatePlayButtonVisibility);
-            updatePlayButtonVisibility();
+            // Accordion button toggle logic
+            var accordionItems = [
+                { button: '.accordion-item:nth-child(1) .accordion-button .video_btn', collapse: '#collapseOne' },
+                { button: '.accordion-item:nth-child(2) .accordion-button .video_btn', collapse: '#collapseTwo' }
+            ];
+
+            accordionItems.forEach(function (item, index) {
+                var videoButton = document.querySelector(item.button);
+                var collapseElement = document.querySelector(item.collapse);
+
+                // Set the first button to "Close" by default
+                if (index === 0) {
+                    videoButton.textContent = 'Close';
+                    videoButton.classList.add('closebtn');
+                }
+
+                collapseElement.addEventListener('show.bs.collapse', function () {
+                    videoButton.textContent = 'Close';
+                    videoButton.classList.add('closebtn');
+                });
+
+                collapseElement.addEventListener('hide.bs.collapse', function () {
+                    videoButton.textContent = 'Open Video';
+                    videoButton.classList.remove('closebtn');
+                });
+            });
         });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var video = document.getElementById('myVideoPlayer');
-            var playButton = document.getElementById('myPlayButton');
-            // When video is clicked
-            myVideoPlayer.addEventListener('click', function () {
-                if (video.paused) {
-                    video.play();
-                    myPlayButton.classList.add('d-none');
-                } else {
-                    video.pause();
-                    myPlayButton.classList.remove('d-none');
-                }
-                updatemyPlayButtonVisibility();
-            });
 
-            // When the video itself is clicked
-            video.addEventListener('click', function () {
-                if (!video.paused) {
-                    video.pause();
-                } else {
-                    video.play();
-                }
-                updatemyPlayButtonVisibility();
-            });
-
-            // Update play button visibility on video play/pause
-            video.addEventListener('play', updatemyPlayButtonVisibility);
-            video.addEventListener('pause', updatemyPlayButtonVisibility);
-            updatemyPlayButtonVisibility();
-        });
     </script>
 </body>
 
