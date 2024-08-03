@@ -130,7 +130,8 @@
 }
 
 .diligence_button:hover {
-  box-shadow: 0 3px 10px 0 var(--text-skyblue);
+  box-shadow: 0 3px 10px 0 var(--text-gray);
+  opacity: 80%;
 }
 
 .diligence_button {

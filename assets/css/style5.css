@@ -35,3 +35,7 @@
 .closebtn:hover {
     background-color: transparent !important;
 }
+.home_button:hover{
+    background: var(--text-darkblue) !important;
+    color: white ;
+}

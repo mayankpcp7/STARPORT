@@ -31,9 +31,6 @@
   .swiper-pagination .swiper-pagination-bullet {
     background-color: white;
   }
-  .diligence_button:hover {
-    box-shadow: 0 3px 10px 0 white;
-  }
   .swiper-pagination .swiper-pagination-bullet-active {
     background-color: white;
     opacity: 100%;
