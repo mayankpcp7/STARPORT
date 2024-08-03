@@ -77,10 +77,10 @@
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
   box-shadow: none !important;
-  padding: 24px 40.5px 16px 40.5px !important;
+  padding: 24px 20.5px 16px 20.5px !important;
 }
 .accordion-body {
-  padding: 0px 0px 16px 40.5px !important;
+  padding: 0px 0px 16px 20.5px !important;
 }
 .accordion-item:nth-child(1) .accordion-button::after,
 .accordion-item:nth-child(2) .accordion-button::after,
@@ -152,7 +152,7 @@
 }
 .play_icon {
   cursor: pointer;
-  z-index: 10;
+  z-index: 1;
 }
 .video_radius {
   border-radius: 32px;
