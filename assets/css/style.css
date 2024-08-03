@@ -130,7 +130,7 @@
 }
 
 .diligence_button {
-  max-width: 162px !;
+  min-width: 162px;
   padding: 12px 0;
 }
 
@@ -156,14 +156,6 @@
 }
 
 /* ========================= COMMON INVESTOR QUESTIONS ========================= */
-.d-none {
-  display: none;
-}
-.play_icon {
-    cursor: pointer;
-    z-index: 2;
-    display: block; 
-}
 
 .faq {
   padding-top: 60px;
@@ -397,6 +389,9 @@
   }
 }
 @media (max-width: 575.98px) {
+  .swiper-slide {
+  height: 286px !important;
+  }
   .footer_logo {
     max-width: 300px;
   }

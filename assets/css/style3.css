@@ -1,26 +1,6 @@
-:root {
-  --gradient-purple: linear-gradient(
-    180deg,
-    #630df3 0%,
-    #7527ec 40.51%,
-    #ffefb7 100%
-  );
-  --off-yellow: #ffefb7;
-  --dark-purple: #6a16f1;
-  --off-purple: #630df3bd;
-}
-.text_gradient_purple {
-  background: var(--gradient-purple);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.swiper-pagination .swiper-pagination-bullet {
-  background-color: var(--off-yellow);
-}
-
 .video_bg::after {
   position: fixed;
-  background-color: var(--dark-purple) !important;
+  background: var(--text-offpurple) !important;
   opacity: 74%;
   bottom: 0;
   content: "";
@@ -30,17 +10,34 @@
   right: 0;
   mix-blend-mode: color;
 }
+.text_gradient_purple {
+  background: var(--gradient-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--text-yellow);
+}
+
+.video_bg::after {
+  background: var(--text-darkpurple);
+  background-blend-mode: color;
+  mix-blend-mode: color;
+}
+
+.video_btn:hover {
+  background-color: var(--text-lightpurple) !important;
+}
 .video_btn.closebtn {
   background-color: transparent;
   border: 1px solid var(--text-purple) !important;
   color: var(--text-purple) !important;
 }
-.video_btn:hover {
-  background-color: var(--off-purple) !important;
-}
 .closebtn:hover {
   background-color: transparent !important;
 }
+
 .diligence_button:hover {
   box-shadow: 0 3px 10px 0 var(--text-purple);
 }
