@@ -735,46 +735,35 @@
     <!-- ========== COMMON INVEST QUESTION =========== -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var video = document.getElementById("videoPlayer");
-            var playButton = document.getElementById("playButton");
-            playButton.addEventListener("click", function () {
-                if (video.paused) {
-                    video.play();
+            // Function to handle play/pause and button visibility
+            function setupVideoControls(videoId, buttonId) {
+                var video = document.getElementById(videoId);
+                var playButton = document.getElementById(buttonId);
+
+                playButton.addEventListener("click", function () {
+                    if (video.paused) {
+                        video.play();
+                        playButton.style.display = "none";
+                    } else {
+                        video.pause();
+                    }
+                });
+
+                video.addEventListener("play", function () {
                     playButton.style.display = "none";
-                } else {
-                    video.pause();
-                }
-            });
-            video.addEventListener("play", function () {
-                playButton.style.display = "none";
-            });
+                });
 
-            video.addEventListener("pause", function () {
-                playButton.style.display = "block";
-            });
+                video.addEventListener("pause", function () {
+                    playButton.style.display = "block";
+                });
+            }
+
+            // Set up controls for both videos
+            setupVideoControls("videoPlayer", "playButton");
+            setupVideoControls("myVideoPlayer", "myPlayButton");
         });
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var video = document.getElementById("myVideoPlayer");
-            var playButton = document.getElementById("myPlayButton");
-            playButton.addEventListener("click", function () {
-                if (video.paused) {
-                    video.play();
-                    myPlayButton.style.display = "none";
-                } else {
-                    video.pause();
-                }
-            });
-            video.addEventListener("play", function () {
-                myPlayButton.style.display = "none";
-            });
 
-            video.addEventListener("pause", function () {
-                myPlayButton.style.display = "block";
-            });
-        });
-    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var accordionItems = [
