@@ -38,3 +38,6 @@
 .video_btn:hover {
   background-color: var(--off-purple) !important;
 }
+.closebtn:hover {
+  background-color: transparent !important;
+}
