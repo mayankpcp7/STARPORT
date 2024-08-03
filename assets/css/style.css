@@ -14,7 +14,9 @@
 .swiper-slide {
   min-width: 461px;
 }
-
+.startegic_market{
+  max-width: 370px;
+}
 .revetalizing_retail {
   max-width: 367px !important;
 }

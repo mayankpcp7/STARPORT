@@ -37,24 +37,77 @@
 </head>
 
 <body>
-    <div class="overflow-hidden px-3 px-xxl-0">
+
+    <!-- ============ header ======================== -->
+    <header class="video_bg position-relative w-100 -mx-3 overflow-hidden pt-5">
+        <video autoplay muted loop id="headerVideo">
+            <source src="./assets/videos/header_bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="pt-4 z-2 position-relative container custom_container z-1">
+            <a href="#" aria-label="Header Logo">
+                <img class="mx-auto starport_logo d-flex justify-content-center mb-3"
+                    src="./assets/images/svg/starport-header-logo.svg" alt="starport logo">
+            </a>
+            <h1 class="text-white font_gelasio fw-bold text-center mt-1 fs_xxl mx-auto">Investor Due <br />
+                Diligence Guide</h1>
+        </div>
+    </header>
+    <div class="px-3 px-xxl-0">
+        <!--============== video section ===================-->
+        <section class="section_width px-3 video_sec_spacing section_spacing radius_32 section_bg_blur mx-auto">
+            <p class="text_red font_gelasio fw-medium leading_135 fs_xl text-center fst-italic mb-2">Step 1:</p>
+            <p class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center pb-1 mb-md-4">
+                Watch The Video Below
+            </p>
+            <div class="d-flex justify-content-center position-relative">
+                <video id="diligenceVideo" class="diligence_video_img w-100" src="./assets/videos/buildings.mp4"
+                    controls poster="./assets/images/webp/buildings.webp"></video>
+                <span id="playIcon" class="video_play_icon position-absolute">
+                    <svg viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50.2197" r="50" fill="white" fill-opacity="0.53" />
+                        <path
+                            d="M69.25 50.2197C69.2511 50.6866 69.1314 51.1458 68.9025 51.5527C68.6736 51.9596 68.3433 52.3003 67.9437 52.5418L43.18 67.6908C42.7625 67.9465 42.2843 68.0861 41.7948 68.0951C41.3053 68.1042 40.8223 67.9824 40.3956 67.7424C39.973 67.5061 39.6209 67.1615 39.3757 66.744C39.1304 66.3265 39.0007 65.8513 39 65.3671V35.0724C39.0007 34.5882 39.1304 34.1129 39.3757 33.6954C39.6209 33.278 39.973 32.9334 40.3956 32.6971C40.8223 32.457 41.3053 32.3353 41.7948 32.3443C42.2843 32.3534 42.7625 32.493 43.18 32.7486L67.9437 47.8977C68.3433 48.1391 68.6736 48.4799 68.9025 48.8868C69.1314 49.2937 69.2511 49.7529 69.25 50.2197Z"
+                            fill="#FF0A00" />
+                    </svg>
+                </span>
+            </div>
+            <p class="text_red font_gelasio fw-medium leading_135 fs_xl text-center fst-italic vider_top_spacing">Step
+                2:
+            </p>
+            <p class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center pb-1 mb-md-4">Our Unique Value
+                Proposition</p>
+            <div class="d-flex justify-content-center position-relative">
+                <video id="diligenceVideo2" class="diligence_video_img w-100" src="./assets/videos/bussiness-person.mp4"
+                    controls poster="./assets/images/webp/bussiness-men.webp"></video>
+                <span id="playIcon2" class="video_play_icon position-absolute">
+                    <svg viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50.2197" r="50" fill="white" fill-opacity="0.53" />
+                        <path
+                            d="M69.25 50.2197C69.2511 50.6866 69.1314 51.1458 68.9025 51.5527C68.6736 51.9596 68.3433 52.3003 67.9437 52.5418L43.18 67.6908C42.7625 67.9465 42.2843 68.0861 41.7948 68.0951C41.3053 68.1042 40.8223 67.9824 40.3956 67.7424C39.973 67.5061 39.6209 67.1615 39.3757 66.744C39.1304 66.3265 39.0007 65.8513 39 65.3671V35.0724C39.0007 34.5882 39.1304 34.1129 39.3757 33.6954C39.6209 33.278 39.973 32.9334 40.3956 32.6971C40.8223 32.457 41.3053 32.3353 41.7948 32.3443C42.2843 32.3534 42.7625 32.493 43.18 32.7486L67.9437 47.8977C68.3433 48.1391 68.6736 48.4799 68.9025 48.8868C69.1314 49.2937 69.2511 49.7529 69.25 50.2197Z"
+                            fill="#FF0A00" />
+                    </svg>
+                </span>
+            </div>
+        </section>
         <!-- ==================   Case Studies  =======================-->
-        <section class="section_width section_spacing overflow-hidden py-5 bg_gray mx-auto radius_32">
+        <section class="section_width section_spacing overflow-hidden py-5 section_bg_blur mx-auto radius_32">
             <div class="custom_container py-2 container mx-auto px-3">
                 <p class="text-center font_gelasio fst-italic fs_xl leading_135 fw-medium text_red mb-0">Step 3:</p>
-                <h2 class="text-white text-center mb-1 fs_xl font_gelasio leading_135 mt-2 fw-semibold mb-0">Case
+                <h2 class="text-white text-center mb-5 fs_xl font_gelasio leading_135 mt-2 fw-semibold mb-0">Case
                     Studies
                     (Investors & Our Offering)
                 </h2>
 
             </div>
-            <div class="swiper-container">
+            <div class="swiper-container mb-5 pb-4">
                 <div class="swiper-wrapper d-flex gap-4 justify-content-between">
-                    <div class="swiper-slide d-flex justify-content-center align-items-center flex-column radius_28 video_slide bg-white p_20">
+                    <div
+                        class="swiper-slide d-flex justify-content-center align-items-center flex-column radius_28 video_slide bg-white p_20">
                         <div class="position-relative bg-white">
                             <video class="position-relative rounded-2 z-0"
                                 poster="./assets/images/webp/case-studio-video-poster-1.webp" width="421" height="237"
-                                id="sliderVideo1" src="./assets/videos/bussiness-person.mp4" controls="false"></video>
+                                id="sliderVideo1" src="./assets/videos/bussiness-person.mp4"></video>
                             <span class="position-absolute slider_playicon z-2 cursor_pointer">
                                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -71,11 +124,12 @@
                         </p>
                     </div>
 
-                    <div class="swiper-slide d-flex justify-content-center align-items-center flex-column radius_28 video_slide bg-white p_20">
+                    <div
+                        class="swiper-slide d-flex justify-content-center align-items-center flex-column radius_28 video_slide bg-white p_20">
                         <div class="position-relative bg-white radius_28">
                             <video class="position-relative rounded-2 z-0"
                                 poster="./assets/images/webp/case-studio-video-poster-2.webp" width="421" height="237"
-                                id="sliderVideo2" src="./assets/videos/bussiness-person.mp4" controls="false"></video>
+                                id="sliderVideo2" src="./assets/videos/bussiness-person.mp4"></video>
                             <span class="position-absolute slider_playicon z-2 cursor_pointer">
                                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -92,11 +146,12 @@
                         </p>
                     </div>
 
-                    <div class="swiper-slide d-flex justify-content-center align-items-center flex-column radius_28 video_slide bg-white p_20">
+                    <div
+                        class="swiper-slide d-flex justify-content-center align-items-center flex-column radius_28 video_slide bg-white p_20">
                         <div class="position-relative">
                             <video class="position-relative rounded-2 z-0"
                                 poster="./assets/images/webp/case-studio-video-poster-3.webp" width="421" height="237"
-                                id="sliderVideo3" src="./assets/videos/bussiness-person.mp4" controls="false"></video>
+                                id="sliderVideo3" src="./assets/videos/bussiness-person.mp4"></video>
                             <span class="position-absolute slider_playicon z-2 cursor_pointer">
                                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -113,11 +168,12 @@
                         </p>
                     </div>
 
-                    <div class="swiper-slide d-flex justify-content-center align-items-center flex-column radius_28 video_slide bg-white p_20">
+                    <div
+                        class="swiper-slide d-flex justify-content-center align-items-center flex-column radius_28 video_slide bg-white p_20">
                         <div class="position-relative">
                             <video class="position-relative rounded-2 z-0"
                                 poster="./assets/images/webp/case-studio-video-poster-4.webp" width="421" height="237"
-                                id="sliderVideo4" src="./assets/videos/bussiness-person.mp4" controls="false"></video>
+                                id="sliderVideo4" src="./assets/videos/bussiness-person.mp4"></video>
                             <span class="position-absolute slider_playicon z-2 cursor_pointer">
                                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -129,16 +185,36 @@
                             </span>
                         </div>
                         <p
-                            class="text-center mx-auto fw-semibold fs_lg pt-4 mb-2 pb-4 font_gelasio unlocking_leadership leading_140 text-black">
-                            Unlocking Leadership Potential at Global Corp
+                            class="text-center mx-auto fw-semibold fs_lg pt-4 mb-0 font_gelasio startegic_market leading_140 text-black">
+                            Strategic Market Penetration: Helping Green Energy Co. Enter New Markets
                         </p>
                     </div>
-                   
+                    <div
+                        class="swiper-slide d-flex justify-content-center align-items-center flex-column radius_28 video_slide bg-white p_20">
+                        <div class="position-relative bg-white">
+                            <video class="position-relative rounded-2 z-0"
+                                poster="./assets/images/webp/case-studio-video-poster-1.webp" width="421" height="237"
+                                id="sliderVideo5" src="./assets/videos/bussiness-person.mp4"></video>
+                            <span class="position-absolute slider_playicon z-2 cursor_pointer">
+                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="32" r="32" fill="#F4F4F4" fill-opacity="0.75" />
+                                    <path
+                                        d="M40.6802 32.4405C40.6808 32.7393 40.6109 33.0332 40.4771 33.2936C40.3433 33.5541 40.1503 33.7721 39.9167 33.9266L25.4431 43.622C25.1991 43.7857 24.9196 43.875 24.6335 43.8808C24.3474 43.8866 24.0651 43.8087 23.8157 43.655C23.5687 43.5038 23.3629 43.2833 23.2196 43.0161C23.0762 42.7489 23.0004 42.4447 23 42.1348V22.7462C23.0004 22.4364 23.0762 22.1322 23.2196 21.865C23.3629 21.5978 23.5687 21.3773 23.8157 21.226C24.0651 21.0724 24.3474 20.9945 24.6335 21.0003C24.9196 21.0061 25.1991 21.0954 25.4431 21.259L39.9167 30.9544C40.1503 31.109 40.3433 31.327 40.4771 31.5875C40.6109 31.8479 40.6808 32.1418 40.6802 32.4405Z"
+                                        fill="#FF0A00" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p
+                            class="text-center mx-auto fw-semibold fs_lg pt-4 mb-2 pb-4 font_gelasio revetalizing_retail leading_140 text-black">
+                            Revitalizing Retail: Boosting Sales for Fashion Forward Ltd
+                        </p>
+                    </div>
                 </div>
 
         </section>
         <!-- ==================  DUE DILIGENCE ======================= -->
-        <section class="section_width section_spacing radius_32 bg_gray mx-auto">
+        <section class="section_width section_spacing radius_32 section_bg_blur mx-auto">
             <div class="custom_container px-3 mx-auto py-5 ">
                 <p
                     class="text_red font_gelasio fw-medium leading_135 fs_xl text-center  fst-italic pt-md-4 mt-sm-3 mb-2">
@@ -288,12 +364,11 @@
                 </div>
             </div>
         </section>
-        <!-- ================ COMMON INVESTOR QUESTIONS ========================= -->
+        <!-- ========================= COMMON INVESTOR QUESTIONS ========================= -->
         <section class="section_spacing">
-            <div class="section_width bg_gray radius_32 mx-auto py_common_invester">
+            <div class="section_width section_bg_blur radius_32 mx-auto py_common_invester">
                 <div class="container custom_container">
-                    <p class="mb-sm-2 mb-1 font_gelasio fw-medium fs_xl text-center fst-italic text_red leading_135">
-                        Step 5:</p>
+                    <p class="mb-sm-2 mb-1 font_gelasio fw-medium fs_xl text-center text_red leading_135">Step 5:</p>
                     <h2 class="text-capitalize font_gelasio text-white fs_xl fw-semibold leading_135 text-center mb-0">
                         Common
                         Investor
@@ -311,15 +386,13 @@
                                             are the risks associated with this investment ?</p>
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show "
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
                                     <div
                                         class="accordion-body leading_150 max_w_866 font_inter fw-normal fs_sm text_offblack opacity_70">
-                                        All investments carry some level of risk, including the potential loss of
-                                        principal.
+                                        All investments carry some level of risk, including the potential loss of principal.
                                         Our investment strategy is designed
-                                        to mitigate risks through diversification and active management, but it’s
-                                        important
+                                        to mitigate risks through diversification and active management, but it’s important
                                         to understand that market
                                         fluctuations can impact returns.
                                     </div>
@@ -333,8 +406,7 @@
                                         class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                         aria-expanded="false" aria-controls="collapseTwo">
-                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>2. </span> How
-                                            can
+                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>2. </span> How can
                                             I
                                             track the performance of my investment ?</p>
                                     </button>
@@ -343,14 +415,12 @@
                                     data-bs-parent="#accordionExample">
                                     <div
                                         class="accordion-body leading_150 max_w_866 font_inter fw-normal fs_sm text_offblack opacity_70">
-                                        All investments carry some level of risk, including the potential loss of
-                                        principal.
+                                        All investments carry some level of risk, including the potential loss of principal.
                                         Our investment strategy is designed
-                                        to mitigate risks through diversification and active management, but it’s
-                                        important
+                                        to mitigate risks through diversification and active management, but it’s important
                                         to understand that market
                                         fluctuations can impact returns.
-
+        
                                     </div><img src="./assets/images/png/faq-video.png" alt="faq-video" class="w-100 max_w_866 mx-auto d-flex mb-md-4 mb-3 radius_32 
         ">
                                 </div>
@@ -366,15 +436,13 @@
                                             will I receive updates on my investment ?</p>
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
                                     <div
                                         class="accordion-body leading_150 max_w_866 font_inter fw-normal fs_sm text_offblack opacity_70">
-                                        All investments carry some level of risk, including the potential loss of
-                                        principal.
+                                        All investments carry some level of risk, including the potential loss of principal.
                                         Our investment strategy is designed
-                                        to mitigate risks through diversification and active management, but it’s
-                                        important
+                                        to mitigate risks through diversification and active management, but it’s important
                                         to understand that market
                                         fluctuations can impact returns.
                                     </div>
@@ -386,8 +454,7 @@
                                         class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                         aria-expanded="false" aria-controls="collapseFour">
-                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>4. </span> How
-                                            do
+                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>4. </span> How do
                                             you ensure the security of my investment ?</p>
                                     </button>
                                 </h2>
@@ -395,11 +462,9 @@
                                     data-bs-parent="#accordionExample">
                                     <div
                                         class="accordion-body leading_150 max_w_866 font_inter fw-normal fs_sm text_offblack opacity_70">
-                                        All investments carry some level of risk, including the potential loss of
-                                        principal.
+                                        All investments carry some level of risk, including the potential loss of principal.
                                         Our investment strategy is designed
-                                        to mitigate risks through diversification and active management, but it’s
-                                        important
+                                        to mitigate risks through diversification and active management, but it’s important
                                         to understand that market
                                         fluctuations can impact returns.
                                     </div>
@@ -419,11 +484,9 @@
                                     data-bs-parent="#accordionExample">
                                     <div
                                         class="accordion-body leading_150 max_w_866 font_inter fw-normal fs_sm text_offblack opacity_70">
-                                        All investments carry some level of risk, including the potential loss of
-                                        principal.
+                                        All investments carry some level of risk, including the potential loss of principal.
                                         Our investment strategy is designed
-                                        to mitigate risks through diversification and active management, but it’s
-                                        important
+                                        to mitigate risks through diversification and active management, but it’s important
                                         to understand that market
                                         fluctuations can impact returns.
                                     </div>
@@ -435,8 +498,9 @@
             </div>
         </section>
 
+
         <!-- ================= Moving Forward ========================= -->
-        <section class="section_width section_spacing py-5 bg_gray mx-auto radius_32">
+        <section class="section_width section_spacing py-5 section_bg_blur mx-auto radius_32">
             <div class="custom_container py-2 container mx-auto px-3">
                 <p class="text-center font_gelasio fst-italic fs_xl leading_135 fw-medium text_red mb-0">Step 6:</p>
                 <h2 class="text-white text-center fs_xl font_gelasio leading_135 mt-2 fw-semibold mb-0">Moving Forward
@@ -538,7 +602,7 @@
     <script>
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 4,
-            loop: true, 
+            loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
