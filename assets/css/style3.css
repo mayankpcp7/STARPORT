@@ -7,6 +7,7 @@
   );
   --off-yellow: #ffefb7;
   --dark-purple: #6a16f1;
+  --off-purple: #630df3bd;
 }
 .text_gradient_purple {
   background: var(--gradient-purple);
@@ -26,4 +27,6 @@
   border: 1px solid var(--text-purple) !important;
   color: var(--text-purple) !important;
 }
-
+.video_btn:hover {
+  background-color: var(--off-purple) !important;
+}
