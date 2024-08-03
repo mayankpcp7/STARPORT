@@ -11,17 +11,7 @@
     mix-blend-mode: color;
   }
   
-  .accordion-item:nth-child(1) .accordion-button::after,
-  .accordion-item:nth-child(2) .accordion-button::after {
-    background: var(--text-darkblue);
-  }
-  
-  .accordion-item:nth-child(1) .accordion-button:not(.collapsed)::after,
-  .accordion-item:nth-child(2) .accordion-button:not(.collapsed)::after {
-    content: "Close" !important;
-    color: var(--text-darkblue) !important;
-    border: 1px solid var(--text-darkblue) !important;
-  }
+
   .swiper-pagination .swiper-pagination-bullet {
     background-color: white;
   }

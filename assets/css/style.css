@@ -86,7 +86,7 @@
 
 .video_sec_spacing {
   padding: 140px 0;
-  margin-top: 0% ;
+  margin-top: 0%;
 }
 
 .diligence_video_img {
@@ -103,7 +103,7 @@
   left: 50%;
   transform: translate(-50%, -50%) !important;
 }
-.mb_desktop{
+.mb_desktop {
   margin-bottom: 80px;
 }
 /* ========================== DUE DILIGENCE ================== */
@@ -152,10 +152,19 @@
   max-width: 444px;
 }
 .cards_shadow:hover {
-  box-shadow: 8px 8px 8px rgba(239, 19, 19, 0.5);
+  transform: translateY(-5%);
 }
 
 /* ========================= COMMON INVESTOR QUESTIONS ========================= */
+.d-none {
+  display: none;
+}
+.play_icon {
+    cursor: pointer;
+    z-index: 2;
+    display: block; 
+}
+
 .faq {
   padding-top: 60px;
   max-width: 946px;
@@ -183,37 +192,34 @@
   background-color: transparent !important;
   box-shadow: none !important;
   padding: 20px 0 16px 0 !important;
-  color: #000000 !important;
+  color: black !important;
 }
 .accordion-body {
   padding: 0px 0px 16px 0 !important;
 }
-.accordion-item:nth-child(1) .accordion-button::after,
-.accordion-item:nth-child(2) .accordion-button::after,
-.accordion-item:nth-child(3) .accordion-button::after,
-.accordion-item:nth-child(4) .accordion-button::after,
-.accordion-item:nth-child(5) .accordion-button::after {
-  width: 149px !important;
-  height: 51px !important;
+.accordion-button::after {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: none !important;
+  content: none !important;
 }
-.accordion-item:nth-child(1) .accordion-button::after,
-.accordion-item:nth-child(2) .accordion-button::after {
-  content: "Open Video" !important;
-  color: #fff !important;
-  background: #ff0a00;
-  border-radius: 12px !important;
-  font-family: "Inter", sans-serif !important;
-  font-weight: 500 !important;
-  font-size: 18px !important;
-  transition: 0.3s linear;
+.video_btn {
+  width: 149px;
+  height: 51px;
+  border-radius: 12px;
+  transition: all 0.3s linear;
 }
-.accordion-item:nth-child(1) .accordion-button:hover::after,
-.accordion-item:nth-child(2) .accordion-button:hover::after {
-  box-shadow: 4px 5px rgba(0, 0, 0, 0.3);
+.video_btn:hover {
+  background-color: #ff0a00ba !important;
+}
+.video_btn.closebtn {
+  background-color: transparent;
+  border: 1px solid var(--text-red) !important;
+  color: var(--text-red) !important;
+}
+.closebtn:hover {
+  background-color: transparent !important;
 }
 
 .accordion-item:nth-child(3) .accordion-button::after,
@@ -221,17 +227,9 @@
 .accordion-item:nth-child(5) .accordion-button::after {
   content: "+" !important;
   font-size: 50px !important;
-  color: #010101 !important;
+  color: var(--text-offblack) !important;
   font-weight: 400 !important;
-}
-.accordion-item:nth-child(1) .accordion-button:not(.collapsed)::after,
-.accordion-item:nth-child(2) .accordion-button:not(.collapsed)::after {
-  content: "Close" !important;
-  color: #ff0a00 !important;
-  border: 1px solid #ff0a00 !important;
-  background: transparent !important;
-  border-radius: 12px;
-  transform: none !important;
+  margin-top: -1%;
 }
 .accordion-item:nth-child(3) .accordion-button:not(.collapsed)::after,
 .accordion-item:nth-child(4) .accordion-button:not(.collapsed)::after,
@@ -243,11 +241,9 @@
 .collapse {
   transition-duration: 0.2s !important;
 }
-
 .mw_523 {
   max-width: 523px;
 }
-
 .accordian_item_gap {
   gap: 40px;
 }
@@ -261,27 +257,46 @@
 .video_radius {
   border-radius: 32px;
 }
-@media (max-width:1500.98px) {
+@media (max-width: 1500.98px) {
   .video_bg {
     min-height: 100vh !important;
   }
-  .mb_desktop{
+  .mb_desktop {
     margin-bottom: 0;
   }
-  
-.video_sec_spacing {
-  padding: 140px 0;
-  margin-top: -40% ;
-}
 
+  .video_sec_spacing {
+    padding: 140px 0;
+    margin-top: -40%;
+  }
 }
-@media (max-width:1023.98px) {
+@media (max-width: 1023.98px) {
   .vider_top_spacing {
     padding-top: 100px;
   }
-
 }
 @media (max-width: 992px) {
+}
+
+@media (max-width: 991.98px) {
+  .swiper-slide {
+    min-height: 376px !important;
+  }
+  .footer_logo {
+    max-width: 390px;
+  }
+  .button_svg_icon {
+    width: 20px;
+    height: 20px;
+  }
+  .diligence_button {
+    padding: 9px 0;
+    min-width: 132px;
+  }
+  .diligence_image {
+    border-radius: 16px;
+    max-width: 100%;
+  }
   .accordian_item_gap {
     gap: 20px;
   }
@@ -307,8 +322,7 @@
   }
   .video_sec_spacing {
     padding: 80px 0;
-    margin-top: -58% ;
-
+    margin-top: -58%;
   }
 
   .button_svg_icon {
@@ -321,66 +335,6 @@
     min-width: 132px;
   }
 
-  .diligence_image {
-    border-radius: 16px;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .py_common_invester {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .accordion-button:not(.collapsed) {
-    padding: 16px !important;
-  }
-  .accordion-item:nth-child(3) .accordion-button::after,
-  .accordion-item:nth-child(4) .accordion-button::after,
-  .accordion-item:nth-child(5) .accordion-button::after {
-    margin-top: -8px !important;
-  }
-  .video_radius {
-    border-radius: 16px;
-  }
-  .vider_top_spacing {
-    padding-top: 40px;
-  }
-
-  .video_sec_spacing {
-    margin-top: -80% ;
-    padding: 60px 0;
-
-  }
-  .video_play_icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .starport_logo {
-    max-width: 330px;
-    height: 65px;
-  }
-
-  .header_bg {
-    min-height: 510px;
-  }
-}
-@media (max-width: 991.98px) {
-  .swiper-slide {
-    min-height: 376px !important;
-  }
-  .footer_logo {
-    max-width: 390px;
-  }
-  .button_svg_icon {
-    width: 20px;
-    height: 20px;
-  }
-  .diligence_button {
-    padding: 9px 0;
-    min-width: 132px;
-  }
   .diligence_image {
     border-radius: 16px;
     max-width: 100%;
@@ -404,6 +358,42 @@
   }
   .swiper-slide {
     min-height: 306px !important;
+  }
+  .py_common_invester {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .accordion-button:not(.collapsed) {
+    padding: 16px !important;
+  }
+  .accordion-item:nth-child(3) .accordion-button::after,
+  .accordion-item:nth-child(4) .accordion-button::after,
+  .accordion-item:nth-child(5) .accordion-button::after {
+    margin-top: -8px !important;
+  }
+  .video_radius {
+    border-radius: 16px;
+  }
+  .vider_top_spacing {
+    padding-top: 40px;
+  }
+
+  .video_sec_spacing {
+    margin-top: -80%;
+    padding: 60px 0;
+  }
+  .video_play_icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .starport_logo {
+    max-width: 330px;
+    height: 65px;
+  }
+
+  .header_bg {
+    min-height: 510px;
   }
 }
 @media (max-width: 575.98px) {
@@ -448,11 +438,11 @@
   }
   .video_sec_spacing {
     padding: 50px 0;
-    margin-top: -100% ;
+    margin-top: -100%;
   }
 }
 @media (max-width: 405.98px) {
   .video_sec_spacing {
-    margin-top: -130% ;
+    margin-top: -130%;
   }
 }

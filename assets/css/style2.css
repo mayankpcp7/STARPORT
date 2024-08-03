@@ -11,18 +11,6 @@
   mix-blend-mode: color;
 }
 
-.accordion-item:nth-child(1) .accordion-button::after,
-.accordion-item:nth-child(2) .accordion-button::after {
-  background: var(--text-skin);
-}
-
-.accordion-item:nth-child(1) .accordion-button:not(.collapsed)::after,
-.accordion-item:nth-child(2) .accordion-button:not(.collapsed)::after {
-  content: "Close" !important;
-  color: var(--text-skin) !important;
-  border: 1px solid var(--text-skin) !important;
-}
-
 /* swiper */
 .swiper-pagination .swiper-pagination-bullet {
   background-color: var(--text-skin);
