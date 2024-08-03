@@ -1,4 +1,15 @@
-
+.video_bg::after {
+  position: fixed;
+  background: var(--text-offpurple) !important;
+  opacity: 74%;
+  bottom: 0;
+  content: "";
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  mix-blend-mode: color;
+}
 .text_gradient_purple {
   background: var(--gradient-purple);
   -webkit-background-clip: text;
@@ -15,8 +26,18 @@
   mix-blend-mode: color;
 }
 
+.video_btn:hover {
+  background-color: var(--text-lightpurple) !important;
+}
 .video_btn.closebtn {
   background-color: transparent;
   border: 1px solid var(--text-purple) !important;
   color: var(--text-purple) !important;
+}
+.closebtn:hover {
+  background-color: transparent !important;
+}
+
+.diligence_button:hover {
+  box-shadow: 0 3px 10px 0 var(--text-purple);
 }

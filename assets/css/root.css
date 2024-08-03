@@ -19,11 +19,14 @@
   --text-offwhite: #fefefe;
   --text-yellow: #ffefb7;
   --text-darkpurple: #6a16f1;
-  --gradient-purple: linear-gradient(180deg,
-      #630df3 0%,
-      #7527ec 40.51%,
-      #ffefb7 100%);
-
+  --gradient-purple: linear-gradient(
+    180deg,
+    #630df3 0%,
+    #7527ec 40.51%,
+    #ffefb7 100%
+  );
+  --text-lightpurple: #630df3bd;
+  --text-offpurple: #6a16f1;
 }
 
 /* ====== FONT SIZE CLASSES =======*/
@@ -81,7 +84,7 @@
 }
 
 .text_purpleGradient {
-  background: linear-gradient(95.07deg, #7E93FD 33.03%, #2F3C7D 63.15%);
+  background: linear-gradient(95.07deg, #7e93fd 33.03%, #2f3c7d 63.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

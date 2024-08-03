@@ -734,67 +734,33 @@
     </script>
     <!-- ========== COMMON INVEST QUESTION =========== -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var video = document.getElementById('videoPlayer');
-            var playButton = document.getElementById('playButton');
-            // When video is clicked
-            videoPlayer.addEventListener('click', function () {
-                if (video.paused) {
-                    video.play();
-                    playButton.classList.add('d-none');
-                } else {
-                    video.pause();
-                    playButton.classList.remove('d-none');
-                }
-                updatePlayButtonVisibility();
-            });
+        document.addEventListener("DOMContentLoaded", function () {
+            // Function to handle play/pause and button visibility
+            function setupVideoControls(videoId, buttonId) {
+                var video = document.getElementById(videoId);
+                var playButton = document.getElementById(buttonId);
 
-            // When the video itself is clicked
-            video.addEventListener('click', function () {
-                if (!video.paused) {
-                    video.pause();
-                } else {
-                    video.play();
-                }
-                updatePlayButtonVisibility();
-            });
+                playButton.addEventListener("click", function () {
+                    if (video.paused) {
+                        video.play();
+                        playButton.style.display = "none";
+                    } else {
+                        video.pause();
+                    }
+                });
 
-            // Update play button visibility on video play/pause
-            video.addEventListener('play', updatePlayButtonVisibility);
-            video.addEventListener('pause', updatePlayButtonVisibility);
-            updatePlayButtonVisibility();
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var video = document.getElementById('myVideoPlayer');
-            var playButton = document.getElementById('myPlayButton');
-            // When video is clicked
-            myVideoPlayer.addEventListener('click', function () {
-                if (video.paused) {
-                    video.play();
-                    myPlayButton.classList.add('d-none');
-                } else {
-                    video.pause();
-                    myPlayButton.classList.remove('d-none');
-                }
-                updatemyPlayButtonVisibility();
-            });
+                video.addEventListener("play", function () {
+                    playButton.style.display = "none";
+                });
 
-            // When the video itself is clicked
-            video.addEventListener('click', function () {
-                if (!video.paused) {
-                    video.pause();
-                } else {
-                    video.play();
-                }
-                updatemyPlayButtonVisibility();
-            });
+                video.addEventListener("pause", function () {
+                    playButton.style.display = "block";
+                });
+            }
 
-            // Update play button visibility on video play/pause
-            video.addEventListener('play', updatemyPlayButtonVisibility);
-            video.addEventListener('pause', updatemyPlayButtonVisibility);
-            updatemyPlayButtonVisibility();
+            // Set up controls for both videos
+            setupVideoControls("videoPlayer", "playButton");
+            setupVideoControls("myVideoPlayer", "myPlayButton");
         });
     </script>
     <script>
