@@ -78,7 +78,7 @@
   background-color: transparent !important;
   box-shadow: none !important;
   padding: 20px 0 16px 0 !important;
-  color: #000000 !important;
+  color: black !important;
 }
 .accordion-body {
   padding: 0px 0px 16px 0 !important;
@@ -91,7 +91,8 @@
   content: none !important;
 }
 .video_btn {
-  padding: 14.71px 24px;
+  width: 149px;
+  height: 51px;
   border-radius: 12px;
   transition: all 0.3s linear;
 }
@@ -100,15 +101,19 @@
 }
 .video_btn.closebtn {
   background-color: transparent;
-  border: 1px solid #ff0a00 !important;
-  color: #ff0a00 !important;
+  border: 1px solid var(--text-red) !important;
+  color: var(--text-red) !important;
 }
+.closebtn:hover {
+  background-color: transparent !important;
+}
+
 .accordion-item:nth-child(3) .accordion-button::after,
 .accordion-item:nth-child(4) .accordion-button::after,
 .accordion-item:nth-child(5) .accordion-button::after {
   content: "+" !important;
   font-size: 50px !important;
-  color: #010101 !important;
+  color: var(--text-offblack) !important;
   font-weight: 400 !important;
 }
 .accordion-item:nth-child(3) .accordion-button:not(.collapsed)::after,
