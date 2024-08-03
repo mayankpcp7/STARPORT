@@ -61,8 +61,13 @@
   color: var(--text-offwhite);
 }
 .text_purpleGradient {
-  background: linear-gradient(180deg, #630DF3 0%, #7527EC 40.51%, #FFEFB7 100%);
+  background: linear-gradient(95.07deg, #7E93FD 33.03%, #2F3C7D 63.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
+
 /* ======== BACKGROUND COLORS CLASSES ====== */
 .bg_red {
   background-color: var(--text-red);
@@ -82,6 +87,9 @@
 }
 .bg_offwhite {
   background-color: var(--text-offwhite);
+}
+.bg_darkblue {
+  background-color: var(--text-darkblue);
 }
 
 /* ====== FONT FAMILY CLASSES =========== */
