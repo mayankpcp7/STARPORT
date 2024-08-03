@@ -2,7 +2,7 @@
   position: fixed;
   background: linear-gradient(
     179.27deg,
-    #090e27 0.63%,
+    #090E27 0.63%,
     #000000 175.69%
   ) !important;
   opacity: 74%;
@@ -52,7 +52,7 @@
 @media (max-width: 1500.98px) {
   .hwm_video_sec_spacing {
     padding: 108px 0;
-    margin-top: -37%;
+    margin-top: -39%;
   }
 }
 
