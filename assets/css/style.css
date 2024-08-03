@@ -101,10 +101,11 @@
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
   box-shadow: none !important;
-  padding: 24px 40.5px 16px 40.5px !important;
+  padding: 20px 0 16px 0 !important;
+  color: #000000 !important;
 }
 .accordion-body {
-  padding: 0px 0px 16px 40.5px !important;
+  padding: 0px 0px 16px 0 !important;
 }
 .accordion-item:nth-child(1) .accordion-button::after,
 .accordion-item:nth-child(2) .accordion-button::after,
@@ -131,8 +132,7 @@
 }
 .accordion-item:nth-child(1) .accordion-button:hover::after,
 .accordion-item:nth-child(2) .accordion-button:hover::after {
-  background: #ff0a00ad !important;
-  color: #fff !important;
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 .accordion-item:nth-child(3) .accordion-button::after,
@@ -145,7 +145,6 @@
 }
 .accordion-item:nth-child(1) .accordion-button:not(.collapsed)::after,
 .accordion-item:nth-child(2) .accordion-button:not(.collapsed)::after {
-  width: 97px !important;
   content: "Close" !important;
   color: #ff0a00 !important;
   border: 1px solid #ff0a00 !important;
@@ -171,23 +170,17 @@
 .accordian_item_gap {
   gap: 40px;
 }
-
-@media (max-width: 991.98px) {
-  .footer_logo {
-    max-width: 390px;
-  }
-  .button_svg_icon {
-    width: 20px;
-    height: 20px;
-  }
-  .diligence_button {
-    padding: 9px 0;
-    min-width: 132px;
-  }
-  .diligence_image {
-    border-radius: 16px;
-    max-width: 100%;
-  }
+.translate_middle {
+  transform: translate(-50%, -50%);
+}
+.play_icon {
+  cursor: pointer;
+  z-index: 1;
+}
+.video_radius {
+  border-radius: 32px;
+}
+@media (max-width: 992px) {
   .accordian_item_gap {
     gap: 20px;
   }
@@ -212,7 +205,8 @@
     padding-top: 36px;
   }
 }
-@media (max-width: 767.98px) {
+
+@media (max-width: 768px) {
   .py_common_invester {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -225,8 +219,34 @@
   .accordion-item:nth-child(5) .accordion-button::after {
     margin-top: -8px !important;
   }
+  .video_radius {
+    border-radius: 16px;
+  }
+}
+@media (max-width: 991.98px) {
+  .footer_logo {
+    max-width: 390px;
+  }
+  .button_svg_icon {
+    width: 20px;
+    height: 20px;
+  }
+  .diligence_button {
+    padding: 9px 0;
+    min-width: 132px;
+  }
+  .diligence_image {
+    border-radius: 16px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
   .footer_logo {
     max-width: 360px;
+  }
+  .play_icon {
+    width: 50px;
+    height: 49px;
   }
 }
 @media (max-width: 575.98px) {
@@ -234,15 +254,13 @@
     max-width: 300px;
   }
   .accordion-button:not(.collapsed) {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    padding: 24px 0px 16px 0px !important;
+    padding: 24px 0px 8px 0px !important;
   }
   .accordion-body {
     padding: 0px 0px 16px 0 !important;
   }
   .accordian_item_gap {
-    gap: 12px;
+    gap: 12px !important;
   }
 
   .accordion-item:nth-child(3) .accordion-button::after,
@@ -263,5 +281,12 @@
   }
   .accordion-button {
     padding: 12px 0 !important;
+  }
+  .faq {
+    padding-top: 30px;
+  }
+  .play_icon {
+    width: 40px;
+    height: 39px;
   }
 }
