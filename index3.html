@@ -51,13 +51,15 @@
                         id="accordionExample">
                         <div class="accordion-item rounded-4 border-0 bg_offwhite">
                             <h2 class="accordion-header" id="headingOne">
-                                <button
-                                    class="accordion-button bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                <div class="accordion-button bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                     aria-expanded="true" aria-controls="collapseOne">
                                     <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>1. </span> What
                                         are the risks associated with this investment ?</p>
-                                </button>
+                                    <button
+                                        class="bg_red video_btn text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                        Video</button>
+                                </div>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
@@ -81,14 +83,16 @@
                         </div>
                         <div class="accordion-item rounded-4 border-0 bg_offwhite">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button
-                                    class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                     aria-expanded="false" aria-controls="collapseTwo">
                                     <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>2. </span> How can
                                         I
                                         track the performance of my investment ?</p>
-                                </button>
+                                    <button
+                                        class="bg_red video_btn text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                        Video</button>
+                                </div>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
@@ -251,6 +255,31 @@
             updatemyPlayButtonVisibility();
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var accordionItems = [
+                { button: '.accordion-item:nth-child(1) .accordion-button .video_btn', collapse: '#collapseOne' },
+                { button: '.accordion-item:nth-child(2) .accordion-button .video_btn', collapse: '#collapseTwo' }
+            ];
+
+            accordionItems.forEach(function (item) {
+                var videoButton = document.querySelector(item.button);
+                var collapseElement = document.querySelector(item.collapse);
+
+                collapseElement.addEventListener('show.bs.collapse', function () {
+                    videoButton.textContent = 'Close';
+                    videoButton.classList.add('closebtn');
+                });
+
+                collapseElement.addEventListener('hide.bs.collapse', function () {
+                    videoButton.textContent = 'Open Video';
+                    videoButton.classList.remove('closebtn');
+                });
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
