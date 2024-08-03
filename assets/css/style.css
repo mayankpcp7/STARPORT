@@ -54,6 +54,58 @@
   max-width: 319px;
 }
 
+/* ========================== HEADER CLASSES ================== */
+.video_bg {
+  background-attachment: fixed;
+  min-height: auto;
+}
+
+#headerVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.starport_logo {
+  max-width: 430px;
+  height: 65px;
+}
+/* ========================== VIDEO SECTION CLASSES ================== */
+.vider_top_spacing {
+  padding-top: 150px;
+}
+
+.video_sec_spacing {
+  padding: 140px 0;
+  margin-top: 0% ;
+}
+
+.diligence_video_img {
+  max-width: 945px;
+  max-height: 537px;
+  border-radius: 24px;
+}
+
+.video_play_icon {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+.mb_desktop{
+  margin-bottom: 80px;
+}
 /* ========================== DUE DILIGENCE ================== */
 .radius_28 {
   border-radius: 28px;
@@ -68,19 +120,20 @@
 .diligence_card:hover img {
   transform: scale(1.05);
 }
+
 .diligence_card {
   max-width: 364px;
 }
 
 .diligence_button:hover {
-  box-shadow: 0 4px 8px 0 var(--text-navyblue),
-    0 6px 20px 0 var(--text-navyblue);
+  box-shadow: 0 3px 10px 0 var(--text-skyblue);
 }
 
 .diligence_button {
-  min-width: 162px;
+  max-width: 162px !;
   padding: 12px 0;
 }
+
 .button_svg_icon {
   width: 25px;
   height: 25px;
@@ -208,6 +261,26 @@
 .video_radius {
   border-radius: 32px;
 }
+@media (max-width:1500.98px) {
+  .video_bg {
+    min-height: 100vh !important;
+  }
+  .mb_desktop{
+    margin-bottom: 0;
+  }
+  
+.video_sec_spacing {
+  padding: 140px 0;
+  margin-top: -40% ;
+}
+
+}
+@media (max-width:1023.98px) {
+  .vider_top_spacing {
+    padding-top: 100px;
+  }
+
+}
 @media (max-width: 992px) {
   .accordian_item_gap {
     gap: 20px;
@@ -232,6 +305,26 @@
   .faq {
     padding-top: 36px;
   }
+  .video_sec_spacing {
+    padding: 80px 0;
+    margin-top: -58% ;
+
+  }
+
+  .button_svg_icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .diligence_button {
+    padding: 9px 0;
+    min-width: 132px;
+  }
+
+  .diligence_image {
+    border-radius: 16px;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -249,6 +342,28 @@
   }
   .video_radius {
     border-radius: 16px;
+  }
+  .vider_top_spacing {
+    padding-top: 40px;
+  }
+
+  .video_sec_spacing {
+    margin-top: -80% ;
+    padding: 60px 0;
+
+  }
+  .video_play_icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .starport_logo {
+    max-width: 330px;
+    height: 65px;
+  }
+
+  .header_bg {
+    min-height: 510px;
   }
 }
 @media (max-width: 991.98px) {
@@ -330,5 +445,14 @@
   .play_icon {
     width: 40px;
     height: 39px;
+  }
+  .video_sec_spacing {
+    padding: 50px 0;
+    margin-top: -100% ;
+  }
+}
+@media (max-width: 405.98px) {
+  .video_sec_spacing {
+    margin-top: -130% ;
   }
 }
