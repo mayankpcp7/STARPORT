@@ -37,10 +37,6 @@
   background-color: var(--text-skin);
 }
 
-.diligence_button:hover {
-  box-shadow: 0 3px 10px 0 var(--text-navyblue);
-}
-
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--text-skin);
   opacity: 100%;
