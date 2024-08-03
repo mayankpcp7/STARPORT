@@ -167,6 +167,7 @@
   font-size: 50px !important;
   color: var(--text-offblack) !important;
   font-weight: 400 !important;
+  margin-top: -1%;
 }
 .accordion-item:nth-child(3) .accordion-button:not(.collapsed)::after,
 .accordion-item:nth-child(4) .accordion-button:not(.collapsed)::after,
@@ -178,11 +179,9 @@
 .collapse {
   transition-duration: 0.2s !important;
 }
-
 .mw_523 {
   max-width: 523px;
 }
-
 .accordian_item_gap {
   gap: 40px;
 }
@@ -196,7 +195,25 @@
 .video_radius {
   border-radius: 32px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
+  .swiper-slide {
+    min-height: 376px !important;
+  }
+  .footer_logo {
+    max-width: 390px;
+  }
+  .button_svg_icon {
+    width: 20px;
+    height: 20px;
+  }
+  .diligence_button {
+    padding: 9px 0;
+    min-width: 132px;
+  }
+  .diligence_image {
+    border-radius: 16px;
+    max-width: 100%;
+  }
   .accordian_item_gap {
     gap: 20px;
   }
@@ -221,44 +238,6 @@
     padding-top: 36px;
   }
 }
-
-@media (max-width: 768px) {
-  .py_common_invester {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .accordion-button:not(.collapsed) {
-    padding: 16px !important;
-  }
-  .accordion-item:nth-child(3) .accordion-button::after,
-  .accordion-item:nth-child(4) .accordion-button::after,
-  .accordion-item:nth-child(5) .accordion-button::after {
-    margin-top: -8px !important;
-  }
-  .video_radius {
-    border-radius: 16px;
-  }
-}
-@media (max-width: 991.98px) {
-  .swiper-slide {
-    min-height: 376px !important;
-  }
-  .footer_logo {
-    max-width: 390px;
-  }
-  .button_svg_icon {
-    width: 20px;
-    height: 20px;
-  }
-  .diligence_button {
-    padding: 9px 0;
-    min-width: 132px;
-  }
-  .diligence_image {
-    border-radius: 16px;
-    max-width: 100%;
-  }
-}
 @media (max-width: 767.98px) {
   .slider_video {
     max-width: 307px;
@@ -277,6 +256,21 @@
   }
   .swiper-slide {
     min-height: 306px !important;
+  }
+  .py_common_invester {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .accordion-button:not(.collapsed) {
+    padding: 16px !important;
+  }
+  .accordion-item:nth-child(3) .accordion-button::after,
+  .accordion-item:nth-child(4) .accordion-button::after,
+  .accordion-item:nth-child(5) .accordion-button::after {
+    margin-top: -8px !important;
+  }
+  .video_radius {
+    border-radius: 16px;
   }
 }
 @media (max-width: 575.98px) {
