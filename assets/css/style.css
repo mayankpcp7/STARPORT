@@ -156,14 +156,6 @@
 }
 
 /* ========================= COMMON INVESTOR QUESTIONS ========================= */
-.d-none {
-  display: none;
-}
-.play_icon {
-    cursor: pointer;
-    z-index: 2;
-    display: block; 
-}
 
 .faq {
   padding-top: 60px;
