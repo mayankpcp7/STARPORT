@@ -207,14 +207,16 @@
                             </div>
                             <div class="accordion-item rounded-4 border-0 bg_offwhite">
                                 <h2 class="accordion-header" id="headingThree">
-                                    <button
-                                        class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                         aria-expanded="false" aria-controls="collapseThree">
                                         <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>3. </span> How
                                             often
                                             will I receive updates on my investment ?</p>
-                                    </button>
+                                        <button
+                                            class="bg_darkblue video_btn text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -232,14 +234,16 @@
                             </div>
                             <div class="accordion-item rounded-4 border-0 bg_offwhite">
                                 <h2 class="accordion-header" id="headingFour">
-                                    <button
-                                        class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                         aria-expanded="false" aria-controls="collapseFour">
                                         <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>4. </span> How
                                             do
                                             you ensure the security of my investment ?</p>
-                                    </button>
+                                        <button
+                                            class="bg_darkblue video_btn text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionExample">
@@ -535,50 +539,52 @@
         setupVideoControls('diligenceVideo', 'playIcon');
         setupVideoControls('diligenceVideo2', 'playIcon2');
     </script>
-    <!-- ========== COMMON INVEST QUESTION =========== -->
+    <!-- !-- ========== COMMON INVEST QUESTION =========== --> -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            function handleVideoClick(videoId, playButtonId) {
+        document.addEventListener("DOMContentLoaded", function () {
+            // Function to handle play/pause and button visibility
+            function setupVideoControls(videoId, buttonId) {
                 var video = document.getElementById(videoId);
-                var playButton = document.getElementById(playButtonId);
+                var playButton = document.getElementById(buttonId);
 
-                video.addEventListener('click', function () {
+                playButton.addEventListener("click", function () {
                     if (video.paused) {
                         video.play();
-                        playButton.classList.add('d-none');
-                        video.controls = true; // Enable controls when video plays
+                        playButton.style.display = "none";
                     } else {
                         video.pause();
-                        playButton.classList.remove('d-none');
-                        video.controls = false; // Disable controls when video is paused
                     }
                 });
 
-                playButton.addEventListener('click', function () {
-                    video.play();
-                    playButton.classList.add('d-none');
-                    video.controls = true; // Enable controls when video plays
+                video.addEventListener("play", function () {
+                    playButton.style.display = "none";
+                });
+
+                video.addEventListener("pause", function () {
+                    playButton.style.display = "block";
                 });
             }
 
-            handleVideoClick('videoPlayer', 'playButton');
-            handleVideoClick('myVideoPlayer', 'myPlayButton');
-
-            // Accordion button toggle logic
+            // Set up controls for both videos
+            setupVideoControls("videoPlayer", "playButton");
+            setupVideoControls("myVideoPlayer", "myPlayButton");
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
             var accordionItems = [
                 { button: '.accordion-item:nth-child(1) .accordion-button .video_btn', collapse: '#collapseOne' },
-                { button: '.accordion-item:nth-child(2) .accordion-button .video_btn', collapse: '#collapseTwo' }
+                { button: '.accordion-item:nth-child(2) .accordion-button .video_btn', collapse: '#collapseTwo' },
+                { button: '.accordion-item:nth-child(3) .accordion-button .video_btn', collapse: '#collapseThree' },
+                { button: '.accordion-item:nth-child(4) .accordion-button .video_btn', collapse: '#collapseFour' }
             ];
+            var firstButton = document.querySelector(accordionItems[0].button);
+            firstButton.textContent = 'Close';
+            firstButton.classList.add('closebtn');
 
-            accordionItems.forEach(function (item, index) {
+            accordionItems.forEach(function (item) {
                 var videoButton = document.querySelector(item.button);
                 var collapseElement = document.querySelector(item.collapse);
-
-                // Set the first button to "Close" by default
-                if (index === 0) {
-                    videoButton.textContent = 'Close';
-                    videoButton.classList.add('closebtn');
-                }
 
                 collapseElement.addEventListener('show.bs.collapse', function () {
                     videoButton.textContent = 'Close';
@@ -591,8 +597,8 @@
                 });
             });
         });
-
     </script>
+
 </body>
 
 </html>
