@@ -107,8 +107,7 @@
 }
 .accordion-item:nth-child(1) .accordion-button:hover::after,
 .accordion-item:nth-child(2) .accordion-button:hover::after {
-  background: #ff0a00ad !important;
-  color: #fff !important;
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 .accordion-item:nth-child(3) .accordion-button::after,
