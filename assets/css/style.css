@@ -99,7 +99,7 @@
   max-width: 444px;
 }
 .cards_shadow:hover {
-  box-shadow: 8px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 8px 8px rgba(239, 19, 19, 0.5);
 }
 
 /* ========================= COMMON INVESTOR QUESTIONS ========================= */

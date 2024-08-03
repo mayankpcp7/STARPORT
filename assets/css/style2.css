@@ -32,10 +32,6 @@
 
 /* -------header------- */
 .video_bg {
-<<<<<<< HEAD
-  height: 810px;
-=======
->>>>>>> 3bc08aade64c260c752a28af4e9c79d986c99e0d
   background-attachment: fixed;
   min-height: auto;
 }
