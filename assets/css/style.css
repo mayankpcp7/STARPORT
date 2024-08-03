@@ -86,7 +86,7 @@
 
 .video_sec_spacing {
   padding: 140px 0;
-  margin-top: 0% ;
+  margin-top: 0%;
 }
 
 .diligence_video_img {
@@ -103,7 +103,7 @@
   left: 50%;
   transform: translate(-50%, -50%) !important;
 }
-.mb_desktop{
+.mb_desktop {
   margin-bottom: 80px;
 }
 /* ========================== DUE DILIGENCE ================== */
@@ -152,7 +152,7 @@
   max-width: 444px;
 }
 .cards_shadow:hover {
-  box-shadow: 8px 8px 8px rgba(239, 19, 19, 0.5);
+transform: translateY(-5%);
 }
 
 /* ========================= COMMON INVESTOR QUESTIONS ========================= */
@@ -261,25 +261,23 @@
 .video_radius {
   border-radius: 32px;
 }
-@media (max-width:1500.98px) {
+@media (max-width: 1500.98px) {
   .video_bg {
     min-height: 100vh !important;
   }
-  .mb_desktop{
+  .mb_desktop {
     margin-bottom: 0;
   }
-  
-.video_sec_spacing {
-  padding: 140px 0;
-  margin-top: -40% ;
-}
 
+  .video_sec_spacing {
+    padding: 140px 0;
+    margin-top: -40%;
+  }
 }
-@media (max-width:1023.98px) {
+@media (max-width: 1023.98px) {
   .vider_top_spacing {
     padding-top: 100px;
   }
-
 }
 @media (max-width: 992px) {
   .accordian_item_gap {
@@ -307,8 +305,7 @@
   }
   .video_sec_spacing {
     padding: 80px 0;
-    margin-top: -58% ;
-
+    margin-top: -58%;
   }
 
   .button_svg_icon {
@@ -348,9 +345,8 @@
   }
 
   .video_sec_spacing {
-    margin-top: -80% ;
+    margin-top: -80%;
     padding: 60px 0;
-
   }
   .video_play_icon {
     width: 50px;
@@ -448,11 +444,11 @@
   }
   .video_sec_spacing {
     padding: 50px 0;
-    margin-top: -100% ;
+    margin-top: -100%;
   }
 }
 @media (max-width: 405.98px) {
   .video_sec_spacing {
-    margin-top: -130% ;
+    margin-top: -130%;
   }
 }
