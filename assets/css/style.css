@@ -77,10 +77,11 @@
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
   box-shadow: none !important;
-  padding: 24px 20.5px 16px 20.5px !important;
+  padding: 20px 0 16px 0 !important;
+  color: #000000 !important;
 }
 .accordion-body {
-  padding: 0px 0px 16px 20.5px !important;
+  padding: 0px 0px 16px 0 !important;
 }
 .accordion-item:nth-child(1) .accordion-button::after,
 .accordion-item:nth-child(2) .accordion-button::after,
@@ -120,7 +121,6 @@
 }
 .accordion-item:nth-child(1) .accordion-button:not(.collapsed)::after,
 .accordion-item:nth-child(2) .accordion-button:not(.collapsed)::after {
-  width: 97px !important;
   content: "Close" !important;
   color: #ff0a00 !important;
   border: 1px solid #ff0a00 !important;
