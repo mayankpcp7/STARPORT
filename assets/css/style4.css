@@ -2,7 +2,7 @@
   position: fixed;
   background: linear-gradient(
     179.27deg,
-    #090E27 0.63%,
+    #090e27 0.63%,
     #000000 175.69%
   ) !important;
   opacity: 74%;
@@ -33,6 +33,33 @@
   background: transparent;
   background-blend-mode: color;
   mix-blend-mode: color;
+}
+/* ================== RECENT SLIDER ================= */
+.radius_20 {
+  border-radius: 20px;
+}
+.p_30 {
+  padding: 30px;
+}
+.open_website_btn {
+  padding: 12px 20px;
+  background: var(--gradient-blue);
+  max-width: 189px;
+}
+.text_gradiant_blue {
+  background: var(--gradient-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.recent_card {
+  background-color: #00000034;
+}
+.recent_slider{
+  max-width: 1140px;
+}
+.swiper-wrapper{
+  width: 1140px !important;
+  overflow: hidden !important;
 }
 /* swiper  */
 .swiper-pagination .swiper-pagination-bullet {

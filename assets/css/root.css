@@ -28,6 +28,7 @@
   --text-lightpurple: #630df3bd;
   --text-offpurple: #6a16f1;
   --text-lightblack: #090e27cf;
+  --gradient-blue: linear-gradient(91.88deg, #7e93fd 26.1%, #2f3c7d 104.11%);
 }
 
 /* ====== FONT SIZE CLASSES =======*/
