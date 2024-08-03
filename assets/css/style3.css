@@ -37,7 +37,3 @@
 .closebtn:hover {
   background-color: transparent !important;
 }
-
-.diligence_button:hover {
-  box-shadow: 0 3px 10px 0 var(--text-purple);
-}

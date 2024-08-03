@@ -1,37 +1,53 @@
 .video_bg::after {
-    position: fixed;
-    background: var(--text-darkblue) !important;
-    opacity: 74%;
-    bottom: 0;
-    content: "";
-    min-height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    mix-blend-mode: color;
+  position: fixed;
+  background: var(--text-darkblue) !important;
+  opacity: 74%;
+  bottom: 0;
+  content: "";
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  mix-blend-mode: color;
 }
 
 .onboarding_logo {
-    height: 65px;
-    width: 195px;
+  height: 65px;
+  width: 195px;
 }
 
 .video_bg::after {
-    background: var(--text-darkpurple);
-    background-blend-mode: color;
-    mix-blend-mode: color;
+  background: var(--text-darkpurple);
+  background-blend-mode: color;
+  mix-blend-mode: color;
 }
-
+.video_btn {
+  color: white;
+}
 .video_btn:hover {
-    background-color: var(--text-darkpurple) !important;
+  background-color: var(--text-lightblack) !important;
 }
 
 .video_btn.closebtn {
-    background-color: transparent;
-    border: 1px solid var(--text-darkpurple) !important;
-    color: var(--text-darkpurple) !important;
+  background-color: transparent;
+  border: 1px solid var(--text-darkblue) !important;
+  color: var(--text-darkblue) !important;
 }
 
 .closebtn:hover {
-    background-color: transparent !important;
+  background-color: transparent !important;
+}
+.home_button:hover{
+    background: var(--text-darkblue) !important;
+    color: white ;
+}
+.accordion-item:nth-child(3) .accordion-button::after,
+.accordion-item:nth-child(4) .accordion-button::after,
+.accordion-item:nth-child(5) .accordion-button::after {
+  content: none !important;
+}
+.accordion-item:nth-child(3) .accordion-button:not(.collapsed)::after,
+.accordion-item:nth-child(4) .accordion-button:not(.collapsed)::after,
+.accordion-item:nth-child(5) .accordion-button:not(.collapsed)::after {
+  content: none !important;
 }
