@@ -1,10 +1,6 @@
 .video_bg::after {
   position: fixed;
-  background: linear-gradient(
-    179.27deg,
-    #090e27 0.63%,
-    #000000 175.69%
-  ) !important;
+  background: var(--text-darkblue) !important;
   opacity: 74%;
   bottom: 0;
   content: "";
@@ -15,8 +11,19 @@
   mix-blend-mode: color;
 }
 /* FAQ */
+
 .swiper-pagination .swiper-pagination-bullet {
   background-color: var(--text-darkblue);
+}
+.accordion-item:nth-child(3) .accordion-button::after,
+.accordion-item:nth-child(4) .accordion-button::after,
+.accordion-item:nth-child(5) .accordion-button::after {
+  content: none !important;
+}
+.accordion-item:nth-child(3) .accordion-button:not(.collapsed)::after,
+.accordion-item:nth-child(4) .accordion-button:not(.collapsed)::after,
+.accordion-item:nth-child(5) .accordion-button:not(.collapsed)::after {
+  content: none !important;
 }
 .video_btn:hover {
   background-color: var(--text-lightblack) !important;
@@ -41,6 +48,9 @@
 .p_30 {
   padding: 30px;
 }
+.white_space_nowrap {
+  white-space: nowrap;
+}
 .open_website_btn {
   padding: 12px 20px;
   background: var(--gradient-blue);
@@ -54,14 +64,10 @@
 .recent_card {
   background-color: #00000034;
 }
-.recent_slider{
+.recent_slider {
   max-width: 1140px;
 }
-.swiper-wrapper{
-  width: 1140px !important;
-  overflow: hidden !important;
-}
-/* swiper  */
+
 .swiper-pagination .swiper-pagination-bullet {
   background-color: white;
 }
@@ -88,17 +94,30 @@
     padding: 80px 0;
     margin-top: -42%;
   }
+  .p_30 {
+    padding: 16px;
+  }
+    .tech_nova_logo {
+    max-width: 60px;
+  }
 }
 
 @media (max-width: 767.98px) {
   .hwm_video_sec_spacing {
     margin-top: -55%;
   }
+  .open_website_btn {
+    padding: 8px 13px;
+  }
+
 }
 
 @media (max-width: 576.98px) {
   .hwm_video_sec_spacing {
     margin-top: -85%;
+  }
+  .open_website_btn {
+    padding: 6px 11px;
   }
 }
 @media (max-width: 405.98px) {
