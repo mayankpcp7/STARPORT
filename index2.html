@@ -214,8 +214,8 @@
                     <div class="swiper-slide d-flex align-items-center flex-column radius_28 video_slide bg-white p_20">
                         <div class="position-relative">
                             <video class="position-relative object-fit-cover rounded-md-2 slider_video z-0"
-                                poster="./assets/images/webp/starport/case-studio-video-poster-4.webp" width="421" height="237"
-                                id="sliderVideo4" src="./assets/videos/bussiness-person.mp4"></video>
+                                poster="./assets/images/webp/starport/case-studio-video-poster-4.webp" width="421"
+                                height="237" id="sliderVideo4" src="./assets/videos/bussiness-person.mp4"></video>
                             <span class="position-absolute slider_playicon z-2 cursor_pointer">
                                 <svg class="slider_play" width="64" height="64" viewBox="0 0 64 64" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -226,7 +226,8 @@
                                 </svg>
                             </span>
                         </div>
-                        <p class="text-center mx-auto fw-semibold fs_lg pt-4 mb-0 font_gelasio startegic_market leading_140 text-black">
+                        <p
+                            class="text-center mx-auto fw-semibold fs_lg pt-4 mb-0 font_gelasio startegic_market leading_140 text-black">
                             Strategic Market Penetration: Helping Green Energy Co. Enter New Markets
                         </p>
                     </div>
@@ -752,14 +753,14 @@
                     } else {
                         video.pause();
                         playButton.classList.remove('d-none');
-                        video.controls = false; // Disable controls when video is paused
+                        video.controls = false;
                     }
                 });
 
                 playButton.addEventListener('click', function () {
                     video.play();
                     playButton.classList.add('d-none');
-                    video.controls = true; // Enable controls when video plays
+                    video.controls = true;
                 });
             }
 
@@ -776,7 +777,6 @@
                 var videoButton = document.querySelector(item.button);
                 var collapseElement = document.querySelector(item.collapse);
 
-                // Set the first button to "Close" by default
                 if (index === 0) {
                     videoButton.textContent = 'Close';
                     videoButton.classList.add('closebtn');
@@ -795,6 +795,12 @@
         });
 
     </script>
+    <!-- // ===================== YEAR FUNCTION ========================== -->
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("current-year").textContent = currentYear;
+    </script>
+    
 </body>
 
 </html>

@@ -536,6 +536,9 @@
                 aria-label="logo"><img class="w-100 footer_logo mx-auto"
                     src="/assets/images/svg/onboarding-footer-logo.svg" alt="Footer logo"></a>
         </footer>
+        <p class="text-center text-white font_inter leading_150 fs-3 mb-0">
+            Copyright &copy;<span id="current-year"></span> Vibecap. All rights reserved.
+        </p>
     </div>
     <!-- =========================== BOOTSTRAP CDN ========================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -639,10 +642,9 @@
         setupVideoControls('diligenceVideo', 'playIcon');
         setupVideoControls('diligenceVideo2', 'playIcon2');
     </script>
-    <!-- !-- ========== COMMON INVEST QUESTION =========== --> -->
+    <!-- !-- ========== COMMON INVEST QUESTION =========== -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Function to handle play/pause and button visibility
             function setupVideoControls(videoId, buttonId) {
                 var video = document.getElementById(videoId);
                 var playButton = document.getElementById(buttonId);
@@ -670,6 +672,7 @@
             setupVideoControls("myVideoPlayer", "myPlayButton");
         });
     </script>
+    <!-- =========================== FAQ ========================= -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var accordionItems = [
@@ -702,7 +705,11 @@
             });
         });
     </script>
-
+    <!-- !-- ========================== CURRENT DATE FUNCTION ======================== --> -->
+    <Script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('current-year').textContent = currentYear;
+    </Script>
 </body>
 
 </html>

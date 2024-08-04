@@ -56,6 +56,9 @@
   background: var(--gradient-blue);
   max-width: 189px;
 }
+.open_website_btn:hover{
+  box-shadow: white;
+}
 .text_gradiant_blue {
   background: var(--gradient-blue);
   -webkit-background-clip: text;

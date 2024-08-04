@@ -248,3 +248,12 @@
     --fs-sm: 14px;
   }
 }
+@media (max-width: 424.98px) {
+  :root {
+    --fs-xxl: 35px;
+    --fs-xl: 25px;
+    --fs-lg: 17px;
+    --fs-md: 15px;
+    --fs-sm: 14px;
+  }
+}
