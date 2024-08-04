@@ -204,7 +204,6 @@
 .video_btn {
   width: 149px;
   height: 51px;
-  border-radius: 12px;
   transition: all 0.3s linear;
 }
 .video_btn:hover {
