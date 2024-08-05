@@ -1,7 +1,7 @@
 .video_bg::after {
   position: fixed;
   background: linear-gradient(179.27deg, #124068 0.63%, #000000 175.69%);
-  opacity: 74%;
+  opacity: 100%;
   bottom: 0;
   content: "";
   min-height: 100vh;
