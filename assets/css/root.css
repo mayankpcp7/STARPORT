@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
   /*========== FONT SIZES =============*/
   --fs-xxl: 64px;
@@ -16,21 +17,38 @@
   --text-purple: #630df3;
   --text-darkblue: #090e27;
   --text-offwhite: #fefefe;
-
+  --text-yellow: #ffefb7;
+  --text-darkpurple: #6a16f1;
+  --text-lightpurple: #630df3bd;
+  --text-offpurple: #6a16f1;
+  --text-lightblack: #090e27cf;
+  --gradient-blue: linear-gradient(91.88deg, #7e93fd 26.1%, #2f3c7d 104.11%);
+  --gradient-purple: linear-gradient(
+    180deg,
+    #630df3 0%,
+    #7527ec 40.51%,
+    #ffefb7 100%
+  );
+  --text-offskin: #e9965adb;
 }
+
 /* ====== FONT SIZE CLASSES =======*/
 .fs_xxl {
   font-size: var(--fs-xxl);
 }
+
 .fs_xl {
   font-size: var(--fs-xl);
 }
+
 .fs_lg {
   font-size: var(--fs-lg);
 }
+
 .fs_md {
   font-size: var(--fs-md);
 }
+
 .fs_sm {
   font-size: var(--fs-sm);
 }
@@ -39,49 +57,75 @@
 .text_red {
   color: var(--text-red);
 }
+
 .text_skyblue {
   color: var(--text-skyblue);
 }
+
 .text_offblack {
   color: var(--text-offblack);
 }
+
 .text_darkblue {
   color: var(--text-darkblue);
 }
+
 .text_navyblue {
   color: var(--text-navyblue);
 }
+
 .text_skin {
   color: var(--text-skin);
 }
+
 .text_purple {
   color: var(--text-purple);
 }
+
 .text_offwhite {
   color: var(--text-offwhite);
 }
+
 .text_purpleGradient {
-  background: linear-gradient(180deg, #630DF3 0%, #7527EC 40.51%, #FFEFB7 100%);
+  background: linear-gradient(95.07deg, #7e93fd 33.03%, #2f3c7d 63.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
+
 /* ======== BACKGROUND COLORS CLASSES ====== */
 .bg_red {
   background-color: var(--text-red);
 }
+
 .bg_skyblue {
   background-color: var(--text-skyblue);
 }
+
+.bg_skin {
+  background-color: var(--text-skin);
+}
+
 .bg_navyblue {
   background-color: var(--text-navyblue);
 }
+
 .bg_purple {
   background-color: var(--text-purple);
 }
+
 .section_bg_blur {
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(100px);
 }
+
 .bg_offwhite {
   background-color: var(--text-offwhite);
+}
+
+.bg_darkblue {
+  background-color: var(--text-darkblue);
 }
 
 /* ====== FONT FAMILY CLASSES =========== */
@@ -92,51 +136,65 @@
 .font_inter {
   font-family: "Inter", sans-serif;
 }
+
 /* ======== LINE HEIGHTS ============ */
 .leading_120 {
   line-height: 120%;
 }
+
 .leading_135 {
   line-height: 135%;
 }
+
 .leading_140 {
   line-height: 140%;
 }
+
 .leading_150 {
   line-height: 150%;
 }
+
 .leading_152 {
   line-height: 152%;
 }
+
 /* ====== COMMON CLASSES ===== */
 .section_width {
   max-width: 1290px;
 }
+
 .p_20 {
   padding: 20px;
 }
+
 .radius_32 {
   border-radius: 32px;
 }
+
 .section_spacing {
   margin-top: 75px;
 }
+
 .duration_300 {
   transition: all 300ms linear;
 }
+
 .cursor_pointer {
   cursor: pointer;
 }
+
 /* ===== CUSTOM CONTAINER ===== */
 @media (min-width: 1399.98px) {
   .custom_container {
     max-width: 1172px !important;
   }
 }
+
 @media (max-width: 1199.98px) {
   .section_spacing {
     margin-top: 70px;
   }
+
   :root {
     --fs-xxl: 55px;
     --fs-xl: 38px;
@@ -144,10 +202,12 @@
     --fs-md: 19px;
   }
 }
+
 @media (max-width: 991.98px) {
   .section_spacing {
     margin-top: 65px;
   }
+
   :root {
     --fs-xxl: 50px;
     --fs-xl: 35px;
@@ -155,14 +215,17 @@
     --fs-md: 17px;
     --fs-sm: 16px;
   }
+
   .p_20 {
     padding: 12px;
   }
 }
+
 @media (max-width: 767.98px) {
   .section_spacing {
     margin-top: 60px;
   }
+
   :root {
     --fs-xxl: 48px;
     --fs-xl: 32px;
@@ -171,15 +234,26 @@
     --fs-sm: 15px;
   }
 }
+
 @media (max-width: 575.98px) {
   .section_spacing {
     margin-top: 48px;
   }
+
   :root {
     --fs-xxl: 40px;
     --fs-xl: 30px;
     --fs-lg: 17px;
-    --fs-md: 16px;
+    --fs-md: 15px;
+    --fs-sm: 14px;
+  }
+}
+@media (max-width: 424.98px) {
+  :root {
+    --fs-xxl: 35px;
+    --fs-xl: 25px;
+    --fs-lg: 17px;
+    --fs-md: 15px;
     --fs-sm: 14px;
   }
 }
