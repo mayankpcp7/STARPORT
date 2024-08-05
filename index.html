@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--================ Primary Meta Tags ====================-->
-    <title>INVESTOR STARPORT</title>
+    <title>INVESTOR VERSION 5</title>
     <meta name="title" content="Meta Tags — Preview, Edit and Generate" />
     <meta name="description"
         content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
@@ -27,6 +27,7 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <!-- ================= STYLE SHEETS =========================== -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style5.css">
     <link rel="stylesheet" href="./assets/css/root.css">
     <!-- ==================  BOOTSTRAP CDNS ======================= -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -42,23 +43,28 @@
         <video autoplay muted loop id="headerVideo">
             <source src="./assets/videos/header-bg.mp4" type="video/mp4">
         </video>
-        <div class="pt-4 z-2 position-relative container custom_container z-1">
-            <div> <a href="#" aria-label="Header Logo">
-                    <img class="mx-auto starport_logo d-flex justify-content-center mb-3"
-                        src="./assets/images/svg/starport-header-logo.svg" alt="starport logo">
-                </a></div>
-            <h1 class="text-white font_gelasio fw-bold text-center mb_desktop mt-1 fs_xxl mx-auto">Investor Due
-                <br />
-                Diligence Guide
+        <div class="z-2 position-relative container custom_container z-1">
+            <div class="d-flex justify-content-between align-items-center">
+                <a target="_blank" href="#" aria-label="Header Logo">
+                    <img class="mx-auto d-flex onboarding_logo justify-content-center mb-3"
+                        src="./assets/images/svg/consultation-header-logo.svg" alt="consultation logo">
+                </a>
+                <a href="https://www.figma.com/exit?url=http%3A%2F%2Fciaan.io" aria-label="home Button"
+                    class="font_inter duration_300 fw-medium bg-white px-4 border-none border-0 text_darkblue home_button rounded-1 fs_sm leading_150">Home
+                </a>
+            </div>
+            <h1 class="text-white font_gelasio fw-bold text-center mb_desktop mt-1 pb-5 pt-5 mt-4 fs_xxl mx-auto">
+                CÌAAN Onboarding Process
             </h1>
-        </div>
+
     </header>
     <div class="px-3 px-xxl-0">
         <!--============== video section ===================-->
-        <section class="section_width px-3 video_sec_spacing radius_32 section_bg_blur mx-auto">
-            <p class="text_red font_gelasio fw-medium leading_135 fs_xl text-center fst-italic mb-2">Step 1:</p>
+        <section class="section_width px-3 onboarding_video_sec_spacing radius_32 section_bg_blur mx-auto">
+            <p class="text_purpleGradient font_gelasio fw-medium leading_135 fs_xl text-center fst-italic mb-2">Step 1:
+            </p>
             <h2 class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center pb-1 mb-md-4">
-                Watch The Video Below
+                Watch The Orientation Video Below
             </h2>
             <div class="d-flex justify-content-center position-relative">
                 <video id="diligenceVideo" class="diligence_video_img w-100" src="./assets/videos/buildings.mp4"
@@ -68,15 +74,17 @@
                         <circle cx="50" cy="50.2197" r="50" fill="white" fill-opacity="0.53" />
                         <path
                             d="M69.25 50.2197C69.2511 50.6866 69.1314 51.1458 68.9025 51.5527C68.6736 51.9596 68.3433 52.3003 67.9437 52.5418L43.18 67.6908C42.7625 67.9465 42.2843 68.0861 41.7948 68.0951C41.3053 68.1042 40.8223 67.9824 40.3956 67.7424C39.973 67.5061 39.6209 67.1615 39.3757 66.744C39.1304 66.3265 39.0007 65.8513 39 65.3671V35.0724C39.0007 34.5882 39.1304 34.1129 39.3757 33.6954C39.6209 33.278 39.973 32.9334 40.3956 32.6971C40.8223 32.457 41.3053 32.3353 41.7948 32.3443C42.2843 32.3534 42.7625 32.493 43.18 32.7486L67.9437 47.8977C68.3433 48.1391 68.6736 48.4799 68.9025 48.8868C69.1314 49.2937 69.2511 49.7529 69.25 50.2197Z"
-                            fill="#FF0A00" />
+                            fill="#090e27" />
                     </svg>
                 </span>
             </div>
-            <p class="text_red font_gelasio fw-medium leading_135 fs_xl text-center fst-italic video_top_spacing">Step
+            <p
+                class="text_purpleGradient font_gelasio fw-medium leading_135 fs_xl text-center fst-italic video_top_spacing">
+                Step
                 2:
             </p>
-            <p class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center pb-1 mb-md-4">Our Unique Value
-                Proposition</p>
+            <p class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center pb-1 mb-md-4">Create Your
+                Scheduling Links</p>
             <div class="d-flex justify-content-center position-relative">
                 <video id="diligenceVideo2" class="diligence_video_img w-100" src="./assets/videos/bussiness-person.mp4"
                     controls poster="./assets/images/webp/starport/bussiness-men.webp"></video>
@@ -85,320 +93,22 @@
                         <circle cx="50" cy="50.2197" r="50" fill="white" fill-opacity="0.53" />
                         <path
                             d="M69.25 50.2197C69.2511 50.6866 69.1314 51.1458 68.9025 51.5527C68.6736 51.9596 68.3433 52.3003 67.9437 52.5418L43.18 67.6908C42.7625 67.9465 42.2843 68.0861 41.7948 68.0951C41.3053 68.1042 40.8223 67.9824 40.3956 67.7424C39.973 67.5061 39.6209 67.1615 39.3757 66.744C39.1304 66.3265 39.0007 65.8513 39 65.3671V35.0724C39.0007 34.5882 39.1304 34.1129 39.3757 33.6954C39.6209 33.278 39.973 32.9334 40.3956 32.6971C40.8223 32.457 41.3053 32.3353 41.7948 32.3443C42.2843 32.3534 42.7625 32.493 43.18 32.7486L67.9437 47.8977C68.3433 48.1391 68.6736 48.4799 68.9025 48.8868C69.1314 49.2937 69.2511 49.7529 69.25 50.2197Z"
-                            fill="#FF0A00" />
+                            fill="#090e27" />
                     </svg>
                 </span>
             </div>
         </section>
-        <!-- ==================   Case Studies  =======================-->
-        <section class="section_width section_spacing overflow-hidden py-5 section_bg_blur mx-auto radius_32">
-            <div class="custom_container py-2 mb-4 container mx-auto px-3">
-                <p class="text-center font_gelasio fst-italic fs_xl leading_135 fw-medium text_red mb-0">Step 3:</p>
-                <h2 class="text-white text-center mb-md-5 mb-0 fs_xl font_gelasio leading_135 mt-2 fw-semibold">Case
-                    Studies
-                    (Investors & Our Offering)
-                </h2>
 
-            </div>
-            <div class="swiper-container position-relative mb_58 pb-sm-5">
-                <div class="swiper-wrapper position-relative d-flex gap-4 justify-content-between">
-                    <div class="swiper-slide d-flex align-items-center flex-column radius_28 video_slide bg-white p_20">
-                        <div class="position-relative bg-white">
-                            <video class="position-relative object-fit-cover w-full slider_video rounded-md-2 z-0"
-                                poster="./assets/images/webp/starport/case-studio-video-poster-1.webp" width="421"
-                                height="237" id="sliderVideo1" src="./assets/videos/bussiness-person.mp4"></video>
-                            <span class="position-absolute slider_playicon z-2 cursor_pointer">
-                                <svg class="slider_play" width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="32" r="32" fill="#F4F4F4" fill-opacity="0.75" />
-                                    <path
-                                        d="M40.6802 32.4405C40.6808 32.7393 40.6109 33.0332 40.4771 33.2936C40.3433 33.5541 40.1503 33.7721 39.9167 33.9266L25.4431 43.622C25.1991 43.7857 24.9196 43.875 24.6335 43.8808C24.3474 43.8866 24.0651 43.8087 23.8157 43.655C23.5687 43.5038 23.3629 43.2833 23.2196 43.0161C23.0762 42.7489 23.0004 42.4447 23 42.1348V22.7462C23.0004 22.4364 23.0762 22.1322 23.2196 21.865C23.3629 21.5978 23.5687 21.3773 23.8157 21.226C24.0651 21.0724 24.3474 20.9945 24.6335 21.0003C24.9196 21.0061 25.1991 21.0954 25.4431 21.259L39.9167 30.9544C40.1503 31.109 40.3433 31.327 40.4771 31.5875C40.6109 31.8479 40.6808 32.1418 40.6802 32.4405Z"
-                                        fill="#FF0A00" />
-                                </svg>
-                            </span>
-                        </div>
-                        <p
-                            class="text-center mx-auto fw-semibold fs_lg pt-4 mb-2 pb-4 font_gelasio revetalizing_retail leading_140 text-black">
-                            Revitalizing Retail: Boosting Sales for Fashion Forward Ltd
-                        </p>
-                    </div>
-
-                    <div class="swiper-slide d-flex align-items-center flex-column radius_28 video_slide bg-white p_20">
-                        <div class="position-relative bg-white radius_28">
-                            <video class="position-relative object-fit-cover rounded-md-2 slider_video z-0"
-                                poster="./assets/images/webp/starport/case-studio-video-poster-2.webp" width="421"
-                                height="237" id="sliderVideo2" src="./assets/videos/bussiness-person.mp4"></video>
-                            <span class="position-absolute slider_playicon z-2 cursor_pointer">
-                                <svg class="slider_play" width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="32" r="32" fill="#F4F4F4" fill-opacity="0.75" />
-                                    <path
-                                        d="M40.6802 32.4405C40.6808 32.7393 40.6109 33.0332 40.4771 33.2936C40.3433 33.5541 40.1503 33.7721 39.9167 33.9266L25.4431 43.622C25.1991 43.7857 24.9196 43.875 24.6335 43.8808C24.3474 43.8866 24.0651 43.8087 23.8157 43.655C23.5687 43.5038 23.3629 43.2833 23.2196 43.0161C23.0762 42.7489 23.0004 42.4447 23 42.1348V22.7462C23.0004 22.4364 23.0762 22.1322 23.2196 21.865C23.3629 21.5978 23.5687 21.3773 23.8157 21.226C24.0651 21.0724 24.3474 20.9945 24.6335 21.0003C24.9196 21.0061 25.1991 21.0954 25.4431 21.259L39.9167 30.9544C40.1503 31.109 40.3433 31.327 40.4771 31.5875C40.6109 31.8479 40.6808 32.1418 40.6802 32.4405Z"
-                                        fill="#FF0A00" />
-                                </svg>
-                            </span>
-                        </div>
-                        <p
-                            class="text-center mx-auto fw-semibold fs_lg pt-4 mb-2 pb-4 font_gelasio driving_innovation leading_140 text-black">
-                            Driving Innovation at EcoTech Solutions
-                        </p>
-                    </div>
-
-                    <div class="swiper-slide d-flex align-items-center flex-column radius_28 video_slide bg-white p_20">
-                        <div class="position-relative">
-                            <video class="position-relative object-fit-cover rounded-md-2 slider_video z-0"
-                                poster="./assets/images/webp/starport/case-studio-video-poster-3.webp" width="421"
-                                height="237" id="sliderVideo3" src="./assets/videos/bussiness-person.mp4"></video>
-                            <span class="position-absolute slider_playicon z-2 cursor_pointer">
-                                <svg class="slider_play" width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="32" r="32" fill="#F4F4F4" fill-opacity="0.75" />
-                                    <path
-                                        d="M40.6802 32.4405C40.6808 32.7393 40.6109 33.0332 40.4771 33.2936C40.3433 33.5541 40.1503 33.7721 39.9167 33.9266L25.4431 43.622C25.1991 43.7857 24.9196 43.875 24.6335 43.8808C24.3474 43.8866 24.0651 43.8087 23.8157 43.655C23.5687 43.5038 23.3629 43.2833 23.2196 43.0161C23.0762 42.7489 23.0004 42.4447 23 42.1348V22.7462C23.0004 22.4364 23.0762 22.1322 23.2196 21.865C23.3629 21.5978 23.5687 21.3773 23.8157 21.226C24.0651 21.0724 24.3474 20.9945 24.6335 21.0003C24.9196 21.0061 25.1991 21.0954 25.4431 21.259L39.9167 30.9544C40.1503 31.109 40.3433 31.327 40.4771 31.5875C40.6109 31.8479 40.6808 32.1418 40.6802 32.4405Z"
-                                        fill="#FF0A00" />
-                                </svg>
-                            </span>
-                        </div>
-                        <p
-                            class="text-center mx-auto fw-semibold fs_lg pt-4 mb-2 pb-4 font_gelasio scaling_new leading_140 text-black">
-                            Scaling New Heights with Tech Innovators Inc.
-                        </p>
-                    </div>
-
-                    <div class="swiper-slide d-flex align-items-center flex-column radius_28 video_slide bg-white p_20">
-                        <div class="position-relative">
-                            <video class="position-relative object-fit-cover rounded-md-2 slider_video z-0"
-                                poster="./assets/images/webp/starport/case-studio-video-poster-4.webp" width="421"
-                                height="237" id="sliderVideo4" src="./assets/videos/bussiness-person.mp4"></video>
-                            <span class="position-absolute slider_playicon z-2 cursor_pointer">
-                                <svg class="slider_play" width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="32" r="32" fill="#F4F4F4" fill-opacity="0.75" />
-                                    <path
-                                        d="M40.6802 32.4405C40.6808 32.7393 40.6109 33.0332 40.4771 33.2936C40.3433 33.5541 40.1503 33.7721 39.9167 33.9266L25.4431 43.622C25.1991 43.7857 24.9196 43.875 24.6335 43.8808C24.3474 43.8866 24.0651 43.8087 23.8157 43.655C23.5687 43.5038 23.3629 43.2833 23.2196 43.0161C23.0762 42.7489 23.0004 42.4447 23 42.1348V22.7462C23.0004 22.4364 23.0762 22.1322 23.2196 21.865C23.3629 21.5978 23.5687 21.3773 23.8157 21.226C24.0651 21.0724 24.3474 20.9945 24.6335 21.0003C24.9196 21.0061 25.1991 21.0954 25.4431 21.259L39.9167 30.9544C40.1503 31.109 40.3433 31.327 40.4771 31.5875C40.6109 31.8479 40.6808 32.1418 40.6802 32.4405Z"
-                                        fill="#FF0A00" />
-                                </svg>
-                            </span>
-                        </div>
-                        <p
-                            class="text-center mx-auto fw-semibold fs_lg pt-4 mb-0 font_gelasio startegic_market leading_140 text-black">
-                            Strategic Market Penetration: Helping Green Energy Co. Enter New Markets
-                        </p>
-                    </div>
-                    <div class="swiper-slide d-flex align-items-center flex-column radius_28 video_slide bg-white p_20">
-                        <div class="position-relative bg-white">
-                            <video class="position-relative object-fit-cover radius_sm_28 rounded-md-2 slider_video z-0"
-                                poster="./assets/images/webp/starport/case-studio-video-poster-1.webp" width="421"
-                                height="237" id="sliderVideo5" src="./assets/videos/bussiness-person.mp4"></video>
-                            <span class="position-absolute slider_playicon z-2 cursor_pointer">
-                                <svg class="slider_play" width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="32" r="32" fill="#F4F4F4" fill-opacity="0.75" />
-                                    <path
-                                        d="M40.6802 32.4405C40.6808 32.7393 40.6109 33.0332 40.4771 33.2936C40.3433 33.5541 40.1503 33.7721 39.9167 33.9266L25.4431 43.622C25.1991 43.7857 24.9196 43.875 24.6335 43.8808C24.3474 43.8866 24.0651 43.8087 23.8157 43.655C23.5687 43.5038 23.3629 43.2833 23.2196 43.0161C23.0762 42.7489 23.0004 42.4447 23 42.1348V22.7462C23.0004 22.4364 23.0762 22.1322 23.2196 21.865C23.3629 21.5978 23.5687 21.3773 23.8157 21.226C24.0651 21.0724 24.3474 20.9945 24.6335 21.0003C24.9196 21.0061 25.1991 21.0954 25.4431 21.259L39.9167 30.9544C40.1503 31.109 40.3433 31.327 40.4771 31.5875C40.6109 31.8479 40.6808 32.1418 40.6802 32.4405Z"
-                                        fill="#FF0A00" />
-                                </svg>
-                            </span>
-                        </div>
-                        <p
-                            class="text-center mx-auto fw-semibold fs_lg pt-4 mb-2 pb-4 font_gelasio revetalizing_retail leading_140 text-black">
-                            Revitalizing Retail: Boosting Sales for Fashion Forward Ltd
-                        </p>
-                    </div>
-                    <div class="swiper-slide d-flex align-items-center flex-column radius_28 video_slide bg-white p_20">
-                        <div class="position-relative">
-                            <video class="position-relative object-fit-cover rounded-md-2 slider_video z-0"
-                                poster="./assets/images/webp/starport/case-studio-video-poster-4.webp" width="421"
-                                height="237" id="sliderVideo4" src="./assets/videos/bussiness-person.mp4"></video>
-                            <span class="position-absolute slider_playicon z-2 cursor_pointer">
-                                <svg class="slider_play" width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="32" r="32" fill="#F4F4F4" fill-opacity="0.75" />
-                                    <path
-                                        d="M40.6802 32.4405C40.6808 32.7393 40.6109 33.0332 40.4771 33.2936C40.3433 33.5541 40.1503 33.7721 39.9167 33.9266L25.4431 43.622C25.1991 43.7857 24.9196 43.875 24.6335 43.8808C24.3474 43.8866 24.0651 43.8087 23.8157 43.655C23.5687 43.5038 23.3629 43.2833 23.2196 43.0161C23.0762 42.7489 23.0004 42.4447 23 42.1348V22.7462C23.0004 22.4364 23.0762 22.1322 23.2196 21.865C23.3629 21.5978 23.5687 21.3773 23.8157 21.226C24.0651 21.0724 24.3474 20.9945 24.6335 21.0003C24.9196 21.0061 25.1991 21.0954 25.4431 21.259L39.9167 30.9544C40.1503 31.109 40.3433 31.327 40.4771 31.5875C40.6109 31.8479 40.6808 32.1418 40.6802 32.4405Z"
-                                        fill="#FF0A00" />
-                                </svg>
-                            </span>
-                        </div>
-                        <p
-                            class="text-center mx-auto fw-semibold fs_lg pt-4 mb-0 font_gelasio startegic_market leading_140 text-black">
-                            Strategic Market Penetration: Helping Green Energy Co. Enter New Markets
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-        <!-- ==================  DUE DILIGENCE ======================= -->
-        <section class="section_width section_spacing radius_32 section_bg_blur mx-auto">
-            <div class="custom_container px-3 px-xl-0 mx-auto py-5 ">
-                <p
-                    class="text_red font_gelasio fw-medium leading_135 fs_xl text-center fst-italic pt-md-4 mt-sm-3 mb-2">
-                    Step 4:</p>
-                <h2 class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center pb-2 mb-4 mb-md-5">Further
-                    Due
-                    Diligence
-                </h2>
-                <div class="row m-0 pb-md-4 mb-sm-3 pt-1">
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <article class="bg-white diligence_card duration_300 mx-auto duration_300 radius_28 p_20">
-                            <div class="overflow-hidden"> <img src="./assets/images/webp/starport/teaser-document.webp"
-                                    class="overflow-hidden diligence_image duration_300 w-100" alt="Teaser Document">
-                            </div>
-                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">1. Teaser
-                                Document</p>
-                            <a href="https://drive.google.com/file/d/1DgxJe97Zozt4HiOIfpbOn1FrTHAd0Z8F/view?usp=sharing"
-                                target="_blank" rel="noopener noopener"> <button aria-label="Download Button"
-                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_skyblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Download
-                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M19 18.5H5C4.44772 18.5 4 18.9477 4 19.5C4 20.0523 4.44772 20.5 5 20.5H19C19.5523 20.5 20 20.0523 20 19.5C20 18.9477 19.5523 18.5 19 18.5Z"
-                                                fill="#FEFEFE" />
-                                            <path
-                                                d="M4 17.5V19.5C4 20.0523 4.44772 20.5 5 20.5C5.55228 20.5 6 20.0523 6 19.5V17.5C6 16.9477 5.55228 16.5 5 16.5C4.44772 16.5 4 16.9477 4 17.5Z"
-                                                fill="#FEFEFE" />
-                                            <path
-                                                d="M18 17.5V19.5C18 20.0523 18.4477 20.5 19 20.5C19.5523 20.5 20 20.0523 20 19.5V17.5C20 16.9477 19.5523 16.5 19 16.5C18.4477 16.5 18 16.9477 18 17.5Z"
-                                                fill="#FEFEFE" />
-                                            <path
-                                                d="M12.0014 15.5C11.7941 15.5016 11.5914 15.4387 11.4214 15.32L7.42142 12.5C7.20583 12.3471 7.05956 12.115 7.01459 11.8545C6.96961 11.5941 7.02959 11.3264 7.18142 11.11C7.2572 11.0019 7.35366 10.9098 7.46522 10.8391C7.57678 10.7684 7.70124 10.7206 7.8314 10.6982C7.96156 10.6759 8.09486 10.6796 8.22359 10.7091C8.35232 10.7386 8.47393 10.7933 8.58142 10.87L12.0014 13.26L15.4014 10.7C15.6136 10.5409 15.8803 10.4725 16.1428 10.5101C16.4054 10.5476 16.6423 10.6878 16.8014 10.9C16.9605 11.1122 17.0289 11.3789 16.9914 11.6414C16.9539 11.904 16.8136 12.1409 16.6014 12.3L12.6014 15.3C12.4283 15.4298 12.2178 15.5 12.0014 15.5Z"
-                                                fill="#FEFEFE" />
-                                            <path
-                                                d="M12 13.5C11.7348 13.5 11.4804 13.3946 11.2929 13.2071C11.1054 13.0196 11 12.7652 11 12.5V4.5C11 4.23478 11.1054 3.98043 11.2929 3.79289C11.4804 3.60536 11.7348 3.5 12 3.5C12.2652 3.5 12.5196 3.60536 12.7071 3.79289C12.8946 3.98043 13 4.23478 13 4.5V12.5C13 12.7652 12.8946 13.0196 12.7071 13.2071C12.5196 13.3946 12.2652 13.5 12 13.5Z"
-                                                fill="#FEFEFE" />
-                                        </svg>
-                                    </span></button></a>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 pt-4 pt-sm-0">
-                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
-                            <div class="overflow-hidden"> <img src="./assets/images/webp/starport/pitch-deck.webp"
-                                    class="diligence_image duration_300 w-100" alt="Pitch Deck"></div>
-
-                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">2. Pitch
-                                Deck
-                            </p>
-                            <a href="https://s.tiled.co/1cV0ZF5/dpef-for-ria-heritage-wm" target="_blank"
-                                rel="noopener noopener"> <button aria-label="Download Button"
-                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_skyblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Download
-                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M19 18.5H5C4.44772 18.5 4 18.9477 4 19.5C4 20.0523 4.44772 20.5 5 20.5H19C19.5523 20.5 20 20.0523 20 19.5C20 18.9477 19.5523 18.5 19 18.5Z"
-                                                fill="#FEFEFE" />
-                                            <path
-                                                d="M4 17.5V19.5C4 20.0523 4.44772 20.5 5 20.5C5.55228 20.5 6 20.0523 6 19.5V17.5C6 16.9477 5.55228 16.5 5 16.5C4.44772 16.5 4 16.9477 4 17.5Z"
-                                                fill="#FEFEFE" />
-                                            <path
-                                                d="M18 17.5V19.5C18 20.0523 18.4477 20.5 19 20.5C19.5523 20.5 20 20.0523 20 19.5V17.5C20 16.9477 19.5523 16.5 19 16.5C18.4477 16.5 18 16.9477 18 17.5Z"
-                                                fill="#FEFEFE" />
-                                            <path
-                                                d="M12.0014 15.5C11.7941 15.5016 11.5914 15.4387 11.4214 15.32L7.42142 12.5C7.20583 12.3471 7.05956 12.115 7.01459 11.8545C6.96961 11.5941 7.02959 11.3264 7.18142 11.11C7.2572 11.0019 7.35366 10.9098 7.46522 10.8391C7.57678 10.7684 7.70124 10.7206 7.8314 10.6982C7.96156 10.6759 8.09486 10.6796 8.22359 10.7091C8.35232 10.7386 8.47393 10.7933 8.58142 10.87L12.0014 13.26L15.4014 10.7C15.6136 10.5409 15.8803 10.4725 16.1428 10.5101C16.4054 10.5476 16.6423 10.6878 16.8014 10.9C16.9605 11.1122 17.0289 11.3789 16.9914 11.6414C16.9539 11.904 16.8136 12.1409 16.6014 12.3L12.6014 15.3C12.4283 15.4298 12.2178 15.5 12.0014 15.5Z"
-                                                fill="#FEFEFE" />
-                                            <path
-                                                d="M12 13.5C11.7348 13.5 11.4804 13.3946 11.2929 13.2071C11.1054 13.0196 11 12.7652 11 12.5V4.5C11 4.23478 11.1054 3.98043 11.2929 3.79289C11.4804 3.60536 11.7348 3.5 12 3.5C12.2652 3.5 12.5196 3.60536 12.7071 3.79289C12.8946 3.98043 13 4.23478 13 4.5V12.5C13 12.7652 12.8946 13.0196 12.7071 13.2071C12.5196 13.3946 12.2652 13.5 12 13.5Z"
-                                                fill="#FEFEFE" />
-                                        </svg>
-                                    </span></button></a>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 pt-4 pt-md-0">
-                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
-                            <div class="overflow-hidden"> <img src="./assets/images/webp/starport/website.webp"
-                                    class="diligence_image duration_300 w-100" alt="Website"></div>
-                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">3. Website
-                            </p>
-                            <a href="https://starportco.com/market
-                                " target="_blank" rel="noopener noopener"> <button aria-label="Open Button"
-                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_skyblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
-                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
-                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-
-                                    </span></button></a>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 pt-4">
-                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
-                            <div class="overflow-hidden"> <img src="./assets/images/webp/starport/linkdin.webp"
-                                    class="diligence_image duration_300 w-100" alt="Linkdin "></div>
-                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">4. Founder
-                                LinkedIn</p>
-                            <a href="https://www.linkedin.com/in/dlibman/" target="_blank" rel="noopener noopener">
-                                <button aria-label="Open Button"
-                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_skyblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
-                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
-                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-
-                                    </span></button></a>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 pt-4">
-                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
-                            <div class="overflow-hidden"> <img src="./assets/images/webp/starport/starport-linkdin.webp"
-                                    class="diligence_image duration_300 w-100" alt="Linkdin Starport"></div>
-                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">5. Starport
-                                LinkedIn</p>
-                            <a href="https://www.linkedin.com/company/starportco/" target="_blank"
-                                rel="noopener noopener">
-                                <button aria-label="Open Button"
-                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_skyblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
-                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
-                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-
-                                    </span></button></a>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 pt-4 ">
-                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
-                            <div class="overflow-hidden"> <img src="./assets/images/webp/starport/investor-faq.webp"
-                                    class="diligence_image duration_300 w-100" alt="faq Investor"></div>
-                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">6. Investor
-                                FAQ
-                            </p>
-                            <a href="https://drive.google.com/file/d/1urlXuVzc3_jqr2reKyrZzRSu3Fzr-SYc/view"
-                                target="_blank" rel="noopener"> <button aria-label="Open Button"
-                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_skyblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
-                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
-                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-
-                                    </span></button></a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- ========================= COMMON INVESTOR QUESTIONS ========================= -->
         <section class="section_spacing">
             <div class="section_width section_bg_blur radius_32 mx-auto py_common_invester">
                 <div class="container custom_container">
-                    <p class="mb-sm-2 mb-1 font_gelasio fw-medium fs_xl fst-italic text-center text_red leading_135">
-                        Step 5:
+                    <p
+                        class="mb-sm-2 mb-1 font_gelasio fw-medium fs_xl fst-italic text-center text_purpleGradient leading_135">
+                        Step 3:
                     </p>
                     <h2 class="text-capitalize font_gelasio text-white fs_xl fw-semibold leading_135 text-center mb-0">
-                        Common
-                        Investor
-                        Questions</h2>
+                        Complete The Following Process</h2>
                     <div class="faq w-100 mx-auto">
                         <div class="accordion d-flex flex-column accordian_item_gap mx-auto position-relative"
                             id="accordionExample">
@@ -407,10 +117,10 @@
                                     <div class="accordion-button bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                         aria-expanded="true" aria-controls="collapseOne">
-                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>1. </span> What
-                                            are the risks associated with this investment ?</p>
+                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>1. </span>
+                                            Complete The Onboarding Form That Matches Your Deal Type</p>
                                         <button
-                                            class="bg_red video_btn text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            class="bg_darkblue video_btn rounded-1 text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
                                             Video</button>
                                     </div>
                                 </h2>
@@ -435,7 +145,7 @@
                                                 <circle cx="35" cy="34.5" r="34.5" fill="#F4F4F4" fill-opacity="0.75" />
                                                 <path
                                                     d="M45.3541 35.1999C45.3549 35.5446 45.2744 35.8837 45.1203 36.1842C44.9663 36.4847 44.7441 36.7363 44.4752 36.9145L27.8126 48.1009C27.5316 48.2897 27.2099 48.3928 26.8805 48.3995C26.5512 48.4062 26.2262 48.3162 25.9391 48.139C25.6547 47.9645 25.4178 47.7101 25.2528 47.4018C25.0877 47.0935 25.0005 46.7426 25 46.385V24.0148C25.0005 23.6573 25.0877 23.3063 25.2528 22.998C25.4178 22.6898 25.6547 22.4353 25.9391 22.2608C26.2262 22.0836 26.5512 21.9937 26.8805 22.0003C27.2099 22.007 27.5316 22.1101 27.8126 22.2989L44.4752 33.4853C44.7441 33.6636 44.9663 33.9152 45.1203 34.2156C45.2744 34.5161 45.3549 34.8552 45.3541 35.1999Z"
-                                                    fill="#FF0A00" />
+                                                    fill="#090e27" />
                                             </svg>
 
                                         </span>
@@ -452,12 +162,10 @@
                                     <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                         aria-expanded="false" aria-controls="collapseTwo">
-                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>2. </span> How
-                                            can
-                                            I
-                                            track the performance of my investment ?</p>
+                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>2. </span> Add
+                                            All The Emails Of Relevant Parties For Communication</p>
                                         <button
-                                            class="bg_red video_btn text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            class="bg_darkblue video_btn rounded-1 text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
                                             Video</button>
                                     </div>
                                 </h2>
@@ -483,7 +191,7 @@
                                                 <circle cx="35" cy="34.5" r="34.5" fill="#F4F4F4" fill-opacity="0.75" />
                                                 <path
                                                     d="M45.3541 35.1999C45.3549 35.5446 45.2744 35.8837 45.1203 36.1842C44.9663 36.4847 44.7441 36.7363 44.4752 36.9145L27.8126 48.1009C27.5316 48.2897 27.2099 48.3928 26.8805 48.3995C26.5512 48.4062 26.2262 48.3162 25.9391 48.139C25.6547 47.9645 25.4178 47.7101 25.2528 47.4018C25.0877 47.0935 25.0005 46.7426 25 46.385V24.0148C25.0005 23.6573 25.0877 23.3063 25.2528 22.998C25.4178 22.6898 25.6547 22.4353 25.9391 22.2608C26.2262 22.0836 26.5512 21.9937 26.8805 22.0003C27.2099 22.007 27.5316 22.1101 27.8126 22.2989L44.4752 33.4853C44.7441 33.6636 44.9663 33.9152 45.1203 34.2156C45.2744 34.5161 45.3549 34.8552 45.3541 35.1999Z"
-                                                    fill="#FF0A00" />
+                                                    fill="#090e27" />
                                             </svg>
 
                                         </span>
@@ -497,14 +205,15 @@
                             </div>
                             <div class="accordion-item rounded-4 border-0 bg_offwhite">
                                 <h2 class="accordion-header" id="headingThree">
-                                    <button
-                                        class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                         aria-expanded="false" aria-controls="collapseThree">
-                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>3. </span> How
-                                            often
-                                            will I receive updates on my investment ?</p>
-                                    </button>
+                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>3. </span> Join
+                                            Your Slack Channel</p>
+                                        <button
+                                            class="bg_darkblue video_btn rounded-1 text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -522,14 +231,15 @@
                             </div>
                             <div class="accordion-item rounded-4 border-0 bg_offwhite">
                                 <h2 class="accordion-header" id="headingFour">
-                                    <button
-                                        class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                         aria-expanded="false" aria-controls="collapseFour">
-                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>4. </span> How
-                                            do
-                                            you ensure the security of my investment ?</p>
-                                    </button>
+                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>4. </span>
+                                            Schedule Your Induction Call</p>
+                                        <button
+                                            class="bg_darkblue video_btn rounded-1 text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionExample">
@@ -546,17 +256,97 @@
                                 </div>
                             </div>
                             <div class="accordion-item rounded-4 border-0 bg_offwhite">
-                                <h2 class="accordion-header ff_opensans" id="headingFour">
-                                    <button
-                                        class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                <h2 class="accordion-header" id="headingFive">
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
                                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
                                         aria-expanded="false" aria-controls="collapseFive">
-                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>5. </span> What
-                                            makes your investment strategy unique ?</p>
-                                    </button>
+                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>5. </span>
+                                            Complete This Enhanced Deal Analysis Document</p>
+                                        <button
+                                            class="bg_darkblue video_btn rounded-1 text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
                                 </h2>
                                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                     data-bs-parent="#accordionExample">
+                                    <div
+                                        class="accordion-body leading_150 max_w_866 font_inter fw-normal fs_sm text_offblack opacity_70">
+                                        All investments carry some level of risk, including the potential loss of
+                                        principal.
+                                        Our investment strategy is designed
+                                        to mitigate risks through diversification and active management, but it’s
+                                        important
+                                        to understand that market
+                                        fluctuations can impact returns.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item rounded-4 border-0 bg_offwhite">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                        aria-expanded="false" aria-controls="collapseSix">
+                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>6. </span>
+                                            Complete This 'Do Not Contact' Form</p>
+                                        <button
+                                            class="bg_darkblue video_btn rounded-1 text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div
+                                        class="accordion-body leading_150 max_w_866 font_inter fw-normal fs_sm text_offblack opacity_70">
+                                        All investments carry some level of risk, including the potential loss of
+                                        principal.
+                                        Our investment strategy is designed
+                                        to mitigate risks through diversification and active management, but it’s
+                                        important
+                                        to understand that market
+                                        fluctuations can impact returns.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item rounded-4 border-0 bg_offwhite">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseSeven">
+                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>7. </span>
+                                            Review The Data Room Checklis</p>
+                                        <button
+                                            class="bg_darkblue video_btn rounded-1 text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div
+                                        class="accordion-body leading_150 max_w_866 font_inter fw-normal fs_sm text_offblack opacity_70">
+                                        All investments carry some level of risk, including the potential loss of
+                                        principal.
+                                        Our investment strategy is designed
+                                        to mitigate risks through diversification and active management, but it’s
+                                        important
+                                        to understand that market
+                                        fluctuations can impact returns.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item rounded-4 border-0 bg_offwhite">
+                                <h2 class="accordion-header" id="headingEight">
+                                    <div class="accordion-button collapsed bg_offwhite position-relative d-flex align-items-center justify-content-between w-100 rounded-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                        aria-expanded="false" aria-controls="collapseEight">
+                                        <p class="mb-0 font_gelasio fw-semibold fs_lg leading_140"><span>8. </span>
+                                            Follow Our LinkedIn Company Page</p>
+                                        <button
+                                            class="bg_darkblue video_btn rounded-1 text-nowrap border-0 font_inter text-white fw-medium fs_sm">Open
+                                            Video</button>
+                                    </div>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse"
+                                    aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                                     <div
                                         class="accordion-body leading_150 max_w_866 font_inter fw-normal fs_sm text_offblack opacity_70">
                                         All investments carry some level of risk, including the potential loss of
@@ -574,69 +364,186 @@
                 </div>
             </div>
         </section>
-        <!-- ================= Moving Forward ========================= -->
-        <section class="section_width section_spacing py-5 section_bg_blur mx-auto radius_32">
-            <div class="custom_container py-2 container mx-auto px-3">
-                <p class="text-center font_gelasio fst-italic fs_xl leading_135 fw-medium text_red mb-0">Step 6:</p>
-                <h2 class="text-white text-center fs_xl font_gelasio leading_135 mt-2 fw-semibold mb-0">Moving Forward
+        <!-- ==================  DUE DILIGENCE ======================= -->
+        <section class="section_width section_spacing radius_32 section_bg_blur mx-auto">
+            <div class="custom_container px-3 px-xl-0 mx-auto py-5 ">
+                <p
+                    class="text_purpleGradient font_gelasio fw-medium leading_135 fs_xl text-center fst-italic pt-md-4 mt-sm-3 mb-2">
+                    Step 4:</p>
+                <h2 class="text-white font_gelasio fw-semibold leading_135 fs_xl text-center pb-2 mb-4 mb-md-5">
+                    Additional Resources
                 </h2>
-                <div class="row mt-md-5 mt-4">
-                    <div class="col-lg-4 col-sm-6">
-                        <article class="flex flex-col h-100 p_20 bg-white radius_16 cards_shadow duration_300">
-                            <p class="tex-start text_red font_gelasio fw-semibold fs_xxl leading_120 mb-0 pb-2 mb-1">01
-                            </p>
-                            <h4 class="text-black font_gelasio fs_lg leading_140 mb-md-3 fw-semibold text-start">
-                                Research the Opportunity
-                            </h4>
-                            <p
-                                class="text-start text_offblack opacity-70 font_inter fw-normal fs_sm opacity_70 leading_150 mb-0">
-                                Start by exploring our website and reviewing the
-                                provided documents, including the teaser
-                                document, pitch deck, and
-                                financial reports.</p>
+                <div class="row m-0 pb-md-4 mb-sm-3 pt-1">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <article class="bg-white diligence_card duration_300 mx-auto duration_300 radius_28 p_20">
+                            <div class="overflow-hidden"> <img
+                                    src="./assets/images/webp/consultation/capital-matchmaking.webp"
+                                    class="overflow-hidden diligence_image duration_300 w-100" alt="Teaser Document">
+                            </div>
+                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">1.
+                                Capital Matchmaking </p>
+                            <a href="https://medium.com/@brendanchoilarosa/what-is-a-capital-matchmaking-firm-why-are-companies-funds-paying-100-000-to-work-with-them-dd3a0d4ff0e1"
+                                target="_blank" rel="noopener noopener">
+                                <button aria-label="Open Button"
+                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_darkblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
+                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
+                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span></button></a>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 pt-4 pt-sm-0">
-                        <article class="flex flex-col h-100 p_20 bg-white radius_16 cards_shadow duration_300">
-                            <p class="tex-start text_red font_gelasio fw-semibold fs_xxl leading_120 mb-0 pb-2 mb-1">02
+                    <div class="col-12 col-sm-6 col-md-4 pt-4 pt-sm-0">
+                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
+                            <div class="overflow-hidden"> <img src="./assets/images/webp/consultation/red-cross.webp"
+                                    class="diligence_image duration_300 w-100" alt="Pitch Deck"></div>
+
+                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">2.How To
+                                Guarantee Target?
                             </p>
-                            <h4 class="text-black font_gelasio fs_lg leading_140 fw-semibold mb-md-3 text-start">
-                                Register Your Interest</h4>
-                            <p
-                                class="text-start text_offblack opacity-70 font_inter fw-normal fs_sm opacity_70 leading_150 mb-0">
-                                Sign up on our platform to express your interest and receive more detailed information.
-                            </p>
+                            <a href="https://medium.com/@brendanchoilarosa/how-to-guarantee-you-meet-your-target-raise-in-2024-f2d1d6242120"
+                                target="_blank" rel="noopener noopener">
+                                <button aria-label="Open Button"
+                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_darkblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
+                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
+                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span></button></a>
                         </article>
                     </div>
-                    <div class="col-lg-4 col-sm-6 pt-4 pt-lg-0">
-                        <article class="flex flex-col h-100 p_20 bg-white radius_16 cards_shadow duration_300">
-                            <p class="tex-start text_red font_gelasio fw-semibold fs_xxl leading_120 mb-0 pb-2 mb-1">03
+                    <div class="col-12 col-sm-6 col-md-4 pt-4 pt-md-0">
+                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
+                            <div class="overflow-hidden"> <img src="./assets/images/webp/consultation/clock.webp"
+                                    class="diligence_image duration_300 w-100" alt="Website"></div>
+                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">3. The
+                                Biggest Mistakes
                             </p>
-                            <h4 class="text-black font_gelasio fs_lg leading_140 fw-semibold mb-md-3 mb-2 text-start">
-                                Make Your Investment</h4>
-                            <p
-                                class="text-start text_offblack opacity-70 font_inter fw-normal fs_sm opacity_70 leading_150 mb-0">
-                                Follow the instructions in the prospectus to complete your investment.</p>
+                            <a href="https://www.figma.com/exit?url=https%3A%2F%2Fmedium.com%2F%40brendanchoilarosa%2Fthe-problem-with-waiting-until-you-need-more-capital-to-start-raising-64c437203f5b "
+                                target="_blank" rel="noopener noopener"> <button aria-label="Open Button"
+                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_darkblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
+                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
+                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span></button></a>
                         </article>
                     </div>
+                    <div class="col-12 col-sm-6 col-md-4 pt-4">
+                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
+                            <div class="overflow-hidden"> <img src="./assets/images/webp/consultation/database.webp"
+                                    class="diligence_image duration_300 w-100" alt="Database "></div>
+                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">4. Pitch
+                                Deck Database</p>
+                            <a href="https://angelmatch.io/pitch_decks" target="_blank" rel="noopener noopener">
+                                <button aria-label="Open Button"
+                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_darkblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
+                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
+                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span></button></a>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 pt-4">
+                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
+                            <div class="overflow-hidden"> <img
+                                    src="./assets/images/webp/consultation/truth-mechine.webp"
+                                    class="diligence_image duration_300 w-100" alt="Linkdin Starport"></div>
+                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">5. The
+                                Truth</p>
+                            <a href="https://medium.com/@brendanchoilarosa/the-truth-why-you-should-only-work-with-capital-raising-firms-that-charge-upfront-and-on-success-7dd4d48cc51c"
+                                target="_blank" rel="noopener noopener">
+                                <button aria-label="Open Button"
+                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_darkblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
+                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
+                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span></button></a>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 pt-4">
+                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
+                            <div class="overflow-hidden"> <img src="./assets/images/webp/consultation/ciaan-scope.webp"
+                                    class="diligence_image duration_300 w-100" alt="Linkdin Starport"></div>
+                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">5. Investor
+                                Types Breakdown</p>
+                            <a href="https://docs.google.com/document/d/1lNODxBzHWi0xOKdSwfC6kP5j3eTNqvBSWF4Cuw-8RpY/edit"
+                                target="_blank" rel="noopener noopener">
+                                <button aria-label="Open Button"
+                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_darkblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
+                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
+                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span></button></a>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 pt-4">
+                        <article class="bg-white diligence_card mx-auto duration_300 radius_28 p_20">
+                            <div class="overflow-hidden"> <img src="./assets/images/webp/consultation/ciaan-scope.webp"
+                                    class="diligence_image duration_300 w-100" alt="Linkdin Starport"></div>
+                            <p class="font_gelasio fs_md text_offblack fw-semibold leading_140 my-2 my-md-3">5.Variable
+                                Breakdown</p>
+                            <a href="https://docs.google.com/document/d/1Hv2ySVDh-PUPGjFzsUbK84OzBI1bZvxrnCxiK52t4Fs/edit"
+                                target="_blank" rel="noopener noopener">
+                                <button aria-label="Open Button"
+                                    class="font_inter diligence_button duration_300 fw-medium gap-1 bg_darkblue py_12 px-2 px-lg-4 border-none border-0 text-white rounded-1 fs_sm leading_150">Open
+                                    <span><svg class="button_svg_icon" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 4.5H6C5.46957 4.5 4.96086 4.71071 4.58579 5.08579C4.21071 5.46086 4 5.96957 4 6.5V18.5C4 19.0304 4.21071 19.5391 4.58579 19.9142C4.96086 20.2893 5.46957 20.5 6 20.5H18C18.5304 20.5 19.0391 20.2893 19.4142 19.9142C19.7893 19.5391 20 19.0304 20 18.5V14.5M12 12.5L20 4.5M20 4.5V9.5M20 4.5H15"
+                                                stroke="#FEFEFE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+
+                                    </span></button></a>
+                        </article>
+                    </div>
+
                 </div>
             </div>
         </section>
+
         <!-- ====================== FOOTER ================================ -->
         <footer class="section_spacing pb-5 mb-4 custom_container container">
-            <a class="d-flex justify-content-center pb-3 align-items-center" href="/index.html" aria-label="logo"><img
-                    class="w-100 footer_logo mx-auto" src="/assets/images/webp/starport/logo.webp" alt="logo"></a>
-            <p class="text-center text-white font_inter leading_150 fs-3 mb-0">
-                Copyright &copy;<span id="current-year"></span> Vibecap. All rights reserved.
-            </p>
+            <a class="d-flex justify-content-center position-relative z-2 pb-3 align-items-center" href="/index5.html"
+                aria-label="logo"><img class="consultation_footer_logomx-auto"
+                    src="/assets/images/svg/onboarding-footer-logo.svg" alt="Footer logo"></a>
+            <p class="fw-normal font_inter text-white mx-auto leading_150 text-center">Copyright @2024 HWM. All rights
+                reserved</p>
+
         </footer>
     </div>
     <!-- =========================== BOOTSTRAP CDN ========================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- ===================  SWIPER CDN ================================= -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- ======================= VIDEOS PLAY PAUSE =========================== -->
     <script>
         const videos = document.querySelectorAll('video');
@@ -678,11 +585,16 @@
 
     </script>
     <!-- =======================  VIDEO SLIDER ============================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
+            slidesPerView: 4,
             pagination: true,
             loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -694,7 +606,7 @@
                     spaceBetween: 20,
                 },
                 640: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                     spaceBetween: 20,
                 },
                 768: {
@@ -730,52 +642,62 @@
         setupVideoControls('diligenceVideo', 'playIcon');
         setupVideoControls('diligenceVideo2', 'playIcon2');
     </script>
-
-    <!-- ========== COMMON INVEST QUESTION =========== -->
+    <!-- !-- ========== COMMON INVEST QUESTION =========== -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            function handleVideoClick(videoId, playButtonId) {
+        document.addEventListener("DOMContentLoaded", function () {
+            function setupVideoControls(videoId, buttonId) {
                 var video = document.getElementById(videoId);
-                var playButton = document.getElementById(playButtonId);
+                var playButton = document.getElementById(buttonId);
 
-                video.addEventListener('click', function () {
+                playButton.addEventListener("click", function () {
                     if (video.paused) {
                         video.play();
-                        playButton.classList.add('d-none');
-                        video.controls = true;
+                        playButton.style.display = "none";
                     } else {
                         video.pause();
-                        playButton.classList.remove('d-none');
-                        video.controls = false;
                     }
                 });
 
-                playButton.addEventListener('click', function () {
-                    video.play();
-                    playButton.classList.add('d-none');
-                    video.controls = true;
+                video.addEventListener("play", function () {
+                    playButton.style.display = "none";
+                });
+
+                video.addEventListener("pause", function () {
+                    playButton.style.display = "block";
                 });
             }
 
-            handleVideoClick('videoPlayer', 'playButton');
-            handleVideoClick('myVideoPlayer', 'myPlayButton');
-            // ================================ FAQ ==================================
+            // Set up controls for both videos
+            setupVideoControls("videoPlayer", "playButton");
+            setupVideoControls("myVideoPlayer", "myPlayButton");
+        });
+    </script>
+    <!-- =========================== FAQ ========================= -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
             var accordionItems = [
                 { button: '.accordion-item:nth-child(1) .accordion-button .video_btn', collapse: '#collapseOne' },
-                { button: '.accordion-item:nth-child(2) .accordion-button .video_btn', collapse: '#collapseTwo' }
+                { button: '.accordion-item:nth-child(2) .accordion-button .video_btn', collapse: '#collapseTwo' },
+                { button: '.accordion-item:nth-child(3) .accordion-button .video_btn', collapse: '#collapseThree' },
+                { button: '.accordion-item:nth-child(4) .accordion-button .video_btn', collapse: '#collapseFour' },
+                { button: '.accordion-item:nth-child(5) .accordion-button .video_btn', collapse: '#collapseFive' },
+                { button: '.accordion-item:nth-child(6) .accordion-button .video_btn', collapse: '#collapseSix' },
+                { button: '.accordion-item:nth-child(7) .accordion-button .video_btn', collapse: '#collapseSeven' },
+                { button: '.accordion-item:nth-child(8) .accordion-button .video_btn', collapse: '#collapseEight' }
             ];
+            var firstButton = document.querySelector(accordionItems[0].button);
+            firstButton.textContent = 'Close';
+            firstButton.classList.add('closebtn');
 
-            accordionItems.forEach(function (item, index) {
+            accordionItems.forEach(function (item) {
                 var videoButton = document.querySelector(item.button);
                 var collapseElement = document.querySelector(item.collapse);
-                if (index === 0) {
-                    videoButton.textContent = 'Close';
-                    videoButton.classList.add('closebtn');
-                }
+
                 collapseElement.addEventListener('show.bs.collapse', function () {
                     videoButton.textContent = 'Close';
                     videoButton.classList.add('closebtn');
                 });
+
                 collapseElement.addEventListener('hide.bs.collapse', function () {
                     videoButton.textContent = 'Open Video';
                     videoButton.classList.remove('closebtn');
@@ -783,7 +705,7 @@
             });
         });
     </script>
-    <!-- ========================== CURRENT DATE FUNCTION ======================== -->
+    <!-- !-- ========================== CURRENT DATE FUNCTION ======================== --> -->
     <Script>
         const currentYear = new Date().getFullYear();
         document.getElementById('current-year').textContent = currentYear;
