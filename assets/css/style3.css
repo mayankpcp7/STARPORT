@@ -37,3 +37,8 @@
 .closebtn:hover {
   background-color: transparent !important;
 }
+@media (min-width: 1200px) {
+  .vibecap_py {
+    padding: 108px 0 109px 0 !important;
+  }
+}
