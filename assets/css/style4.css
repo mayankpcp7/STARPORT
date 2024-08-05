@@ -1,7 +1,7 @@
 .video_bg::after {
     position: fixed;
     background: linear-gradient(179.27deg, #090E27 0.63%, #000000 175.69%) !important;
-    opacity: 74%;
+    opacity: 100%;
     bottom: 0;
     content: "";
     min-height: 100vh;
@@ -9,6 +9,9 @@
     left: 0;
     right: 0;
     mix-blend-mode: color;
+  }
+  .video_top_spacing{
+    padding-top: 120px;
   }
   /* FAQ */
   .swiper-pagination .swiper-pagination-bullet {
@@ -41,7 +44,14 @@
   .hwm_video_sec_spacing {
     padding: 108px 0;
   }
-  
+  .consultation_footer_logo{
+    width: 414px;
+    height: 140px;
+  }
+  .consultation_header_logo{
+    width: 320px;
+    height: 107px;
+  }
 @media (max-width:1500.98px) {
 
     .hwm_video_sec_spacing {
@@ -57,11 +67,16 @@
       padding: 80px 0;
       margin-top: -42%;
     }
-  
+    .video_top_spacing{
+      padding-top: 80px;
+    }
   }
   
   @media (max-width:767.98px) {
-  
+    .consultation_footer_logo{
+      width: 374px;
+      height: 130px;
+    }
     .hwm_video_sec_spacing {
       margin-top: -55%;
     }
@@ -69,11 +84,20 @@
   }
   
   @media (max-width:576.98px) {
-  
+    .video_top_spacing{
+      padding-top: 52px;
+    }
+    .consultation_header_logo{
+      width: 280px;
+      height: 107px;
+    }
     .hwm_video_sec_spacing {
       margin-top: -85%;
     }
-  
+    .consultation_footer_logo{
+      width: 284px;
+      height: 110px;
+    }
   }
   @media (max-width:405.98px) {
   
