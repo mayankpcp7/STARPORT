@@ -1,7 +1,7 @@
 .video_bg::after {
   position: fixed;
   background: var(--text-darkblue) !important;
-  opacity: 74%;
+  opacity: 100%;
   bottom: 0;
   content: "";
   min-height: 100vh;
@@ -41,7 +41,36 @@
   background-blend-mode: color;
   mix-blend-mode: color;
 }
-/* swiper  */
+/* ================== RECENT SLIDER ================= */
+.radius_20 {
+  border-radius: 20px;
+}
+.p_30 {
+  padding: 30px;
+}
+.white_space_nowrap {
+  white-space: nowrap;
+}
+.open_website_btn {
+  padding: 12px 20px;
+  background: var(--gradient-blue);
+  max-width: 189px;
+}
+.open_website_btn:hover{
+  box-shadow: white;
+}
+.text_gradiant_blue {
+  background: var(--gradient-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.recent_card {
+  background-color: #00000034;
+}
+.recent_slider {
+  max-width: 1140px;
+}
+
 .swiper-pagination .swiper-pagination-bullet {
   background-color: white;
 }
@@ -55,7 +84,17 @@
 .hwm_video_sec_spacing {
   padding: 108px 0;
 }
-
+.consultation_footer_logo{
+  width: 414px;
+  height: 140px;
+}
+.consultation_top_spacing{
+  padding-top: 120px;
+}
+.consultation_header_logo{
+  width: 320px;
+  height: 107px;
+}
 @media (max-width: 1500.98px) {
   .hwm_video_sec_spacing {
     padding: 108px 0;
@@ -64,25 +103,60 @@
 }
 
 @media (max-width: 991.98px) {
+  .consultation_top_spacing{
+    padding-top: 100px;
+  }
+  .consultation_footer_logo{
+    width: 334px;
+    height: 130px;
+  }
   .hwm_video_sec_spacing {
     padding: 80px 0;
     margin-top: -42%;
   }
-}
-
-@media (max-width: 767.98px) {
-  .hwm_video_sec_spacing {
-    margin-top: -55%;
+  .p_30 {
+    padding: 16px;
+  }
+    .tech_nova_logo {
+    max-width: 60px;
   }
 }
 
+@media (max-width: 767.98px) {
+  .consultation_header_logo{
+    width: 290px;
+  }
+  .hwm_video_sec_spacing {
+    margin-top: -55%;
+  }
+  .open_website_btn {
+    padding: 8px 13px;
+  }
+
+}
+
 @media (max-width: 576.98px) {
+  .consultation_top_spacing{
+    padding-top: 52px;
+  }
+  .consultation_footer_logo{
+    width: 264px;
+    height: 110px;
+  }
+  .consultation_header_logo{
+    width: 260px;
+    height: 95px;
+  }
   .hwm_video_sec_spacing {
     margin-top: -85%;
+  }
+  .open_website_btn {
+    padding: 6px 11px;
   }
 }
 @media (max-width: 405.98px) {
   .hwm_video_sec_spacing {
-    margin-top: -125%;
+    padding: 45px 0;
+    margin-top: -148%;
   }
 }

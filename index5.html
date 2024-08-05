@@ -41,7 +41,7 @@
     <!-- ============ header ======================== -->
     <header class="video_bg position-relative w-100 -mx-3 overflow-hidden pt-5">
         <video autoplay muted loop id="headerVideo">
-            <source src="./assets/videos/header_bg.mp4" type="video/mp4">
+            <source src="./assets/videos/header-bg.mp4" type="video/mp4">
         </video>
         <div class="z-2 position-relative container custom_container z-1">
             <div class="d-flex justify-content-between align-items-center">
@@ -50,7 +50,7 @@
                         src="./assets/images/svg/consultation-header-logo.svg" alt="consultation logo">
                 </a>
                 <a href="https://www.figma.com/exit?url=http%3A%2F%2Fciaan.io" aria-label="home Button"
-                    class="font_inter duration_300 fw-medium bg-white py-2 md:py-3 px-4 border-none border-0 text_darkblue home_button rounded-1 fs_sm leading_150">Home
+                    class="font_inter duration_300 fw-medium bg-white px-4 border-none border-0 text_darkblue home_button rounded-1 fs_sm leading_150">Home
                 </a>
             </div>
             <h1 class="text-white font_gelasio fw-bold text-center mb_desktop mt-1 pb-5 pt-5 mt-4 fs_xxl mx-auto">
@@ -79,7 +79,7 @@
                 </span>
             </div>
             <p
-                class="text_purpleGradient font_gelasio fw-medium leading_135 fs_xl text-center fst-italic vider_top_spacing">
+                class="text_purpleGradient font_gelasio fw-medium leading_135 fs_xl text-center fst-italic video_top_spacing">
                 Step
                 2:
             </p>
@@ -152,7 +152,7 @@
                                         <video poster="./assets/images/webp/starport/faq-video-poster.webp"
                                             id="videoPlayer" playsinline muted loop
                                             class="w-100 d-flex mb-md-4 mb-3 video_radius">
-                                            <source type="video/mp4" src="./assets/videos/demo video.mp4">
+                                            <source type="video/mp4" src="./assets/videos/demo-video.mp4">
                                         </video>
                                     </div>
                                 </div>
@@ -198,7 +198,7 @@
                                         <video poster="./assets/images/webp/starport/faq-video-poster.webp"
                                             id="myVideoPlayer" controls playsinline muted loop
                                             class="w-100 d-flex mb-md-4 mb-3 video_radius">
-                                            <source type="video/mp4" src="./assets/videos/demo video.mp4">
+                                            <source type="video/mp4" src="./assets/videos/demo-video.mp4">
                                         </video>
                                     </div>
                                 </div>
@@ -532,9 +532,12 @@
 
         <!-- ====================== FOOTER ================================ -->
         <footer class="section_spacing pb-5 mb-4 custom_container container">
-            <a class="d-flex justify-content-center position-relative z-2 pb-3 align-items-center" href="/index.html"
-                aria-label="logo"><img class="w-100 footer_logo mx-auto"
+            <a class="d-flex justify-content-center position-relative z-2 pb-3 align-items-center" href="/index5.html"
+                aria-label="logo"><img class="consultation_footer_logomx-auto"
                     src="/assets/images/svg/onboarding-footer-logo.svg" alt="Footer logo"></a>
+            <p class="fw-normal font_inter text-white mx-auto leading_150 text-center">Copyright @2024 HWM. All rights
+                reserved</p>
+
         </footer>
     </div>
     <!-- =========================== BOOTSTRAP CDN ========================== -->
@@ -642,7 +645,6 @@
     <!-- !-- ========== COMMON INVEST QUESTION =========== -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Function to handle play/pause and button visibility
             function setupVideoControls(videoId, buttonId) {
                 var video = document.getElementById(videoId);
                 var playButton = document.getElementById(buttonId);
@@ -670,6 +672,7 @@
             setupVideoControls("myVideoPlayer", "myPlayButton");
         });
     </script>
+    <!-- =========================== FAQ ========================= -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var accordionItems = [
@@ -702,7 +705,11 @@
             });
         });
     </script>
-
+    <!-- !-- ========================== CURRENT DATE FUNCTION ======================== --> -->
+    <Script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('current-year').textContent = currentYear;
+    </Script>
 </body>
 
 </html>

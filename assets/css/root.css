@@ -19,15 +19,16 @@
   --text-offwhite: #fefefe;
   --text-yellow: #ffefb7;
   --text-darkpurple: #6a16f1;
+  --text-lightpurple: #630df3bd;
+  --text-offpurple: #6a16f1;
+  --text-lightblack: #090e27cf;
+  --gradient-blue: linear-gradient(91.88deg, #7e93fd 26.1%, #2f3c7d 104.11%);
   --gradient-purple: linear-gradient(
     180deg,
     #630df3 0%,
     #7527ec 40.51%,
     #ffefb7 100%
   );
-  --text-lightpurple: #630df3bd;
-  --text-offpurple: #6a16f1;
-  --text-lightblack: #090e27cf;
   --text-offskin: #e9965adb;
 }
 
@@ -243,7 +244,16 @@
     --fs-xxl: 40px;
     --fs-xl: 30px;
     --fs-lg: 17px;
-    --fs-md: 16px;
+    --fs-md: 15px;
+    --fs-sm: 14px;
+  }
+}
+@media (max-width: 424.98px) {
+  :root {
+    --fs-xxl: 35px;
+    --fs-xl: 25px;
+    --fs-lg: 17px;
+    --fs-md: 15px;
     --fs-sm: 14px;
   }
 }
