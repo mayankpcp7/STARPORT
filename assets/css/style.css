@@ -3,6 +3,11 @@
   list-style-type: none !important;
 }
 /* ===========================  */
+.text_gradient_purple {
+  background: var(--gradient-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .mb_58 {
   margin-bottom: 58px;
 }
@@ -34,7 +39,7 @@
 .swiper-pagination .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
-  background-color: var(--text-skyblue);
+  background-color: var(--text-yellow) !important;
   opacity: 37%;
   margin: 0 8px;
   transition: all 0.3s ease;
@@ -63,7 +68,18 @@
   background-attachment: fixed;
   min-height: auto;
 }
-
+.video_bg::after {
+  position: fixed;
+  background: var(--text-offpurple) !important;
+  opacity: 74%;
+  bottom: 0;
+  content: "";
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  mix-blend-mode: color;
+}
 #headerVideo {
   position: fixed;
   top: 50%;
@@ -206,13 +222,14 @@
   height: 51px;
   transition: all 0.3s linear;
 }
+
 .video_btn:hover {
-  background-color: #ff0a00ba !important;
+  background-color: var(--text-lightpurple) !important;
 }
 .video_btn.closebtn {
   background-color: transparent;
-  border: 1px solid var(--text-red) !important;
-  color: var(--text-red) !important;
+  border: 1px solid var(--text-purple) !important;
+  color: var(--text-purple) !important;
 }
 .closebtn:hover {
   background-color: transparent !important;
@@ -253,6 +270,10 @@
 .video_radius {
   border-radius: 32px;
 }
+.vibecap_py {
+  padding: 108px 0 109px 0 !important;
+}
+
 @media (max-width: 1500.98px) {
   .video_bg {
     min-height: 100vh !important;
@@ -265,13 +286,16 @@
     padding: 140px 0;
     margin-top: -40%;
   }
+  .vibecap_header_spacing {
+    padding: 108px 0 109px 0;
+    margin-top: -40%;
+  }
 }
 @media (max-width: 1023.98px) {
   .vider_top_spacing {
     padding-top: 100px;
   }
 }
-
 @media (max-width: 991.98px) {
   .swiper-slide {
     min-height: 376px !important;
@@ -314,7 +338,8 @@
   .faq {
     padding-top: 36px;
   }
-  .video_sec_spacing {
+  .video_sec_spacing,
+  .vibecap_header_spacing {
     padding: 80px 0;
     margin-top: -58%;
   }
@@ -373,7 +398,8 @@
     padding-top: 40px;
   }
 
-  .video_sec_spacing {
+  .video_sec_spacing,
+  .vibecap_header_spacing {
     margin-top: -80%;
     padding: 60px 0;
   }
@@ -442,13 +468,15 @@
     width: 40px;
     height: 39px;
   }
-  .video_sec_spacing {
+  .video_sec_spacing,
+  .vibecap_header_spacing {
     padding: 50px 0;
     margin-top: -100%;
   }
 }
 @media (max-width: 405.98px) {
-  .video_sec_spacing {
+  .video_sec_spacing,
+  .vibecap_header_spacing {
     margin-top: -130%;
   }
 }
