@@ -1,3 +1,58 @@
+
+/* ========================== HEADER CLASSES ================== */
+.video_bg {
+  background-attachment: fixed;
+  min-height: auto;
+}
+
+#headerVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.starport_logo {
+  max-width: 430px;
+  height: 65px;
+}
+
+/* ========================== VIDEO SECTION CLASSES ================== */
+.video_top_spacing {
+  padding-top: 150px;
+}
+
+.video_sec_spacing {
+  padding: 140px 0;
+  margin-top: 0%;
+}
+
+.diligence_video_img {
+  max-width: 945px;
+  max-height: 537px;
+  border-radius: 24px;
+}
+
+.video_play_icon {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.mb_desktop {
+  margin-bottom: 80px;
+}
 .video_bg::after {
   position: fixed;
   background: var(--text-darkblue) !important;
@@ -37,14 +92,12 @@
 .closebtn:hover {
   background-color: transparent !important;
 }
-.home_button{
-  padding: 18px 0;
-}
 .home_button:hover {
   background: var(--text-darkblue) !important;
   color: white;
 }
 
+/* ======================= FAQ ======================== */
 .accordion-item:nth-child(3) .accordion-button::after,
 .accordion-item:nth-child(4) .accordion-button::after,
 .accordion-item:nth-child(5) .accordion-button::after {
@@ -59,11 +112,8 @@
 .onboarding_video_sec_spacing {
   padding: 108px 0;
 }
-.onboarding_footer_logo{
-  width: 414px;
-  height: 140px;
-}
 
+/* =========================== MEDIA QUERIES ========================*/
 @media (max-width: 1500.98px) {
   .onboarding_video_sec_spacing {
     padding: 108px 0;
@@ -72,10 +122,6 @@
 }
 
 @media (max-width: 991.98px) {
-  .onboarding_footer_logo{
-    width: 390px;
-    height: 130px;
-  }
   .onboarding_video_sec_spacing {
     padding: 80px 0;
     margin-top: -42%;
@@ -89,18 +135,6 @@
 }
 
 @media (max-width: 576.98px) {
-  .video_btn{
-    max-width: 100% !important;
-    width: 90px;
-    height: 40px; 
-  }
-  .home_button{
-    padding: 14px 0;
-  }
-  .consultation_footer_logo{
-    width: 284px;
-    height: 110px;
-  }
   .onboarding_video_sec_spacing {
     margin-top: -85%;
   }

@@ -70,60 +70,6 @@
   max-width: 319px;
 }
 
-/* ========================== HEADER CLASSES ================== */
-.video_bg {
-  background-attachment: fixed;
-  min-height: auto;
-}
-
-#headerVideo {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.starport_logo {
-  max-width: 430px;
-  height: 65px;
-}
-
-/* ========================== VIDEO SECTION CLASSES ================== */
-.video_top_spacing {
-  padding-top: 150px;
-}
-
-.video_sec_spacing {
-  padding: 140px 0;
-  margin-top: 0%;
-}
-
-.diligence_video_img {
-  max-width: 945px;
-  max-height: 537px;
-  border-radius: 24px;
-}
-
-.video_play_icon {
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) !important;
-}
-
-.mb_desktop {
-  margin-bottom: 80px;
-}
 
 /* ========================== DUE DILIGENCE ================== */
 .radius_28 {
