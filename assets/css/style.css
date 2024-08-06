@@ -28,6 +28,7 @@
   max-width: 430px;
   height: 65px;
 }
+
 /* ========================== VIDEO SECTION CLASSES ================== */
 .vider_top_spacing {
   padding-top: 150px;
@@ -52,38 +53,38 @@
   left: 50%;
   transform: translate(-50%, -50%) !important;
 }
+
 .mb_desktop {
   margin-bottom: 80px;
 }
+
 /* =========================== CASE STUDIOS ========================= */
 .mb_58 {
   margin-bottom: 58px;
 }
+
 .slider_playicon {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.slide_width {
-  max-width: 467px;
-  height: 100% !important;
-}
-.swiper-slide {
-  min-width: 461px;
-}
+
 .swiper-pagination {
   position: absolute;
   bottom: -40px !important;
   left: 50%;
   transform: translateX(-50%);
 }
+
 .swiper-3d {
   perspective: 1288px !important;
 }
+
 .swiper-wrapper {
   max-width: 1290px;
-  margin: 0 auto !important;
+  margin-inline-start: -300px;
 }
+
 .swiper-pagination .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
@@ -98,18 +99,23 @@
   background-color: var(--text-skyblue);
   opacity: 100%;
 }
+
 .startegic_market {
   max-width: 370px;
 }
+
 .revetalizing_retail {
   max-width: 367px !important;
 }
+
 .driving_innovation {
   max-width: 275px !important;
 }
+
 .scaling_new {
   max-width: 319px;
 }
+
 /* ========================== DUE DILIGENCE ================== */
 .radius_28 {
   border-radius: 28px;
@@ -143,19 +149,24 @@
   width: 25px;
   height: 25px;
 }
+
 /* =========================== MOVING FORWARD ================ */
 .opacity_70 {
   opacity: 70%;
 }
+
 .radius_16 {
   border-radius: 16px;
 }
+
 .opacity_70 {
   opacity: 70%;
 }
+
 .footer_logo {
   max-width: 444px;
 }
+
 .cards_shadow:hover {
   transform: translateY(-5%);
 }
@@ -166,34 +177,43 @@
   padding-top: 60px;
   max-width: 946px;
 }
+
 .radius_32 {
   border-radius: 32px;
 }
+
 .py_common_invester {
   padding-top: 101px;
   padding-bottom: 101px;
 }
+
 .max_w_866 {
   max-width: 866px;
 }
+
 .accordion-button:focus {
   box-shadow: none !important;
 }
+
 .accordion-button {
   padding: 20px 0 !important;
 }
+
 .accordion-item {
   padding: 0 20px !important;
 }
+
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
   box-shadow: none !important;
   padding: 20px 0 16px 0 !important;
   color: black !important;
 }
+
 .accordion-body {
   padding: 0px 0px 16px 0 !important;
 }
+
 .accordion-button::after {
   display: flex;
   justify-content: center;
@@ -201,19 +221,23 @@
   background-image: none !important;
   content: none !important;
 }
+
 .video_btn {
   width: 149px;
   height: 51px;
   transition: all 0.3s linear;
 }
+
 .video_btn:hover {
   background-color: #ff0a00ba !important;
 }
+
 .video_btn.closebtn {
   background-color: transparent;
   border: 1px solid var(--text-red) !important;
   color: var(--text-red) !important;
 }
+
 .closebtn:hover {
   background-color: transparent !important;
 }
@@ -227,6 +251,7 @@
   font-weight: 400 !important;
   margin-top: -1%;
 }
+
 .accordion-item:nth-child(3) .accordion-button:not(.collapsed)::after,
 .accordion-item:nth-child(4) .accordion-button:not(.collapsed)::after,
 .accordion-item:nth-child(5) .accordion-button:not(.collapsed)::after {
@@ -237,26 +262,33 @@
 .collapse {
   transition-duration: 0.2s !important;
 }
+
 .mw_523 {
   max-width: 523px;
 }
+
 .accordian_item_gap {
   gap: 40px;
 }
+
 .translate_middle {
   transform: translate(-50%, -50%);
 }
+
 .play_icon {
   cursor: pointer;
   z-index: 1;
 }
+
 .video_radius {
   border-radius: 32px;
 }
+
 @media (max-width: 1500.98px) {
   .video_bg {
     min-height: 100vh !important;
   }
+
   .mb_desktop {
     margin-bottom: 0;
   }
@@ -266,54 +298,81 @@
     margin-top: -40%;
   }
 }
+
 @media (max-width: 1023.98px) {
+  .swiper-wrapper {
+    margin-inline-start: -100px;
+    margin: 0;
+  }
+  
   .vider_top_spacing {
     padding-top: 100px;
   }
+
+  .slide_width {
+    max-width: 467px;
+    height: 100% !important;
+  }
+
+  .swiper-slide {
+    min-width: 461px;
+  }
+
 }
 
 @media (max-width: 991.98px) {
   .swiper-slide {
     min-height: 376px !important;
   }
+
   .footer_logo {
     max-width: 390px;
   }
+
   .button_svg_icon {
     width: 20px;
     height: 20px;
   }
+
   .diligence_button {
     padding: 9px 0;
     min-width: 132px;
   }
+
   .diligence_image {
     border-radius: 16px;
     max-width: 100%;
   }
+
   .accordian_item_gap {
     gap: 20px;
   }
+
   .accordion-body {
     padding: 0px 0px 16px 20px !important;
   }
+
   .accordion-button:not(.collapsed) {
     background-color: transparent !important;
     box-shadow: none !important;
     padding: 24px 40.5px 16px 20px !important;
   }
+
   .accordion-item:nth-child(1) .accordion-button::after,
   .accordion-item:nth-child(2) .accordion-button::after {
     font-size: 14px !important;
     width: 120px !important;
   }
+
   .py_common_invester {
     padding-top: 70px;
     padding-bottom: 70px;
   }
+
   .faq {
     padding-top: 36px;
   }
+
   .video_sec_spacing {
     padding: 80px 0;
     margin-top: -58%;
@@ -334,41 +393,51 @@
     max-width: 100%;
   }
 }
+
 @media (max-width: 767.98px) {
   .slider_play {
     max-width: 30px;
   }
+
   .slider_video {
     max-width: 100%;
     height: 100% !important;
     border-radius: 20px !important;
   }
+
   .swiper-slide {
     min-width: 347px !important;
     min-height: 320px !important;
   }
+
   .footer_logo {
     max-width: 360px;
   }
+
   .play_icon {
     width: 50px;
     height: 49px;
   }
+
   .py_common_invester {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
   .accordion-button:not(.collapsed) {
     padding: 16px !important;
   }
+
   .accordion-item:nth-child(3) .accordion-button::after,
   .accordion-item:nth-child(4) .accordion-button::after,
   .accordion-item:nth-child(5) .accordion-button::after {
     margin-top: -8px !important;
   }
+
   .video_radius {
     border-radius: 16px;
   }
+
   .vider_top_spacing {
     padding-top: 40px;
   }
@@ -377,6 +446,7 @@
     margin-top: -80%;
     padding: 60px 0;
   }
+
   .video_play_icon {
     width: 50px;
     height: 50px;
@@ -391,27 +461,34 @@
     min-height: 510px;
   }
 }
+
 @media (max-width: 575.98px) {
   .video_slide {
     width: 270px !important;
   }
+
   .swiper-pagination .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
   }
+
   .swiper-slide {
     min-height: 290px !important;
     min-width: 300px !important;
   }
+
   .footer_logo {
     max-width: 300px;
   }
+
   .accordion-button:not(.collapsed) {
     padding: 24px 0px 8px 0px !important;
   }
+
   .accordion-body {
     padding: 0px 0px 16px 0 !important;
   }
+
   .accordian_item_gap {
     gap: 12px !important;
   }
@@ -423,30 +500,37 @@
     font-size: 30px !important;
     margin-top: -8px !important;
   }
+
   .accordion-item {
     padding: 0 12px !important;
   }
+
   .accordion-item:nth-child(1) .accordion-button::after,
   .accordion-item:nth-child(2) .accordion-button::after {
     font-size: 12px !important;
     width: 100px !important;
     height: 40px !important;
   }
+
   .accordion-button {
     padding: 12px 0 !important;
   }
+
   .faq {
     padding-top: 30px;
   }
+
   .play_icon {
     width: 40px;
     height: 39px;
   }
+
   .video_sec_spacing {
     padding: 50px 0;
     margin-top: -100%;
   }
 }
+
 @media (max-width: 405.98px) {
   .video_sec_spacing {
     margin-top: -130%;
